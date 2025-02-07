@@ -2,8 +2,6 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import { ThemeProvider } from "@/components/theme-provider"
 import { LoginForm } from "@/components/login-form"
-// import { NetworkGraph } from "@/components/NetworkGraph"
-// import AllocationChart from "@/components/AllocationChart"
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
