@@ -17,11 +17,11 @@ interface SidebarProps {
   organizations: Organization[];
 }
 
-const lightenCplor = (color: string, percent: number) => {
+const lightenColor = (color: string, percent: number) => {
   console.log('color', color);
   console.log('percent', percent);
 
-  const hexPercent = (percent / 100 * 255).toString(16);
+  const hexPercent = Math.floor(percent / 100 * 255).toString(16);
 
   const lighten = color + hexPercent;
 
@@ -55,8 +55,12 @@ const lightenCplor = (color: string, percent: number) => {
 // ];
 
 const Sidebar: React.FC<SidebarProps> = ({ recommenders, organizations }) => {
-  const totalRecommenderAllocation = recommenders.reduce((sum, r) => sum + r.allocation, 0);
+
+  recommenders.sort((a, b) => b.allocation - a.allocation);
+  organizations.sort((a, b) => b.allocation - a.allocation);
+
   const totalOrganizationAllocation = organizations.reduce((sum, o) => sum + o.allocation, 0);
+  const totalRecommenderAllocation = recommenders.reduce((sum, r) => sum + r.allocation, 0);
 
   return (
     <div className="w-64 h-screen bg-gray-100 flex flex-col overflow-hidden">
@@ -86,7 +90,7 @@ const Sidebar: React.FC<SidebarProps> = ({ recommenders, organizations }) => {
               key={organization.name}
               className="flex items-center px-0 py-0 text-sm font-medium rounded"
               style={{
-                backgroundColor: `${lightenCplor(organization.colorStrip, 20)}`,
+                backgroundColor: `${lightenColor(organization.colorStrip, 20)}`,
                 height: `${heightPercentage}%`,
               }}
             >

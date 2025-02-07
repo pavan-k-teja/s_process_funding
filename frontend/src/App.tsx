@@ -2,51 +2,11 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import { ThemeProvider } from "@/components/theme-provider"
 import { LoginForm } from "@/components/login-form"
-import Navbar from "@/components/Navbar"
-import Sidebar from "@/components/Sidebar"
+// import Navbar from "@/components/Navbar"
+// import Sidebar from "@/components/Sidebar"
+// import UtilityTable from "@/components/UtilityTable"
+import Dashboard from "@/components/Dashboard"
 
-
-interface Recommender {
-  name: string;
-  allocation: number;
-  color: string;
-}
-
-interface Organization {
-  name: string;
-  allocation: number;
-  colorStrip: string;
-}
-
-// interface SidebarProps {
-//   recommenders: Recommender[];
-//   organizations: Organization[];
-// }
-
-
-const example_recommenders: Recommender[] = [
-  { name: 'Recommender 1', allocation: 10, color: '#ff0000' },
-  { name: 'Recommender 2', allocation: 20, color: '#00ff00' },
-  { name: 'Recommender 3', allocation: 30, color: '#0000ff' },
-];
-
-const example_organizations: Organization[] = [
-  {
-    name: 'Organization 1',
-    allocation: 10,
-    colorStrip: '#ff0000',
-  },
-  {
-    name: 'Organization 2',
-    allocation: 20,
-    colorStrip: '#00ff00',
-  },
-  {
-    name: 'Organization 3',
-    allocation: 30,
-    colorStrip: '#0000ff',
-  },
-];
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -81,20 +41,24 @@ function App() {
   }, [])
 
   return (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      {loading ? (
-        <div>Loading...</div>
-      ) : isAuthenticated ? (
-        <div className="w-full h-screen flex flex-col">
-          {/* <Navbar profileName={"JT"} onLogout={() => { console.log("Logout is Clicked") }} /> */}
-          {/* Add other components here */}
-          <Sidebar recommenders={example_recommenders} organizations={example_organizations} />
-        </div>
-        // <Navbar profileName={"JT"} onLogout={()=>{console.log("Logout is Clicked")}}/>
-      ) : (
-        <LoginForm onLoginSuccess={() => setIsAuthenticated(true)} />
-      )}
-    </ThemeProvider>
+    <div className="w-screen h-screen flex justify-center p-0 m-0">
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+        {loading ? (
+          <div>Loading...</div>
+        ) : isAuthenticated ? (
+          <div className="w-full h-screen flex flex-col p-0 m-0">
+            {/* <Navbar profileName={"JT"} onLogout={() => { console.log("Logout is Clicked") }} /> */}
+            {/* Add other components here */}
+            {/* <Sidebar recommenders={example_recommenders} organizations={example_organizations} /> */}
+            {/* <UtilityTable initialBudget={100} maxBudget={1000} companies={example_utility_table} /> */}
+            <Dashboard />
+          </div>
+          // <Navbar profileName={"JT"} onLogout={()=>{console.log("Logout is Clicked")}}/>
+        ) : (
+          <LoginForm onLoginSuccess={() => setIsAuthenticated(true)} />
+        )}
+      </ThemeProvider>
+    </div>
   )
 }
 

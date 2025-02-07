@@ -56,20 +56,29 @@ export default function AllocationChart() {
 
       // Drag behavior
       circles.call(
+        // drag<SVGCircleElement, Point>()
+        //   .on("drag", (event, d) => {
+        //     d.x = Math.max(0, Math.min(width, event.x));
+        //     d.y = Math.max(0, Math.min(height, event.y));
+        //     setPoints([...points]);
+        //     update();
+        //   })
+
         drag<SVGCircleElement, Point>()
           .on("drag", (event, d) => {
-            d.x = Math.max(0, Math.min(width, event.x));
-            d.y = Math.max(0, Math.min(height, event.y));
+            d.x = Math.max(10, Math.min(width - 10, event.x)); // Keep points within width
+            d.y = Math.max(10, Math.min(height - 10, event.y)); // Keep points within height
             setPoints([...points]);
             update();
-          })
-      );
-    };
+          });
 
-    update();
+      );
+};
+
+update();
   }, [points]);
 
-  return (
-    <svg ref={svgRef} width={width} height={height} className="border bg-white" />
-  );
+return (
+  <svg ref={svgRef} width={width} height={height} className="border bg-white" />
+);
 }
