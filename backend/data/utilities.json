@@ -1,0 +1,2018 @@
+[
+    {
+        "username": "BO",
+        "utility_name": "BehemothCorps",
+        "fdv": 0.5,
+        "ldt": 3000000.0,
+        "conc": -0.54
+    },
+    {
+        "username": "CF",
+        "utility_name": "BehemothCorps",
+        "fdv": 1.0,
+        "ldt": 2000000.0,
+        "conc": -0.4
+    },
+    {
+        "username": "GZ",
+        "utility_name": "BehemothCorps",
+        "fdv": 0.81,
+        "ldt": 2100000.0,
+        "conc": 0.14
+    },
+    {
+        "username": "IF",
+        "utility_name": "BehemothCorps",
+        "fdv": 0.66,
+        "ldt": 250000.0,
+        "conc": 0.3
+    },
+    {
+        "username": "VA",
+        "utility_name": "BehemothCorps",
+        "fdv": 0.43,
+        "ldt": 400000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "BehemothCorps",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "BoarBrews",
+        "fdv": 0.2,
+        "ldt": 500000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "BoarBrews",
+        "fdv": 0.63,
+        "ldt": 500000.0,
+        "conc": 0.3
+    },
+    {
+        "username": "GZ",
+        "utility_name": "BoarBrews",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "BoarBrews",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "BoarBrews",
+        "fdv": 0.72,
+        "ldt": 654000.0,
+        "conc": 0.5
+    },
+    {
+        "username": "XO",
+        "utility_name": "BoarBrews",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Chieftronics",
+        "fdv": 0.65,
+        "ldt": 10000000.0,
+        "conc": -0.75
+    },
+    {
+        "username": "CF",
+        "utility_name": "Chieftronics",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Chieftronics",
+        "fdv": 0.54,
+        "ldt": 524000.0,
+        "conc": 0.89
+    },
+    {
+        "username": "IF",
+        "utility_name": "Chieftronics",
+        "fdv": 0.59,
+        "ldt": 600000.0,
+        "conc": 0.3
+    },
+    {
+        "username": "VA",
+        "utility_name": "Chieftronics",
+        "fdv": 0.16,
+        "ldt": 300000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Chieftronics",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "ChronoBrotherhood",
+        "fdv": 0.82,
+        "ldt": 3000000.0,
+        "conc": -0.47
+    },
+    {
+        "username": "CF",
+        "utility_name": "ChronoBrotherhood",
+        "fdv": 0.88,
+        "ldt": 1300000.0,
+        "conc": -0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "ChronoBrotherhood",
+        "fdv": 0.66,
+        "ldt": 2000000.0,
+        "conc": 0.34
+    },
+    {
+        "username": "IF",
+        "utility_name": "ChronoBrotherhood",
+        "fdv": 0.84,
+        "ldt": 2000000.0,
+        "conc": -0.2
+    },
+    {
+        "username": "VA",
+        "utility_name": "ChronoBrotherhood",
+        "fdv": 0.96,
+        "ldt": 2000000.0,
+        "conc": -0.5
+    },
+    {
+        "username": "XO",
+        "utility_name": "ChronoBrotherhood",
+        "fdv": 0.38,
+        "ldt": 2500000.0,
+        "conc": -0.1
+    },
+    {
+        "username": "BO",
+        "utility_name": "Coreland",
+        "fdv": 0.15,
+        "ldt": 660000.0,
+        "conc": 0.38
+    },
+    {
+        "username": "CF",
+        "utility_name": "Coreland",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Coreland",
+        "fdv": 0.36,
+        "ldt": 1300000.0,
+        "conc": -0.25
+    },
+    {
+        "username": "IF",
+        "utility_name": "Coreland",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Coreland",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Coreland",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Curse",
+        "fdv": 0.21,
+        "ldt": 250000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Curse",
+        "fdv": 1.0,
+        "ldt": 350000.0,
+        "conc": -0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Curse",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Curse",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Curse",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Curse",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Deserprises",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Deserprises",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": -0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Deserprises",
+        "fdv": 0.27,
+        "ldt": 200000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Deserprises",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Deserprises",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Deserprises",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": -0.01
+    },
+    {
+        "username": "BO",
+        "utility_name": "Drifthead",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Drifthead",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Drifthead",
+        "fdv": 0.04,
+        "ldt": 499000.0,
+        "conc": 0.16
+    },
+    {
+        "username": "IF",
+        "utility_name": "Drifthead",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Drifthead",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Drifthead",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Dynamicphone",
+        "fdv": 0.25,
+        "ldt": 150000.0,
+        "conc": -0.05
+    },
+    {
+        "username": "CF",
+        "utility_name": "Dynamicphone",
+        "fdv": 1.0,
+        "ldt": 150000.0,
+        "conc": 0.35
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Dynamicphone",
+        "fdv": 0.18,
+        "ldt": 150000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Dynamicphone",
+        "fdv": 0.74,
+        "ldt": 108000.0,
+        "conc": 0.3
+    },
+    {
+        "username": "VA",
+        "utility_name": "Dynamicphone",
+        "fdv": 0.85,
+        "ldt": 194000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Dynamicphone",
+        "fdv": 0.26,
+        "ldt": 226000.0,
+        "conc": 0.65
+    },
+    {
+        "username": "BO",
+        "utility_name": "Electrorks",
+        "fdv": 0.6,
+        "ldt": 1500000.0,
+        "conc": -0.13
+    },
+    {
+        "username": "CF",
+        "utility_name": "Electrorks",
+        "fdv": 0.38,
+        "ldt": 500000.0,
+        "conc": 0.2
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Electrorks",
+        "fdv": 0.36,
+        "ldt": 1000000.0,
+        "conc": 0.56
+    },
+    {
+        "username": "IF",
+        "utility_name": "Electrorks",
+        "fdv": 0.79,
+        "ldt": 500000.0,
+        "conc": 0.2
+    },
+    {
+        "username": "VA",
+        "utility_name": "Electrorks",
+        "fdv": 0.74,
+        "ldt": 1600000.0,
+        "conc": -0.2
+    },
+    {
+        "username": "XO",
+        "utility_name": "Electrorks",
+        "fdv": 1.01,
+        "ldt": 2400000.0,
+        "conc": -0.41
+    },
+    {
+        "username": "BO",
+        "utility_name": "EnigmaCompany",
+        "fdv": 0.1,
+        "ldt": 2000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "EnigmaCompany",
+        "fdv": 0.25,
+        "ldt": 500000.0,
+        "conc": -0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "EnigmaCompany",
+        "fdv": 0.35,
+        "ldt": 212000.0,
+        "conc": 0.1
+    },
+    {
+        "username": "IF",
+        "utility_name": "EnigmaCompany",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "EnigmaCompany",
+        "fdv": 0.18,
+        "ldt": 520000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "EnigmaCompany",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Faseelectronics",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Faseelectronics",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Faseelectronics",
+        "fdv": 0.0,
+        "ldt": 640000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Faseelectronics",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Faseelectronics",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Faseelectronics",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Flowerscape",
+        "fdv": 0.22,
+        "ldt": 150000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Flowerscape",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Flowerscape",
+        "fdv": 0.29,
+        "ldt": 129000.0,
+        "conc": 0.45
+    },
+    {
+        "username": "IF",
+        "utility_name": "Flowerscape",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Flowerscape",
+        "fdv": 0.48,
+        "ldt": 174000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Flowerscape",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Ghostland",
+        "fdv": 0.22,
+        "ldt": 998000.0,
+        "conc": 1.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Ghostland",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Ghostland",
+        "fdv": 0.1,
+        "ldt": 683000.0,
+        "conc": 0.84
+    },
+    {
+        "username": "IF",
+        "utility_name": "Ghostland",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Ghostland",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Ghostland",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Globaltube",
+        "fdv": 0.2,
+        "ldt": 3000000.0,
+        "conc": -0.55
+    },
+    {
+        "username": "CF",
+        "utility_name": "Globaltube",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Globaltube",
+        "fdv": 0.18,
+        "ldt": 500000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Globaltube",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Globaltube",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Globaltube",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Honeywheels",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Honeywheels",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Honeywheels",
+        "fdv": 0.41,
+        "ldt": 300000.0,
+        "conc": 0.03
+    },
+    {
+        "username": "IF",
+        "utility_name": "Honeywheels",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Honeywheels",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Honeywheels",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "ImaginationLimited",
+        "fdv": 0.15,
+        "ldt": 200000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "ImaginationLimited",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "ImaginationLimited",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "ImaginationLimited",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "ImaginationLimited",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "ImaginationLimited",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Ithigh",
+        "fdv": 0.21,
+        "ldt": 200000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Ithigh",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Ithigh",
+        "fdv": 0.02,
+        "ldt": 641000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Ithigh",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Ithigh",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Ithigh",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Lionware",
+        "fdv": 0.2,
+        "ldt": 1000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Lionware",
+        "fdv": 0.94,
+        "ldt": 500000.0,
+        "conc": 0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Lionware",
+        "fdv": 0.27,
+        "ldt": 360000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Lionware",
+        "fdv": 0.84,
+        "ldt": 500000.0,
+        "conc": 0.3
+    },
+    {
+        "username": "VA",
+        "utility_name": "Lionware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Lionware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Microbooks",
+        "fdv": 0.2,
+        "ldt": 10000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Microbooks",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Microbooks",
+        "fdv": 0.0,
+        "ldt": 480000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Microbooks",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Microbooks",
+        "fdv": 0.04,
+        "ldt": 960000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Microbooks",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Mountaintales",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Mountaintales",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Mountaintales",
+        "fdv": 0.0,
+        "ldt": 1700000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Mountaintales",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Mountaintales",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Mountaintales",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Nemomedia",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Nemomedia",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Nemomedia",
+        "fdv": 0.18,
+        "ldt": 120000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Nemomedia",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Nemomedia",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Nemomedia",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.2
+    },
+    {
+        "username": "BO",
+        "utility_name": "Nimbletainment",
+        "fdv": 0.35,
+        "ldt": 8000000.0,
+        "conc": -0.54
+    },
+    {
+        "username": "CF",
+        "utility_name": "Nimbletainment",
+        "fdv": 0.31,
+        "ldt": 5000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Nimbletainment",
+        "fdv": 0.36,
+        "ldt": 1800000.0,
+        "conc": -0.3
+    },
+    {
+        "username": "IF",
+        "utility_name": "Nimbletainment",
+        "fdv": 0.95,
+        "ldt": 2500000.0,
+        "conc": -0.1
+    },
+    {
+        "username": "VA",
+        "utility_name": "Nimbletainment",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Nimbletainment",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Nitro",
+        "fdv": 0.5,
+        "ldt": 2500000.0,
+        "conc": -0.3
+    },
+    {
+        "username": "CF",
+        "utility_name": "Nitro",
+        "fdv": 0.63,
+        "ldt": 1200000.0,
+        "conc": -0.25
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Nitro",
+        "fdv": 0.4,
+        "ldt": 170000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Nitro",
+        "fdv": 1.0,
+        "ldt": 800000.0,
+        "conc": 0.4
+    },
+    {
+        "username": "VA",
+        "utility_name": "Nitro",
+        "fdv": 0.96,
+        "ldt": 1300000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Nitro",
+        "fdv": 0.99,
+        "ldt": 1700000.0,
+        "conc": 0.33
+    },
+    {
+        "username": "BO",
+        "utility_name": "Nymphware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Nymphware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Nymphware",
+        "fdv": 0.18,
+        "ldt": 100000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Nymphware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Nymphware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Nymphware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Peachpaw",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Peachpaw",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Peachpaw",
+        "fdv": 0.0,
+        "ldt": 900000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Peachpaw",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Peachpaw",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Peachpaw",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Peachware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Peachware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Peachware",
+        "fdv": 0.0,
+        "ldt": 1000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Peachware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Peachware",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Peachware",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Prophecycurity",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Prophecycurity",
+        "fdv": 0.0,
+        "ldt": 300000.0,
+        "conc": 0.7
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Prophecycurity",
+        "fdv": 0.0,
+        "ldt": 1600000.0,
+        "conc": 3.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Prophecycurity",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Prophecycurity",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Prophecycurity",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Purplestone",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Purplestone",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Purplestone",
+        "fdv": 0.09,
+        "ldt": 200000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Purplestone",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Purplestone",
+        "fdv": 0.16,
+        "ldt": 300000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Purplestone",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "RavenMotors",
+        "fdv": 0.25,
+        "ldt": 1800000.0,
+        "conc": -0.14
+    },
+    {
+        "username": "CF",
+        "utility_name": "RavenMotors",
+        "fdv": 0.25,
+        "ldt": 300000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "RavenMotors",
+        "fdv": 0.05,
+        "ldt": 320000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "RavenMotors",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "RavenMotors",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "RavenMotors",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Ridgespace",
+        "fdv": 0.65,
+        "ldt": 2000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Ridgespace",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Ridgespace",
+        "fdv": 0.47,
+        "ldt": 2000000.0,
+        "conc": -0.28
+    },
+    {
+        "username": "IF",
+        "utility_name": "Ridgespace",
+        "fdv": 0.99,
+        "ldt": 1000000.0,
+        "conc": 0.2
+    },
+    {
+        "username": "VA",
+        "utility_name": "Ridgespace",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Ridgespace",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Shadewell",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Shadewell",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Shadewell",
+        "fdv": 0.0,
+        "ldt": 900000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Shadewell",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Shadewell",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Shadewell",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Spherebank",
+        "fdv": 0.6,
+        "ldt": 210000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Spherebank",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Spherebank",
+        "fdv": 0.42,
+        "ldt": 203000.0,
+        "conc": 0.35
+    },
+    {
+        "username": "IF",
+        "utility_name": "Spherebank",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Spherebank",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Spherebank",
+        "fdv": 0.52,
+        "ldt": 230000.0,
+        "conc": -0.69
+    },
+    {
+        "username": "BO",
+        "utility_name": "Spritespace",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Spritespace",
+        "fdv": 0.0,
+        "ldt": 1500000.0,
+        "conc": -0.25
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Spritespace",
+        "fdv": 0.27,
+        "ldt": 120000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Spritespace",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Spritespace",
+        "fdv": 0.04,
+        "ldt": 502000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Spritespace",
+        "fdv": 0.11,
+        "ldt": 1700000.0,
+        "conc": -0.52
+    },
+    {
+        "username": "BO",
+        "utility_name": "ThunderRecords",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "ThunderRecords",
+        "fdv": 0.0,
+        "ldt": 350000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "ThunderRecords",
+        "fdv": 0.09,
+        "ldt": 670000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "ThunderRecords",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "ThunderRecords",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "ThunderRecords",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "TribeofSpite",
+        "fdv": 0.22,
+        "ldt": 5000000.0,
+        "conc": -0.55
+    },
+    {
+        "username": "CF",
+        "utility_name": "TribeofSpite",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "TribeofSpite",
+        "fdv": 0.25,
+        "ldt": 710000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "TribeofSpite",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "TribeofSpite",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "TribeofSpite",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.06
+    },
+    {
+        "username": "BO",
+        "utility_name": "TribeofWarlords",
+        "fdv": 0.62,
+        "ldt": 500000.0,
+        "conc": -0.33
+    },
+    {
+        "username": "CF",
+        "utility_name": "TribeofWarlords",
+        "fdv": 0.75,
+        "ldt": 400000.0,
+        "conc": 0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "TribeofWarlords",
+        "fdv": 0.81,
+        "ldt": 500000.0,
+        "conc": 1.98
+    },
+    {
+        "username": "IF",
+        "utility_name": "TribeofWarlords",
+        "fdv": 0.93,
+        "ldt": 175000.0,
+        "conc": 0.3
+    },
+    {
+        "username": "VA",
+        "utility_name": "TribeofWarlords",
+        "fdv": 0.96,
+        "ldt": 398000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "TribeofWarlords",
+        "fdv": 0.99,
+        "ldt": 508000.0,
+        "conc": -0.32
+    },
+    {
+        "username": "BO",
+        "utility_name": "Twist",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Twist",
+        "fdv": 0.5,
+        "ldt": 1000000.0,
+        "conc": -0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Twist",
+        "fdv": 0.36,
+        "ldt": 460000.0,
+        "conc": 1.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Twist",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Twist",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Twist",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "VortexPoint",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "VortexPoint",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "VortexPoint",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "VortexPoint",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "VortexPoint",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "VortexPoint",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.01
+    },
+    {
+        "username": "BO",
+        "utility_name": "Whisper",
+        "fdv": 0.3,
+        "ldt": 2000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Whisper",
+        "fdv": 0.25,
+        "ldt": 1200000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Whisper",
+        "fdv": 0.18,
+        "ldt": 320000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Whisper",
+        "fdv": 0.47,
+        "ldt": 1000000.0,
+        "conc": 0.1
+    },
+    {
+        "username": "VA",
+        "utility_name": "Whisper",
+        "fdv": 1.0,
+        "ldt": 1700000.0,
+        "conc": -0.28
+    },
+    {
+        "username": "XO",
+        "utility_name": "Whisper",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "YellowShade",
+        "fdv": 0.15,
+        "ldt": 2500000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "YellowShade",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "YellowShade",
+        "fdv": 0.27,
+        "ldt": 1700000.0,
+        "conc": -0.28
+    },
+    {
+        "username": "IF",
+        "utility_name": "YellowShade",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "YellowShade",
+        "fdv": 0.2,
+        "ldt": 1000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "YellowShade",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Yeworks",
+        "fdv": 0.6,
+        "ldt": 1000000.0,
+        "conc": -0.66
+    },
+    {
+        "username": "CF",
+        "utility_name": "Yeworks",
+        "fdv": 0.38,
+        "ldt": 500000.0,
+        "conc": 0.35
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Yeworks",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Yeworks",
+        "fdv": 0.74,
+        "ldt": 320000.0,
+        "conc": 0.3
+    },
+    {
+        "username": "VA",
+        "utility_name": "Yeworks",
+        "fdv": 0.36,
+        "ldt": 1300000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Yeworks",
+        "fdv": 0.99,
+        "ldt": 1700000.0,
+        "conc": -0.21
+    },
+    {
+        "username": "BO",
+        "utility_name": "Zaamtech",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Zaamtech",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Zaamtech",
+        "fdv": 0.27,
+        "ldt": 960000.0,
+        "conc": -0.32
+    },
+    {
+        "username": "IF",
+        "utility_name": "Zaamtech",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0.0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Zaamtech",
+        "fdv": 0.31,
+        "ldt": 300000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Zaamtech",
+        "fdv": 0.0,
+        "ldt": 0.0,
+        "conc": 0.0
+    },
+    {
+        "username": "BO",
+        "utility_name": "Zooin",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "CF",
+        "utility_name": "Zooin",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "GZ",
+        "utility_name": "Zooin",
+        "fdv": 0.09,
+        "ldt": 449000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "IF",
+        "utility_name": "Zooin",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "VA",
+        "utility_name": "Zooin",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "XO",
+        "utility_name": "Zooin",
+        "fdv": 0,
+        "ldt": 0,
+        "conc": 0
+    },
+    {
+        "username": "BO",
+        "utility_name": "_hold_",
+        "fdv": 0.2,
+        "ldt": 20000000.0,
+        "conc": 3.0
+    },
+    {
+        "username": "CF",
+        "utility_name": "_hold_",
+        "fdv": 0.31,
+        "ldt": 20000000.0,
+        "conc": 0.5
+    },
+    {
+        "username": "GZ",
+        "utility_name": "_hold_",
+        "fdv": 0.4,
+        "ldt": 20000000.0,
+        "conc": 0.28
+    },
+    {
+        "username": "IF",
+        "utility_name": "_hold_",
+        "fdv": 0.0,
+        "ldt": 20000000.0,
+        "conc": -3.0
+    },
+    {
+        "username": "VA",
+        "utility_name": "_hold_",
+        "fdv": 0.23,
+        "ldt": 20000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "XO",
+        "utility_name": "_hold_",
+        "fdv": 0.13,
+        "ldt": 26000000.0,
+        "conc": 0.0
+    },
+    {
+        "username": "JT",
+        "utility_name": "BO",
+        "fdv": 0.9,
+        "ldt": 5308000,
+        "conc": 0.0
+    },
+    {
+        "username": "JT",
+        "utility_name": "CF",
+        "fdv": 0.95,
+        "ldt": 4375000,
+        "conc": 0.0
+    },
+    {
+        "username": "JT",
+        "utility_name": "GZ",
+        "fdv": 0.75,
+        "ldt": 8808000,
+        "conc": 0.0
+    },
+    {
+        "username": "JT",
+        "utility_name": "IF",
+        "fdv": 1.0,
+        "ldt": 7658000,
+        "conc": 0.0
+    },
+    {
+        "username": "JT",
+        "utility_name": "VA",
+        "fdv": 1.0,
+        "ldt": 6775000,
+        "conc": 0.0
+    },
+    {
+        "username": "JT",
+        "utility_name": "XO",
+        "fdv": 0.82,
+        "ldt": 10000000,
+        "conc": 0.22
+    },
+    {
+        "username": "JM",
+        "utility_name": "BO",
+        "fdv": 0.9,
+        "ldt": 5308000,
+        "conc": 0.0
+    },
+    {
+        "username": "JM",
+        "utility_name": "CF",
+        "fdv": 0.95,
+        "ldt": 4375000,
+        "conc": 0.0
+    },
+    {
+        "username": "JM",
+        "utility_name": "GZ",
+        "fdv": 0.75,
+        "ldt": 8808000,
+        "conc": 0.0
+    },
+    {
+        "username": "JM",
+        "utility_name": "IF",
+        "fdv": 1.0,
+        "ldt": 7658000,
+        "conc": 0.0
+    },
+    {
+        "username": "JM",
+        "utility_name": "VA",
+        "fdv": 1.0,
+        "ldt": 6775000,
+        "conc": 0.0
+    },
+    {
+        "username": "JM",
+        "utility_name": "XO",
+        "fdv": 0.82,
+        "ldt": 10000000,
+        "conc": 0.22
+    },
+    {
+        "username": "DM",
+        "utility_name": "BO",
+        "fdv": 0.9,
+        "ldt": 5308000,
+        "conc": 0.0
+    },
+    {
+        "username": "DM",
+        "utility_name": "CF",
+        "fdv": 0.95,
+        "ldt": 4375000,
+        "conc": 0.0
+    },
+    {
+        "username": "DM",
+        "utility_name": "GZ",
+        "fdv": 0.75,
+        "ldt": 8808000,
+        "conc": 0.0
+    },
+    {
+        "username": "DM",
+        "utility_name": "IF",
+        "fdv": 1.0,
+        "ldt": 7658000,
+        "conc": 0.0
+    },
+    {
+        "username": "DM",
+        "utility_name": "VA",
+        "fdv": 1.0,
+        "ldt": 6775000,
+        "conc": 0.0
+    },
+    {
+        "username": "DM",
+        "utility_name": "XO",
+        "fdv": 0.82,
+        "ldt": 10000000,
+        "conc": 0.22
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "username": "XO",
+        "password": "XO",
+        "profile_name": "XO",
+        "role": "recommender",
+        "budget": 10750000,
+        "max_budget": 10750000
+    },
+    {
+        "username": "VA",
+        "password": "VA",
+        "profile_name": "VA",
+        "role": "recommender",
+        "budget": 10750000,
+        "max_budget": 10750000
+    },
+    {
+        "username": "IF",
+        "password": "IF",
+        "profile_name": "IF",
+        "role": "recommender",
+        "budget": 10750000,
+        "max_budget": 10750000
+    },
+    {
+        "username": "GZ",
+        "password": "GZ",
+        "profile_name": "GZ",
+        "role": "recommender",
+        "budget": 10750000,
+        "max_budget": 10750000
+    },
+    {
+        "username": "CF",
+        "password": "CF",
+        "profile_name": "CF",
+        "role": "recommender",
+        "budget": 10750000,
+        "max_budget": 10750000
+    },
+    {
+        "username": "BO",
+        "password": "BO",
+        "profile_name": "BO",
+        "role": "recommender",
+        "budget": 10750000,
+        "max_budget": 10750000
+    },
+    {
+        "username": "JT",
+        "password": "JT",
+        "profile_name": "JT",
+        "role": "funder",
+        "budget": 10000000,
+        "max_budget": 10000000
+    },
+    {
+        "username": "JM",
+        "password": "JM",
+        "profile_name": "JM",
+        "role": "funder",
+        "budget": 10000000,
+        "max_budget": 10000000
+    },
+    {
+        "username": "DM",
+        "password": "DM",
+        "profile_name": "DM",
+        "role": "funder",
+        "budget": 10000000,
+        "max_budget": 10000000
+    },
+    {
+        "username": "SIGMA",
+        "password": "SIGMA",
+        "profile_name": "\u03a3",
+        "role": "sigma",
+        "budget": 0,
+        "max_budget": 0
+    }
+]
