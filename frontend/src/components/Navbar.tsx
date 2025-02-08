@@ -2,8 +2,10 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Avatar } from '@/components/ui/avatar';
 
+import { User } from '@/lib/types';
+
 interface NavbarProps {
-    profileName: string; // Profile name to display inside the avatar
+    profileName?: User["profile_name"]; // Profile name to display inside the avatar
     onLogout: () => void; // Function to handle logout
 }
 
@@ -12,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ profileName, onLogout }) => {
         <nav className="flex items-center justify-end px-4 py-1 bg-white text-black shadow-md w-full">
             <div className="flex items-center space-x-4">
                 {/* Profile Icon */}
-                <Avatar className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white">
+                <Avatar className="w-8 h-8 flex items-center justify-center rounded-full bg-black text-white" style={{ borderRadius: '15px' }}>
                     <span className="text-sm font-medium">{profileName}</span>
                 </Avatar>
 

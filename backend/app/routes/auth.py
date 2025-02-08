@@ -8,6 +8,7 @@ from flask_jwt_extended import (
 )
 from datetime import timedelta
 from app.models.user import User
+from app.models.color import Colors
 from app.models.utilities import Utilities
 from app.models.recommender_allocation import RecommenderAllocations
 from app.services.services import request_data
@@ -66,6 +67,7 @@ def user_data():
     allocations = RecommenderAllocations.get_recommender_allocations_by_username(
         username, "own"
     )
+    colors = Colors.get_colors()
 
     data = {
         "user": {
@@ -75,6 +77,7 @@ def user_data():
             "max_budget": max_budget,
             "profile_name": profile_name,
         },
+        "colors": colors,
         "utilities": utilities,
         "all_profiles": all_profiles,
         "allocations": allocations,
