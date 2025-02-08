@@ -8,21 +8,25 @@ from pymongo import MongoClient
 
 client = MongoClient("mongodb://localhost:27017/")
 db = client["grant_db"]
-colors_collection = db["colors"]
 
-utility_to_colors = {}
-with open("utility_to_color.csv", "r") as file:
-    reader = csv.reader(file)
-    for row in reader:
-        utility_to_colors[row[0]] = row[1]
+# print all collections
+# print(db.list_collection_names())
+
+# colors_collection = db["colors"]
+
+# utility_to_colors = {}
+# with open("utility_to_color.csv", "r") as file:
+#     reader = csv.reader(file)
+#     for row in reader:
+#         utility_to_colors[row[0]] = row[1]
         
+# # colors_collection.insert_one(utility_to_colors)
+# # print(utility_to_colors)
+
 # colors_collection.insert_one(utility_to_colors)
-print(utility_to_colors)
 
-colors_collection.insert_one(utility_to_colors)
+# # now test the read colors and print
 
-# now test the read colors and print
-
-colors = colors_collection.find_one()
-print("Reading colors")
-print(colors)
+# colors = colors_collection.find_one()
+# print("Reading colors")
+# print(colors)

@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from app.config import Config
 from app.routes.auth import auth_bp
-from app.extensions import db, jwt
+from app.extensions import mongo, jwt
 
 
 def create_app():
@@ -12,7 +12,8 @@ def create_app():
     # CORS(app, resources={r"/*/*": {"origins": "*"}})
 
     app.config.from_object(Config)
-    db.init_app(app)
+    mongo.init_app(app)
+    # print("DB initialized", mongo.db.list_collection_names())
     jwt.init_app(app)
 
 

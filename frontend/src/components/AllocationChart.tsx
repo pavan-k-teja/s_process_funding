@@ -1,84 +1,119 @@
-import { useEffect, useRef, useState } from "react";
-import { select, line, drag, curveCatmullRom } from "d3";
+import React, { useRef, useEffect } from "react";
+import * as d3 from "d3";
 
-interface Point {
-  id: number;
-  x: number;
-  y: number;
-}
-
-const width = 600;
-const height = 400;
-
-// Initial control points
-const initialPoints: Point[] = [
-  { id: 0, x: 100, y: 200 },
-  { id: 1, x: 300, y: 100 },
-  { id: 2, x: 500, y: 300 }
-];
-
-export default function AllocationChart() {
-  const [points, setPoints] = useState<Point[]>(initialPoints);
-  const svgRef = useRef<SVGSVGElement | null>(null);
+const AllocationChart: React.FC = () => {
+  const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
-    if (!svgRef.current) return;
+    const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
-    const svg = select(svgRef.current);
+    const points: [number, number][] = [
+      [0, height / 2], // Constrained to the y-axis
+      [width / 2, height / 3], // Freely movable within bounds
+      [width, 0], // Constrained to the x-axis
+    ];
 
-    // Line generator
-    const curve = line<Point>()
-      .x(d => d.x)
-      .y(d => d.y)
-      .curve(curveCatmullRom.alpha(0.5)); // Smooth curve
+    // Define scales
+    const x = d3.scaleLinear().domain([0, width]).range([0, width]);
+    const y = d3.scaleLinear().domain([0, height]).range([height, 0]);
 
-    const update = () => {
-      // Update curve path
-      svg
-        .selectAll("path")
-        .data([points])
-        .join("path")
-        .attr("d", curve)
-        .attr("fill", "none")
-        .attr("stroke", "blue")
-        .attr("stroke-width", 2);
+    // Define line generator with curve
+    const line = d3
+      .line<[number, number]>()
+      .curve(d3.curveMonotoneX) // Smooth curve passing through the points
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]));
 
-      // Update circles
-      const circles = svg
-        .selectAll<SVGCircleElement, Point>("circle")
-        .data(points)
-        .join("circle")
-        .attr("r", 8)
-        .attr("fill", "red")
-        .attr("stroke", "black")
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y);
+    // Select the SVG element
+    const svg = d3.select(svgRef.current);
 
-      // Drag behavior
-      circles.call(
-        // drag<SVGCircleElement, Point>()
-        //   .on("drag", (event, d) => {
-        //     d.x = Math.max(0, Math.min(width, event.x));
-        //     d.y = Math.max(0, Math.min(height, event.y));
-        //     setPoints([...points]);
-        //     update();
-        //   })
+    // Clear previous content
+    svg.selectAll("*").remove();
 
-        drag<SVGCircleElement, Point>()
-          .on("drag", (event, d) => {
-            d.x = Math.max(10, Math.min(width - 10, event.x)); // Keep points within width
-            d.y = Math.max(10, Math.min(height - 10, event.y)); // Keep points within height
-            setPoints([...points]);
-            update();
-          });
+    const focus = svg
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
 
-      );
+    // Append line path
+    const path = focus
+      .append("path")
+      .datum(points)
+      .attr("fill", "none")
+      .attr("stroke", "steelblue")
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("stroke-width", 1.5)
+      .attr("d", line);
+
+    // Append circles for draggable points
+    const circles = focus
+      .selectAll("circle")
+      .data(points)
+      .enter()
+      .append("circle")
+      .attr("r", 5)
+      .attr("cx", (d) => x(d[0]))
+      .attr("cy", (d) => y(d[1]))
+      .style("cursor", "pointer")
+      .style("fill", "steelblue");
+
+    // Define drag behavior
+    const drag = d3
+      .drag<SVGCircleElement, [number, number]>()
+      .on("start", function () {
+        d3.select(this).raise().classed("active", true);
+      })
+      .on("drag", function (event, d) {
+        const i = points.indexOf(d);
+
+        if (i === 0) {
+          // Constrain point 0 to the y-axis
+          d[1] = Math.max(0, Math.min(height, y.invert(event.y)));
+          d[0] = 0;
+        } else if (i === 2) {
+          // Constrain point 2 to the x-axis
+          d[0] = Math.max(0, Math.min(width, x.invert(event.x)));
+          d[1] = 0;
+        } else if (i === 1) {
+          // Constrain middle point within bounds of points 0 and 2
+          d[0] = Math.max(points[0][0], Math.min(points[2][0], x.invert(event.x)));
+          d[1] = Math.max(points[2][1], Math.min(points[0][1], y.invert(event.y)));
+        }
+
+        // Update circle position
+        d3.select(this)
+          .attr("cx", x(d[0]))
+          .attr("cy", y(d[1]));
+
+        // Update line path
+        path.attr("d", line);
+      })
+      .on("end", function () {
+        d3.select(this).classed("active", false);
+      });
+
+    // Apply drag behavior to circles
+    circles.call(drag);
+
+    // Add axes
+    focus
+      .append("g")
+      .attr("transform", `translate(0,${height})`)
+      .call(d3.axisBottom(x));
+
+    focus.append("g").call(d3.axisLeft(y));
+  }, []);
+
+  return (
+    <svg
+      ref={svgRef}
+      width={600}
+      height={400}
+      style={{ border: "1px solid black" }}
+    ></svg>
+  );
 };
 
-update();
-  }, [points]);
-
-return (
-  <svg ref={svgRef} width={width} height={height} className="border bg-white" />
-);
-}
+export default AllocationChart;

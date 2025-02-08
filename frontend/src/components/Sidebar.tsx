@@ -13,6 +13,7 @@ interface Organization {
 }
 
 interface SidebarProps {
+  profileName: string,
   recommenders: Recommender[];
   organizations: Organization[];
 }
@@ -54,7 +55,7 @@ const lightenColor = (color: string, percent: number) => {
 //   },
 // ];
 
-const Sidebar: React.FC<SidebarProps> = ({ recommenders, organizations }) => {
+const Sidebar: React.FC<SidebarProps> = ({ profileName, recommenders, organizations }) => {
 
   recommenders.sort((a, b) => b.allocation - a.allocation);
   organizations.sort((a, b) => b.allocation - a.allocation);
@@ -63,8 +64,9 @@ const Sidebar: React.FC<SidebarProps> = ({ recommenders, organizations }) => {
   const totalRecommenderAllocation = recommenders.reduce((sum, r) => sum + r.allocation, 0);
 
   return (
-    <div className="w-64 h-screen bg-gray-100 flex flex-col overflow-hidden">
+    <div className="w-64 h-screen bg-gray-200 flex pt-1 flex-col overflow-hidden">
       {/* Recommenders Section */}
+      <h4 className='font-semibold'>{profileName}'s UNILATERAL ALLOCATION</h4>
       <div className="flex flex-col space-y-0.5 mb-1" style={{ flex: '0 0 20%' }}>
         {recommenders.map((recommender) => {
           const heightPercentage = (recommender.allocation / totalRecommenderAllocation) * 100;
