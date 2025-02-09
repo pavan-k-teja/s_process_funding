@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0.5px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -17,6 +18,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  user-select: none; /* Disable text selection */
+  -webkit-user-select: none; /* Disable text selection for Safari */
+  -moz-user-select: none; /* Disable text selection for Firefox */
+  -ms-user-select: none; /* Disable text selection for Internet Explorer/Edge */
+}
 
 root, body {
   margin: 0;
@@ -37,6 +44,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {

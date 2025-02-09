@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import UtilityTable from '@/components/UtilityTable';
-import { NetworkGraph } from '@/components/NetworkGraph';
+import NetworkGraph from '@/components/NetworkGraph';
 import AllocationChart from '@/components/AllocationChart';
 
 import { User, Colors, Profile, Utility, Allocation, RecommenderData } from '@/lib/types';
@@ -19,11 +19,11 @@ import { User, Colors, Profile, Utility, Allocation, RecommenderData } from '@/l
 //     { name: 'Organization 3', allocation: 30, colorStrip: '#0000ff' },
 // ];
 
-const example_utility_table = [
-    { name: 'Company 1', fdv: 100, ldt: '100k', conc: 10 },
-    { name: 'Company 2', fdv: 200, ldt: '200k', conc: 20 },
-    { name: 'Company 3', fdv: 300, ldt: '300k', conc: 30 },
-];
+// const example_utility_table = [
+//     { name: 'Company 1', fdv: 100, ldt: '100k', conc: 10 },
+//     { name: 'Company 2', fdv: 200, ldt: '200k', conc: 20 },
+//     { name: 'Company 3', fdv: 300, ldt: '300k', conc: 30 },
+// ];
 
 const Dashboard: React.FC = () => {
 
@@ -32,6 +32,8 @@ const Dashboard: React.FC = () => {
     const [utilities, setUtilities] = useState<Utility[]>([]);
     const [user, setUser] = useState<User>();
     const [colors, setColors] = useState<Colors>({});
+
+    console.log("user here", user)
 
     useEffect(() => {
 
@@ -80,22 +82,22 @@ const Dashboard: React.FC = () => {
             <div className="flex flex-1 overflow-hidden">
                 {/* Sidebar on the left */}
                 <div className="w-max h-full pt-0 pb-0 mb-0 overflow-y-visible overflow-x-scroll">
-                    <Sidebar profileName={user?.profile_name} organizations={allocations} colors={colors}/>
+                    <Sidebar profileName={user?.profile_name} organizations={allocations} colors={colors} />
                 </div>
 
                 {/* Middle Section with Network Graph and D3 Curve */}
-                <div className="flex-1 flex flex-col items-center justify-center p-3 space-y-4 overflow-auto">
+                <div className="flex-1 flex flex-col items-center justify-center p-3 space-y-4">
                     <div className="w-full flex justify-center m-0 p-0">
-                        <NetworkGraph profiles={allProfiles} userName={user?.profile_name} />
+                        <NetworkGraph profiles={allProfiles} user={user?.profile_name ?? ""} />
                     </div>
-                    <div className="w-full flex justify-center m-0 p-0 border-r-0">
-                        {/* <AllocationChart organizations={utilities} /> */}
+                    <div className="w-max flex justify-center m-0 p-0 border-r-0">
+                        <AllocationChart utilities={utilities} colors={colors} />
                     </div>
                 </div>
 
                 {/* Utility Table on the right */}
-                <div className="w-80 h-full overflow-y-auto p-4">
-                    {/* <UtilityTable initialBudget={100} maxBudget={1000} companies={example_utility_table} /> */}
+                <div className=" h-full overflow-y-auto p-0 z-0 width-full">
+                    <UtilityTable initialBudget={user?.budget ?? 0} maxBudget={user?.max_budget ?? 0} utilities={utilities} />
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Allocation } from '@/lib/types';
+import { shortenNumber } from '@/helpers/helper';
 
 
 interface SidebarProps {
@@ -65,7 +66,7 @@ const Sidebar: React.FC<SidebarProps> = ({ profileName, recommenders, organizati
   const totalRecommenderAllocation = recommenders?.reduce((sum, r) => sum + r.allocation, 0);
 
   return (
-    <div className="w-64 h-full bg-gray-100 flex pt-1 flex-col overflow-x-hidden">
+    <div className="w-72 h-full bg-gray-100 flex pt-1 flex-col overflow-x-hidden">
       <h4 className='font-semibold p-1'>{profileName}'s UNILATERAL ALLOCATION</h4>
       {/* Recommenders Section */}
       {recommenders && recommenders.length > 0 && (
@@ -79,7 +80,7 @@ const Sidebar: React.FC<SidebarProps> = ({ profileName, recommenders, organizati
                 style={{ backgroundColor: colors ? colors[recommender.name] : "#ffffff", height: `${heightPercentage}%` }}
               >
                 <span>{recommender.name}</span>
-                <span>${recommender.allocation}k</span>
+                <span>${shortenNumber(recommender.allocation, 3, 10)}</span>
               </div>
             );
           })}
@@ -94,18 +95,18 @@ const Sidebar: React.FC<SidebarProps> = ({ profileName, recommenders, organizati
           return (
             <div
               key={organization.name}
-              className="flex items-center px-0 py-0 text-sm font-medium rounded"
+              className="flex items-center px-0 py-0 text-sm font-semibold " /* round */
               style={{
                 backgroundColor: `${lightenColor(orgColor, 10)}`,
                 height: `${heightPercentage}%`,
               }}
             >
               <div
-                className="w-3 h-full mr-2 ml-0 pl-0 rounded"
+                className="w-3 h-full mr-2 ml-0 pl-0 " /* round */
                 style={{ backgroundColor: orgColor }}
               ></div>
               <span>{organization.name}</span>
-              <span className="ml-auto mr-1">${organization.allocation}</span>
+              <span className="ml-auto mr-1">${shortenNumber(organization.allocation, 3, 10, 0)}</span>
             </div>
           );
         })}

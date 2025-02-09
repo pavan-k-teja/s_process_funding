@@ -11,7 +11,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ profileName, onLogout }) => {
     return (
-        <nav className="flex items-center justify-end px-4 py-1 bg-white text-black shadow-md w-full">
+        <nav className="flex items-center justify-end px-4 py-1 bg-white text-black shadow-md w-full z-40">
             <div className="flex items-center space-x-4">
                 {/* Profile Icon */}
                 <Avatar className="w-8 h-8 flex items-center justify-center rounded-full bg-black text-white" style={{ borderRadius: '15px' }}>

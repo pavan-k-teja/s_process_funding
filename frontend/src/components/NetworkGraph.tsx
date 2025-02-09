@@ -1,14 +1,15 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
-import { Profile, User } from '@/lib/types';
+import { Profile } from '@/lib/types';
 
 interface NetworkGraphProps {
   profiles: Profile[];
-  userName: User;
+  user: string;
 }
 
 interface Node {
   id: string;
+  name: string;
   level: number;
 }
 
@@ -20,50 +21,67 @@ interface Link {
 const levelSpacing = 80;  // Vertical gap between levels
 const nodeRadius = 16;    // Radius of the node circles
 
-// const nodes: Node[] = [
-//   { id: "Σ", level: 0 },
-//   { id: "JT", level: 1 }, { id: "JM", level: 1 }, { id: "DM", level: 1 },
-//   { id: "VA", level: 2 }, { id: "IF", level: 2 }, { id: "GZ", level: 2 },
-//   { id: "CF", level: 2 }, { id: "BO", level: 2 }, { id: "XO", level: 2 }
-// ];
+const NetworkGraph: React.FC<NetworkGraphProps> = ({ profiles, user }) => {
+  const svgRef = useRef<SVGSVGElement>(null);
 
-
-
-// Function to calculate positions dynamically
-const calculatePositions = (nodes: Node[]) => {
-  const levelGroups: { [key: number]: Node[] } = {};
-
-  // Group nodes by level
-  nodes.forEach(node => {
-    if (!levelGroups[node.level]) levelGroups[node.level] = [];
-    levelGroups[node.level].push(node);
+  // Create nodes from profiles
+  const nodes: Node[] = profiles.map((profile) => {
+    let level: number = 0;
+    if (profile.role === "funder") {
+      level = 1;
+    } else if (profile.role === "recommender") {
+      level = 2;
+    }
+    return {
+      id: profile.profile_name,
+      name: profile.username,
+      level: level,
+    };
   });
 
-  // Calculate width and height based on levels and nodes
-  const maxLevel = Math.max(...nodes.map(node => node.level));
-  const width = Math.max(...Object.values(levelGroups).map(group => group.length)) * (nodeRadius * 4);
-  const height = (maxLevel) * levelSpacing + nodeRadius * 2;
+  // Create links between nodes
+  const links: Link[] = [];
+  nodes.forEach(source => {
+    nodes.forEach(target => {
+      if (source.level + 1 === target.level) {
+        links.push({ source, target });
+      }
+    });
+  });
 
-  // Assign x, y positions based on levelSpacing and calculated width
-  return {
-    width,
-    height,
-    nodes: nodes.map(node => {
-      const levelNodes = levelGroups[node.level];
-      const index = levelNodes.indexOf(node);
-      const totalNodes = levelNodes.length;
+  // Function to calculate positions dynamically
+  const calculatePositions = (nodes: Node[]) => {
+    const levelGroups: { [key: number]: Node[] } = {};
 
-      return {
-        ...node,
-        x: (width / (totalNodes + 1)) * (index + 1), // Spread evenly
-        y: node.level * levelSpacing + nodeRadius,  // Stack levels
-      };
-    })
+    // Group nodes by level
+    nodes.forEach(node => {
+      if (!levelGroups[node.level]) levelGroups[node.level] = [];
+      levelGroups[node.level].push(node);
+    });
+
+    // Calculate width and height based on levels and nodes
+    const maxLevel = Math.max(...nodes.map(node => node.level));
+    const width = Math.max(...Object.values(levelGroups).map(group => group.length)) * (nodeRadius * 4);
+    const height = (maxLevel) * levelSpacing + nodeRadius * 2;
+
+    // Assign x, y positions based on levelSpacing and calculated width
+    return {
+      width,
+      height,
+      nodes: nodes.map(node => {
+        const levelNodes = levelGroups[node.level];
+        const index = levelNodes.indexOf(node);
+        const totalNodes = levelNodes.length;
+
+        return {
+          ...node,
+          x: (width / (totalNodes + 1)) * (index + 1), // Spread evenly
+          y: node.level * levelSpacing + nodeRadius,  // Stack levels
+        };
+      })
+    };
   };
-};
 
-export const NetworkGraph: React.FC<NetworkGraphProps> = (profiles, userName) => {
-  const svgRef = useRef<SVGSVGElement>(null);
   const { width, height, nodes: positionedNodes } = calculatePositions(nodes);
 
   useEffect(() => {
@@ -75,8 +93,9 @@ export const NetworkGraph: React.FC<NetworkGraphProps> = (profiles, userName) =>
     svg.selectAll(".link")
       .data(links)
       .enter().append("line")
-      .attr("stroke", "gray")
+      .attr("stroke", "lightgray")
       .attr("stroke-width", 1.5)
+      .attr("stroke-linecap", "round")
       .attr("x1", d => positionedNodes.find(n => n.id === d.source.id)?.x ?? 0)
       .attr("y1", d => positionedNodes.find(n => n.id === d.source.id)?.y ?? 0)
       .attr("x2", d => positionedNodes.find(n => n.id === d.target.id)?.x ?? 0)
@@ -91,7 +110,9 @@ export const NetworkGraph: React.FC<NetworkGraphProps> = (profiles, userName) =>
 
     nodeGroup.append("circle")
       .attr("r", nodeRadius)
-      .attr("fill", "black");
+      // .attr("fill", "black");
+      .attr("fill", d => (user && d.name === user) ? "steelblue" : "black");
+
 
     // Text inside nodes
     nodeGroup.append("text")
@@ -100,7 +121,7 @@ export const NetworkGraph: React.FC<NetworkGraphProps> = (profiles, userName) =>
       .attr("fill", "white")
       .style("font-size", "12px")
       .text(d => d.id);
-  }, [width, height, positionedNodes]);
+  }, [width, height, positionedNodes, links]);
 
   return (
     <div className="p-0 m-0">
@@ -108,3 +129,5 @@ export const NetworkGraph: React.FC<NetworkGraphProps> = (profiles, userName) =>
     </div>
   );
 };
+
+export default NetworkGraph;

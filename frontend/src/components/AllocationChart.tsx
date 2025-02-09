@@ -1,11 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
+import { Colors, Utility } from '@/lib/types';
 
 type Point = [number, number];
 
-type Props = {
-  a: number;
-  b: number;
+interface AllocationChartProps {
+  utilities: Utility[];
+  colors: Colors;
 };
 
 
@@ -26,34 +27,7 @@ type Props = {
 
 // return false;
 
-//   let step = 0.01; // step size to move back towards valid region
-//   let originalX = cx;
-//   let originalY = cy;
-
-//   let directionX = originalX < x ? -1 : 1;
-//   let directionY = originalY < y ? -1 : 1;
-
-
-//   while (!isValid) {
-//     x += directionX * (width * step); // Scale step by width to ensure meaningful steps
-//     y += directionY * (height * step); // Scale step by height
-
-//     // Keep within bounds of the chart
-//     x = Math.max(0, Math.min(width, x));
-//     y = Math.max(0, Math.min(height, y));
-
-//     isValid = !isOutOfBounds(points.current[2][0], points.current[0][1], x, y);
-//     if (Math.abs(x - originalX) < 1e-6 && Math.abs(y - originalY) < 1e-6) {
-//       // Prevent infinite loop if step is too small and can't get back in bounds
-//       x = originalX;
-//       y = originalY;
-//       isValid = true; // Break loop, revert to original position if stuck
-//       break;
-//     }
-
-//   }
-// };
-
+// }
 
 const nearestPoint = (a: number, b: number, px: number, py: number): [number, number] => {
 
@@ -100,44 +74,60 @@ function solveForX(p: number, q: number, tolerance: number = 1e-7, maxIterations
   return null; // No convergence
 }
 
-// Example usage
-console.log(solveForX(0.6, 0.8)); // Example constants p and q
+const findMidPoint = (fdv: number, ldt: number, conc: number, maxXValue: number): Point => {
 
+  let midX = Math.min(0.5 * ldt, 0.5 * maxXValue);
 
+  let midY = fdv * Math.pow(1 - Math.pow(midX / ldt, Math.exp(conc)), 1 / Math.exp(conc));
 
-const AllocationChart: React.FC<Props> = ({ a, b }) => {
+  return [midX, midY];
+
+}
+
+const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) => {
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
-    const width = 600 - margin.left - margin.right;
+    const width = 700 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
-    const points: Point[] = [
-      [0, height / 2],
-      [width * 3 / 8, height / 4],
-      [width * 3 / 4, 0],
-    ];
+    const maxXValue = 3000000; // $3M cutoff on the x-axis
+
+    const svg = d3.select(svgRef.current);
+    svg.selectAll("*").remove();
+    const focus = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear().domain([0, maxXValue]).range([0, width]);
+    const y = d3.scaleLinear().domain([0, 1]).range([height, 0]);
+
+    // focus.append("g")
+    // .call(d3.axisLeft(y))
+    // show lables at 0.0, 0.5, 1.0
+    // remove other ticks and labels
+
+    focus.append("g")
+      .call(d3.axisLeft(y)
+        .tickValues([0, 0.5, 1])
+        .tickFormat(d3.format(".1f"))
+      );
+
+    focus.append("g")
+      .attr("transform", `translate(0,${height})`)
+      .call(d3.axisBottom(x)
+        .ticks(3)
+        .tickFormat(d => `$${d3.format(".2s")(d)}`)
+      )
+      .selectAll("text")
+      .style("text-anchor", "middle")
 
 
-    const x = d3.scaleLinear().domain([0, width]).range([0, width]);
-    const y = d3.scaleLinear().domain([0, height]).range([height, 0]);
 
-    const minPxDist = 5; // I want 2 pixel distance in both x and y from the second point to the top right and bottom left corners
-    const minXCoordDist = () => x.invert(minPxDist) - x.invert(0);
-    const minYCoordDist = () => y.invert(0) - y.invert(minPxDist);
-
-    console.log('minXCoordDist', minXCoordDist());
-    console.log('minYCoordDist', minYCoordDist());
+    focus.selectAll(".tick text")
+      // .style("font-size", "12px")
+      .style("font-weight", "bolder");
 
 
-    // const xPixelDist = (xCoordDist : number) => {
-    //   return x.invert(xCoordDist) - x.invert(0);
-    // }
-
-    // const yPixelDist = (yCoordDist : number) => {
-    //   return y.invert(0) - y.invert(yCoordDist);
-    // }
 
 
     const line = d3
@@ -146,125 +136,193 @@ const AllocationChart: React.FC<Props> = ({ a, b }) => {
       .x((d) => x(d[0]))
       .y((d) => y(d[1]));
 
-    const svg = d3.select(svgRef.current);
-    svg.selectAll("*").remove();
-    const focus = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+    utilities.forEach((utility) => {
+      if (utility.fdv === 0 || utility.ldt === 0) return;
 
-    focus.append("g").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x));
-    focus.append("g").call(d3.axisLeft(y));
+      let points: Point[] = [
+        [0, utility.fdv], // First point on Y-axis.  Cap at max Y
+        findMidPoint(utility.fdv, utility.ldt, utility.conc, maxXValue), // Midpoint
+        [utility.ldt, 0], // Third point on X-axis.  Cap at maxXValue.
+      ];
 
-    // const path = focus
-    //   .append("path")
-    //   .datum(points)
-    //   .attr("fill", "none")
-    //   .attr("stroke", "steelblue")
-    //   .attr("stroke-width", 1.5)
-    //   .attr("d", line);
+      const minPxDist = 10;
+      const minXCoordDist = () => x.invert(minPxDist) - x.invert(0);
+      const minYCoordDist = () => y.invert(0) - y.invert(minPxDist);
 
-    const generateCurvePoints = (a: number, b: number, k: number, numPoints = 100) => {
-      let curvePoints: [number, number][] = [];
-      for (let i = 0; i <= numPoints; i++) {
-        let xCoord = (i / numPoints) * a;
-        let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k), 1 / k);
-        if (!isNaN(yCoord)) {
-          curvePoints.push([xCoord, yCoord]);
+      const generateCurvePoints = (a: number, b: number, k: number, numPoints = 100) => {
+        let curvePoints: [number, number][] = [];
+        for (let i = 0; i <= numPoints; i++) {
+          let xCoord = (i / numPoints) * a;
+          let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k), 1 / k);
+          if (!isNaN(yCoord)) {
+            curvePoints.push([xCoord, yCoord]);
+          }
         }
-      }
-      return curvePoints;
-    };
+        return curvePoints;
+      };
 
-    const drag = d3.drag<SVGCircleElement, Point>().on("drag", function (event, d) {
-      const i = points.indexOf(d);
+      const drag = d3.drag<SVGCircleElement, Point>().on("drag", function (event, d) {
+        const i = points.indexOf(d);
 
-      if (i === 0) {
-        d[0] = 0;
-        d[1] = Math.max(0, Math.min(height, y.invert(event.y)));
+        if (i === 0) {
+          d[0] = 0;
+          d[1] = Math.max(0.01, Math.min(height, y.invert(event.y)));
 
-        // points[1][1] > d[1] 
-        if (points[1][1] > d[1]) {
-          points[1][1] = d[1];
+          if (points[1][1] > d[1]) {
+            points[1][1] = d[1];
+          }
+
+        } else if (i === 2) {
+          // d[0] = Math.max(0, Math.min(width, x.invert(event.x))); is there any issue here? 
+          d[0] = Math.max(0.01, Math.min(maxXValue, x.invert(event.x)));
+          d[1] = 0;
+
+          if (points[1][0] > d[0]) {
+            points[1][0] = d[0];
+          }
+
+        } else if (i === 1) {
+          d[0] = Math.max(0.001 * points[2][0], Math.min(points[2][0], x.invert(event.x)));
+          d[1] = Math.max(0.001 * points[0][1], Math.min(points[0][1], y.invert(event.y)));
         }
 
-      } else if (i === 2) {
-        d[0] = Math.max(0, Math.min(width, x.invert(event.x)));
-        d[1] = 0;
+        if (distance(points[1][0], points[1][1], points[2][0] - minXCoordDist(), points[0][1] - minYCoordDist()) <= distance(0, 0, minXCoordDist(), minYCoordDist()) && points[1][0] > points[2][0] - minXCoordDist() && points[1][1] > points[0][1] - minYCoordDist()) {
+          let new_x = points[2][0] - minXCoordDist() + Math.pow(minXCoordDist(), 0.5);
+          let new_y = points[0][1] - minYCoordDist() + Math.pow(minYCoordDist(), 0.5);
 
-        if (points[1][0] > d[0]) {
-          points[1][0] = d[0];
+          points[1][0] = new_x;
+          points[1][1] = new_y;
         }
 
-      } else if (i === 1) {
+        let p = points[1][0] / points[2][0];
+        let q = points[1][1] / points[0][1];
 
-        d[0] = Math.max(0.001 * points[2][0], Math.min(points[2][0], x.invert(event.x)));
-        d[1] = Math.max(0.001 * points[0][1], Math.min(points[0][1], y.invert(event.y)));
+        let k = solveForX(p, q);
+        if (k !== null) {
+          const curvePoints = generateCurvePoints(points[2][0], points[0][1], k);
+          curvePath.datum(curvePoints).attr("d", line);
+        }
+        else {
+          // make it a straight line
+          curvePath.datum([points[0], points[2]]).attr("d", line);
 
 
 
-      }
+        }
 
-      if (distance(points[1][0], points[1][1], points[2][0] - minXCoordDist(), points[0][1] - minYCoordDist()) <= distance(0, 0, minXCoordDist(), minYCoordDist()) && points[1][0] > points[2][0] - minXCoordDist() && points[1][1] > points[0][1] - minYCoordDist()) {
+        d3.select(this).attr("cx", x(d[0])).attr("cy", y(d[1]));
 
-        let new_x = points[2][0] - minXCoordDist() + Math.pow(minXCoordDist(), 0.5);
-        let new_y = points[0][1] - minYCoordDist() + Math.pow(minYCoordDist(), 0.5);
+        points.forEach((point, i) => {
+          focus.select(`#circle_${utility.utility_name}_${i}`).attr("cx", x(point[0])).attr("cy", y(point[1]));
+        });
 
-        points[1][0] = new_x;
-        points[1][1] = new_y;
-      }
-
-      // now create a line equation that passes through the all 3 points in form (x/a)^k + (y/b)^k = 1
-      let p = points[1][0] / points[2][0];
-      let q = points[1][1] / points[0][1];
-
-      let k = solveForX(p, q);
-      if (k !== null) {
-        const curvePoints = generateCurvePoints(points[2][0], points[0][1], k);
-        curvePath.datum(curvePoints).attr("d", line);
-      }
-
-      d3.select(this).attr("cx", x(d[0])).attr("cy", y(d[1]));
-      focus.selectAll("circle").data(points).attr("cx", (d) => x(d[0])).attr("cy", (d) => y(d[1]));
-      // path.attr("d", line);
-    });
-
-    const curvePoints = generateCurvePoints(points[2][0], points[0][1], 1); // Initial k=1
-    const curvePath = focus.append("path")
-      .datum(curvePoints)
-      .attr("fill", "none")
-      .attr("stroke", "red")
-      .attr("stroke-width", 1.5)
-      .attr("d", line);
-
-    focus
-      .selectAll("circle")
-      .data(points)
-      .enter()
-      .append("circle")
-      .attr("r", 5)
-      .attr("cx", (d) => x(d[0]))
-      .attr("cy", (d) => y(d[1]))
-      .style("cursor", "pointer")
-      .style("fill", "steelblue")
-      .call(drag);
-
-    // on hover, show the x and y coordinates of the point
-    focus
-      .selectAll("circle")
-      .on("mouseover", function (event, d: any) {
-        focus
-          .append("text")
-          .attr("id", "tooltip")
-          .attr("x", x(d[0]) - 10)
-          .attr("y", y(d[1]) - 10)
-          .text(`(${Math.round(d[0] * 100) / 100}, ${Math.round(d[1] * 100) / 100})`)
-      })
-      .on("mouseout", function () {
-        focus.select("#tooltip").remove()
       });
 
+      const curvePoints = generateCurvePoints(points[2][0], points[0][1], Math.exp(utility.conc)); // Initial k=1
+      const curvePath = focus.append("path")
+        .datum(curvePoints)
+        .attr("fill", "none")
+        .attr("stroke", colors[utility.utility_name] || "red")
+        .attr("stroke-width", 2.5)
+        .attr("d", line);
 
-  }, [a, b]);
 
-  return <svg ref={svgRef} width={600} height={400} style={{ border: "1px solid black" }}></svg>;
+      // first create circles based on points. dont do select all circles, this will modify the other circles as well
+      // focus
+      //   .append("circle")
+      //   .data([points[0]])
+      //   .attr("cx", x(points[0][0]))
+      //   .attr("cy", y(points[0][1]))
+      //   .attr("r", 5)
+      //   .attr("cursor", "grab")
+      //   .style("fill", colors[utility.utility_name] || "steelblue")
+      //   .call(drag);
+
+      // focus
+      //   .append("circle")
+      //   .data([points[1]])
+      //   .attr("cx", x(points[1][0]))
+      //   .attr("cy", y(points[1][1]))
+      //   .attr("r", 5)
+      //   .attr("cursor", "grab")
+      //   .style("fill", colors[utility.utility_name] || "steelblue")
+      //   .call(drag);
+
+      // focus
+      //   .append("circle")
+      //   .data([points[2]])
+      //   .attr("cx", x(points[2][0]))
+      //   .attr("cy", y(points[2][1]))
+      //   .attr("r", 5)
+      //   .attr("cursor", "grab")
+      //   .style("fill", colors[utility.utility_name] || "steelblue")
+      //   .call(drag);
+
+      // do an iteration and create circles based on points
+      // focus
+      //   .selectAll(`circle_${utility.utility_name}`)
+      //   .data(points)
+      //   .enter()
+      //   .append("circle")
+      //   .attr("r", 5)
+      //   .attr("cx", (d) => x(d[0]))
+      //   .attr("cy", (d) => y(d[1]))
+      //   .style("cursor", "pointer")
+      //   .style("fill", colors[utility.utility_name] || "steelblue")
+      //   .call(drag);
+
+      const circleGroup = focus.append("g").attr("id", `circle_${utility.utility_name}`);
+
+      circleGroup.selectAll("circle")
+        .data(points)
+        .enter()
+        .append("circle")
+        .attr("id", (_, i) => `circle_${utility.utility_name}_${i}`)
+        .attr("r", 5)
+        .attr("cx", d => x(d[0]))
+        .attr("cy", d => y(d[1]))
+        .style("cursor", "pointer")
+        .style("fill", colors[utility.utility_name] || "steelblue")
+        .call(drag);
+
+      // focus
+      //   .selectAll("circle")
+      //   .data(points)
+      //   .enter()
+      //   .append("circle")
+      //   .attr("r", 5)
+      //   .attr("cx", (d) => x(d[0]))
+      //   .attr("cy", (d) => y(d[1]))
+      //   .style("cursor", "pointer")
+      //   .style("fill", colors[utility.utility_name] || "steelblue")
+      //   .call(drag);
+
+
+
+
+      // focus
+      //   .selectAll("circle")
+      //   .on("mouseover", function (event, d: any) {
+      //     focus
+      //       .append("text")
+      //       .attr("id", "tooltip")
+      //       .attr("x", x(d[0]) - 10)
+      //       .attr("y", y(d[1]) - 10)
+      //       .text(`(${Math.round(d[0] * 100) / 100}, ${Math.round(d[1] * 100) / 100})`);
+      //   })
+      //   .on("mouseout", function () {
+      //     focus.select("#tooltip").remove();
+      //   });
+    });
+
+
+
+
+
+
+  }, [utilities, colors]);
+
+  return <svg ref={svgRef} width={700} height={400} ></svg>;
 };
 
 export default AllocationChart;
