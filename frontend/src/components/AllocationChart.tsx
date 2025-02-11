@@ -1,53 +1,57 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import * as d3 from "d3";
+import { debounce, throttle } from 'radash';
+
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '@/store';
+// import { setActiveUtility } from '@/store/utilitiesSlice';
+
 import { Colors, Utility } from '@/lib/types';
+import { shortenNumber } from '@/helpers/helper';
 
 type Point = [number, number];
 
 interface AllocationChartProps {
   utilities: Utility[];
+  setUtilities: (utilities: Utility[]) => void;
   colors: Colors;
+  onActive: (utility_name: string) => void;
+  // onUtilitiesChange?: (newUtilities: Utility[]) => void;
 };
+
+interface currentUtility {
+  utility_name: string;
+  fdv: number;
+  ldt: number;
+  conc: number;
+  midPoint: Point;
+}
 
 
 
 // const isOutOfBounds = (a: number, b: number, x: number, y: number, cx: number, cy: number) => {
-
 // let check_below = Math.pow(x / a, Math.exp(-3)) + Math.pow(y / b, Math.exp(-3)) < 1
-
 // if (check_below) {
 //   return true;
 // }
-
 // let check_above = Math.pow(x / a, Math.exp(3)) + Math.pow(y / b, Math.exp(3)) > 1;
-
 // if (check_above) {
 //   return true;
 // }
-
 // return false;
-
 // }
-
-const nearestPoint = (a: number, b: number, px: number, py: number): [number, number] => {
-
-
-  if (px < 0 && py > b) return [0, b];
-  if (px > a && py < 0) return [a, 0];
-
-  let check_below = Math.pow(px / a, Math.exp(-3)) + Math.pow(py / b, Math.exp(-3)) < 1
-
-  if (check_below) {
-    const k = Math.exp(-3);
-    let slope = Math.pow((b / a), k) * Math.pow((px / py), k - 1)
-
-    // equation for x: (x/a)^k + ((slope*(x-px)+py)/b)^k = 1
-    // equation for y given x is found: b * (1 - (x/a)^(k))^1/k
-  }
-
-
-  return [px, py];
-}
+// const nearestPoint = (a: number, b: number, px: number, py: number): [number, number] => {
+//   if (px < 0 && py > b) return [0, b];
+//   if (px > a && py < 0) return [a, 0];
+//   let check_below = Math.pow(px / a, Math.exp(-3)) + Math.pow(py / b, Math.exp(-3)) < 1
+//   if (check_below) {
+//     const k = Math.exp(-3);
+//     let slope = Math.pow((b / a), k) * Math.pow((px / py), k - 1)
+//     // equation for x: (x/a)^k + ((slope*(x-px)+py)/b)^k = 1
+//     // equation for y given x is found: b * (1 - (x/a)^(k))^1/k
+//   }
+//   return [px, py];
+// }
 
 
 
@@ -78,21 +82,91 @@ const findMidPoint = (fdv: number, ldt: number, conc: number, maxXValue: number)
 
   let midX = Math.min(0.5 * ldt, 0.5 * maxXValue);
 
-  let midY = fdv * Math.pow(1 - Math.pow(midX / ldt, Math.exp(conc)), 1 / Math.exp(conc));
+  let exp_conc = Math.exp(conc);
+  let midY = fdv * Math.pow(1 - Math.pow(midX / ldt, exp_conc), 1 / exp_conc);
 
   return [midX, midY];
 
 }
 
-const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) => {
+// const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, setUtilities, colors, onActive }) => {
+const AllocationChart: React.FC<AllocationChartProps> = () => {
+
+  const dispatch = useDispatch();
+  const utilities = useSelector((state: RootState) => state.utilities.utilities);
+  const activeUtility = useSelector((state: RootState) => state.utilities.activeUtility);
+  
   const svgRef = useRef<SVGSVGElement>(null);
+  // const [activeUtility, setActiveUtility] = useState<string | null>(null);
+  // const [currentUtilities, setCurrentUtilities] = useState<currentUtility[]>([]);
+
+  const maxXValue = 3000000; // $3M cutoff on the x-axis
+
+  useEffect(() => {
+    let newUtilities = utilities.map((utility) => {
+      let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, maxXValue);
+      return { utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
+    });
+    setCurrentUtilities(newUtilities);
+  }, [utilities]);
+
+  useEffect(() => {
+    if (!activeUtility) {
+      let maxLdt = 0;
+      let maxLdtUtility = "";
+      currentUtilities.forEach((utility) => {
+        if (utility.ldt > maxLdt) {
+          maxLdt = utility.ldt;
+          maxLdtUtility = utility.utility_name;
+        }
+      });
+      if (maxLdtUtility) {
+        console.log("Setting active utility to max ldt utility", maxLdtUtility)
+        setActiveUtility(maxLdtUtility);
+      }
+      else {
+        console.log("No utility found with ldt > 0")
+      }
+    }
+  }, [activeUtility]);
+
+  useEffect(() => {
+    onActive(activeUtility ?? "");
+  }, [activeUtility]);
+
+
+  const debouncedSetUtilities = useCallback(debounce({ "delay": 600 }, setUtilities), [setUtilities]);
+  const throttledSetUtilities = useCallback(throttle({ "interval": 600 }, setUtilities), [setUtilities]);
+
+  useEffect(() => {
+
+    const utilities = currentUtilities.map((utility) => {
+      return {
+        utility_name: utility.utility_name,
+        fdv: utility.fdv,
+        ldt: utility.ldt,
+        conc: utility.conc
+      } as Utility;
+    });
+
+    debouncedSetUtilities(utilities);
+    throttledSetUtilities(utilities);
+
+  }, [currentUtilities]);
+
+  // const updateUtilities = useCallback((updatedUtility: Utility) => {
+  //   const updatedUtilities = currentUtilities.map(utility =>
+  //     utility.utility_name === updatedUtility.utility_name ? updatedUtility : utility
+  //   );
+  //   onUtilitiesChange?.(updatedUtilities);
+  // }, [currentUtilities, onUtilitiesChange]);
 
   useEffect(() => {
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
     const width = 700 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
-    const maxXValue = 3000000; // $3M cutoff on the x-axis
+
 
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
@@ -100,11 +174,6 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) 
 
     const x = d3.scaleLinear().domain([0, maxXValue]).range([0, width]);
     const y = d3.scaleLinear().domain([0, 1]).range([height, 0]);
-
-    // focus.append("g")
-    // .call(d3.axisLeft(y))
-    // show lables at 0.0, 0.5, 1.0
-    // remove other ticks and labels
 
     focus.append("g")
       .call(d3.axisLeft(y)
@@ -119,29 +188,23 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) 
         .tickFormat(d => `$${d3.format(".2s")(d)}`)
       )
       .selectAll("text")
-      .style("text-anchor", "middle")
-
-
+      .style("text-anchor", "middle");
 
     focus.selectAll(".tick text")
-      // .style("font-size", "12px")
       .style("font-weight", "bolder");
-
-
-
 
     const line = d3
       .line<Point>()
-      .curve(d3.curveMonotoneX)
+      .curve(d3.curveCatmullRom.alpha(0.5))
       .x((d) => x(d[0]))
       .y((d) => y(d[1]));
 
-    utilities.forEach((utility) => {
+    currentUtilities.forEach((utility) => {
       if (utility.fdv === 0 || utility.ldt === 0) return;
 
       let points: Point[] = [
         [0, utility.fdv], // First point on Y-axis.  Cap at max Y
-        findMidPoint(utility.fdv, utility.ldt, utility.conc, maxXValue), // Midpoint
+        utility.midPoint, // Midpoint
         [utility.ldt, 0], // Third point on X-axis.  Cap at maxXValue.
       ];
 
@@ -149,19 +212,73 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) 
       const minXCoordDist = () => x.invert(minPxDist) - x.invert(0);
       const minYCoordDist = () => y.invert(0) - y.invert(minPxDist);
 
-      const generateCurvePoints = (a: number, b: number, k: number, numPoints = 100) => {
+      const generateCurvePoints = (a: number, b: number, k: number, numPoints = 200) => {
         let curvePoints: [number, number][] = [];
         for (let i = 0; i <= numPoints; i++) {
           let xCoord = (i / numPoints) * a;
+          if (xCoord > maxXValue) break;
           let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k), 1 / k);
           if (!isNaN(yCoord)) {
             curvePoints.push([xCoord, yCoord]);
           }
         }
+
+        // smooth the curve by adjusting the points with a minimum distance
+        // for (let i = 1; i < curvePoints.length; i++) {
+        //   let [x1, y1] = curvePoints[i - 1];
+        //   let [x2, y2] = curvePoints[i];
+        //   let dist = distance(x1, y1, x2, y2);
+        //   if (dist < minPxDist) {
+        //     let midX = (x1 + x2) / 2;
+        //     let midY = (y1 + y2) / 2;
+        //     let angle = Math.atan2(y2 - y1, x2 - x1);
+        //     let dx = Math.cos(angle) * minPxDist / 2;
+        //     let dy = Math.sin(angle) * minPxDist / 2;
+        //     curvePoints[i - 1] = [midX - dx, midY - dy];
+        //     curvePoints[i] = [midX + dx, midY + dy];
+        //   }
+        // }
+
         return curvePoints;
       };
 
+      // const generateCurvePoints = (a: number, b: number, k: number, numPoints = 200) => {
+      //   let curvePoints: [number, number][] = [];
+      //   let prevAngle: number | null = null;
+      //   const minArcXRadius = minXCoordDist();
+      //   const minArcYRadius = minYCoordDist();
+
+      //   for (let i = 0; i <= numPoints; i++) {
+      //     let xCoord = (i / numPoints) * a;
+      //     if (xCoord > maxXValue) break;
+      //     let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k), 1 / k);
+      //     if (!isNaN(yCoord)) {
+      //       if (curvePoints.length >= 2) {
+      //         let [x1, y1] = curvePoints[curvePoints.length - 2];
+      //         let [x2, y2] = curvePoints[curvePoints.length - 1];
+      //         let angle1 = Math.atan2(y2 - y1, x2 - x1);
+      //         let angle2 = Math.atan2(yCoord - y2, xCoord - x2);
+      //         let angleDiff = Math.abs(angle2 - angle1);
+
+      //         if (prevAngle !== null && angleDiff > Math.PI / 6) {
+      //           // Insert an arc to smooth the corner
+      //           let arcCenterX = x2 + minArcXRadius * Math.cos(angle1 + Math.PI / 2);
+      //           let arcCenterY = y2 + minArcYRadius * Math.sin(angle1 + Math.PI / 2);
+      //           // remove the last point
+      //           curvePoints.pop();
+      //           curvePoints.push([arcCenterX, arcCenterY]);
+      //         }
+
+      //         prevAngle = angle2;
+      //       }
+      //       curvePoints.push([xCoord, yCoord]);
+      //     }
+      //   }
+      //   return curvePoints;
+      // };
+
       const drag = d3.drag<SVGCircleElement, Point>().on("drag", function (event, d) {
+        setActiveUtility(utility.utility_name);
         const i = points.indexOf(d);
 
         if (i === 0) {
@@ -173,7 +290,6 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) 
           }
 
         } else if (i === 2) {
-          // d[0] = Math.max(0, Math.min(width, x.invert(event.x))); is there any issue here? 
           d[0] = Math.max(0.01, Math.min(maxXValue, x.invert(event.x)));
           d[1] = 0;
 
@@ -198,16 +314,14 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) 
         let q = points[1][1] / points[0][1];
 
         let k = solveForX(p, q);
+        let conc = Math.log(k ?? 1);
+        let curvePoints: [number, number][] = [];
         if (k !== null) {
-          const curvePoints = generateCurvePoints(points[2][0], points[0][1], k);
+          curvePoints = generateCurvePoints(points[2][0], points[0][1], k);
           curvePath.datum(curvePoints).attr("d", line);
         }
         else {
-          // make it a straight line
           curvePath.datum([points[0], points[2]]).attr("d", line);
-
-
-
         }
 
         d3.select(this).attr("cx", x(d[0])).attr("cy", y(d[1]));
@@ -216,7 +330,29 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) 
           focus.select(`#circle_${utility.utility_name}_${i}`).attr("cx", x(point[0])).attr("cy", y(point[1]));
         });
 
+        // Update the text and circle for the holder circle
+        if (points[2][0] > maxXValue) {
+          focus.select(`#holder_circle_${utility.utility_name}`).attr("cx", x(curvePoints[curvePoints.length - 1][0])).attr("cy", y(curvePoints[curvePoints.length - 1][1]));
+          focus.select(`#holder_text_${utility.utility_name}`).attr("x", x(curvePoints[curvePoints.length - 1][0]) + 15).attr("y", y(curvePoints[curvePoints.length - 1][1]) + 5);
+        }
+
+        setCurrentUtilities((prevCurrentUtilities) => {
+          let updatedUtility = {
+            utility_name: utility.utility_name,
+            fdv: points[0][1],
+            ldt: points[2][0],
+            conc: conc,
+            midPoint: [points[1][0], points[1][1]] as Point
+          };
+
+          let updatedUtilities = prevCurrentUtilities.map((prevUtility) =>
+            prevUtility.utility_name === updatedUtility.utility_name ? updatedUtility : prevUtility
+          );
+
+          return updatedUtilities;
+        });
       });
+
 
       const curvePoints = generateCurvePoints(points[2][0], points[0][1], Math.exp(utility.conc)); // Initial k=1
       const curvePath = focus.append("path")
@@ -224,52 +360,9 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) 
         .attr("fill", "none")
         .attr("stroke", colors[utility.utility_name] || "red")
         .attr("stroke-width", 2.5)
-        .attr("d", line);
-
-
-      // first create circles based on points. dont do select all circles, this will modify the other circles as well
-      // focus
-      //   .append("circle")
-      //   .data([points[0]])
-      //   .attr("cx", x(points[0][0]))
-      //   .attr("cy", y(points[0][1]))
-      //   .attr("r", 5)
-      //   .attr("cursor", "grab")
-      //   .style("fill", colors[utility.utility_name] || "steelblue")
-      //   .call(drag);
-
-      // focus
-      //   .append("circle")
-      //   .data([points[1]])
-      //   .attr("cx", x(points[1][0]))
-      //   .attr("cy", y(points[1][1]))
-      //   .attr("r", 5)
-      //   .attr("cursor", "grab")
-      //   .style("fill", colors[utility.utility_name] || "steelblue")
-      //   .call(drag);
-
-      // focus
-      //   .append("circle")
-      //   .data([points[2]])
-      //   .attr("cx", x(points[2][0]))
-      //   .attr("cy", y(points[2][1]))
-      //   .attr("r", 5)
-      //   .attr("cursor", "grab")
-      //   .style("fill", colors[utility.utility_name] || "steelblue")
-      //   .call(drag);
-
-      // do an iteration and create circles based on points
-      // focus
-      //   .selectAll(`circle_${utility.utility_name}`)
-      //   .data(points)
-      //   .enter()
-      //   .append("circle")
-      //   .attr("r", 5)
-      //   .attr("cx", (d) => x(d[0]))
-      //   .attr("cy", (d) => y(d[1]))
-      //   .style("cursor", "pointer")
-      //   .style("fill", colors[utility.utility_name] || "steelblue")
-      //   .call(drag);
+        .attr("d", line)
+        .style("opacity", activeUtility === utility.utility_name ? 1 : 0.3)
+        .on("click", () => setActiveUtility(utility.utility_name));
 
       const circleGroup = focus.append("g").attr("id", `circle_${utility.utility_name}`);
 
@@ -281,48 +374,50 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, colors }) 
         .attr("r", 5)
         .attr("cx", d => x(d[0]))
         .attr("cy", d => y(d[1]))
+        .attr("stroke", "white")
+        .attr("stroke-width", 2.5)
         .style("cursor", "pointer")
         .style("fill", colors[utility.utility_name] || "steelblue")
-        .call(drag);
+        .call(drag)
+        .style("opacity", activeUtility === utility.utility_name ? 1 : 0.3)
+        .on("click", () => setActiveUtility(utility.utility_name));
 
-      // focus
-      //   .selectAll("circle")
-      //   .data(points)
-      //   .enter()
-      //   .append("circle")
-      //   .attr("r", 5)
-      //   .attr("cx", (d) => x(d[0]))
-      //   .attr("cy", (d) => y(d[1]))
-      //   .style("cursor", "pointer")
-      //   .style("fill", colors[utility.utility_name] || "steelblue")
-      //   .call(drag);
+      if (points[2][0] > maxXValue) {
+        circleGroup.append("circle")
+          .attr("id", `holder_circle_${utility.utility_name}`)
+          .attr("r", 5)
+          .attr("cx", x(curvePoints[curvePoints.length - 1][0]))
+          .attr("cy", y(curvePoints[curvePoints.length - 1][1]))
+          .attr("stroke", "white")
+          .attr("stroke-width", 2.5)
+          .style("fill", colors[utility.utility_name] || "steelblue")
+          .style("cursor", "default")
+          .style("opacity", activeUtility === utility.utility_name ? 1 : 0.3)
+          .on("click", () => setActiveUtility(utility.utility_name));
 
+        circleGroup.append("text")
+          .attr("id", `holder_text_${utility.utility_name}`)
+          .attr("x", x(curvePoints[curvePoints.length - 1][0]) + 15)
+          .attr("y", y(curvePoints[curvePoints.length - 1][1]) + 5)
+          .attr("fill", colors[utility.utility_name] || "steelblue")
+          .style("opacity", activeUtility === utility.utility_name ? 1 : 0.3)
+          .text(`$${shortenNumber(utility.ldt, 3, 7, 0, 0)}`)
+      }
 
+      if (activeUtility === utility.utility_name) {
+        curvePath.raise();
+        circleGroup.raise();
+      }
+      else {
+        circleGroup.lower();
+        curvePath.lower();
+      }
 
-
-      // focus
-      //   .selectAll("circle")
-      //   .on("mouseover", function (event, d: any) {
-      //     focus
-      //       .append("text")
-      //       .attr("id", "tooltip")
-      //       .attr("x", x(d[0]) - 10)
-      //       .attr("y", y(d[1]) - 10)
-      //       .text(`(${Math.round(d[0] * 100) / 100}, ${Math.round(d[1] * 100) / 100})`);
-      //   })
-      //   .on("mouseout", function () {
-      //     focus.select("#tooltip").remove();
-      //   });
     });
 
+  }, [utilities, colors, activeUtility]);
 
-
-
-
-
-  }, [utilities, colors]);
-
-  return <svg ref={svgRef} width={700} height={400} ></svg>;
+  return <svg ref={svgRef} width={750} height={400} ></svg>;
 };
 
 export default AllocationChart;

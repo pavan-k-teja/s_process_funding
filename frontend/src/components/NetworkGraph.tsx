@@ -18,8 +18,9 @@ interface Link {
   target: Node;
 }
 
-const levelSpacing = 80;  // Vertical gap between levels
+const levelSpacing = 60;  // Vertical gap between levels
 const nodeRadius = 16;    // Radius of the node circles
+const horizontalSpacing = 70;
 
 const NetworkGraph: React.FC<NetworkGraphProps> = ({ profiles, user }) => {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -61,8 +62,8 @@ const NetworkGraph: React.FC<NetworkGraphProps> = ({ profiles, user }) => {
 
     // Calculate width and height based on levels and nodes
     const maxLevel = Math.max(...nodes.map(node => node.level));
-    const width = Math.max(...Object.values(levelGroups).map(group => group.length)) * (nodeRadius * 4);
-    const height = (maxLevel) * levelSpacing + nodeRadius * 2;
+    const width = Math.max(...Object.values(levelGroups).map(group => group.length)) * horizontalSpacing;
+    const height = (maxLevel) * levelSpacing + nodeRadius * 2 + 10;
 
     // Assign x, y positions based on levelSpacing and calculated width
     return {
@@ -75,7 +76,7 @@ const NetworkGraph: React.FC<NetworkGraphProps> = ({ profiles, user }) => {
 
         return {
           ...node,
-          x: (width / (totalNodes + 1)) * (index + 1), // Spread evenly
+          x: (width / 2) - ((totalNodes - 1) * horizontalSpacing / 2) + (index * horizontalSpacing), // Center nodes horizontally
           y: node.level * levelSpacing + nodeRadius,  // Stack levels
         };
       })
@@ -110,9 +111,9 @@ const NetworkGraph: React.FC<NetworkGraphProps> = ({ profiles, user }) => {
 
     nodeGroup.append("circle")
       .attr("r", nodeRadius)
-      // .attr("fill", "black");
-      .attr("fill", d => (user && d.name === user) ? "steelblue" : "black");
-
+      .attr("fill", d => (user && d.name === user) ? "steelblue" : "black")
+      .attr("stroke", "white")
+      .attr("stroke-width", 2.5)
 
     // Text inside nodes
     nodeGroup.append("text")

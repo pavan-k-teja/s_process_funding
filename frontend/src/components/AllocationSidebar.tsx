@@ -4,11 +4,12 @@ import { Allocation } from '@/lib/types';
 import { shortenNumber } from '@/helpers/helper';
 
 
-interface SidebarProps {
+interface AllocationSidebarProps {
   profileName?: string,
   recommenders?: Allocation[];
   organizations?: Allocation[];
   colors?: { [key: string]: string };
+  activeUtility?: string;
 }
 
 const lightenColor = (color: string, percent: number) => {
@@ -52,7 +53,7 @@ const lightenColor = (color: string, percent: number) => {
 //   },
 // ];
 
-const Sidebar: React.FC<SidebarProps> = ({ profileName, recommenders, organizations, colors }) => {
+const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, recommenders, organizations, colors, activeUtility }) => {
 
   console.log('sidebar colors', colors);
   // filter out recommenders and organizations with 0 allocation
@@ -97,7 +98,7 @@ const Sidebar: React.FC<SidebarProps> = ({ profileName, recommenders, organizati
               key={organization.name}
               className="flex items-center px-0 py-0 text-sm font-semibold " /* round */
               style={{
-                backgroundColor: `${lightenColor(orgColor, 10)}`,
+                backgroundColor: `${(activeUtility === organization.name) ? orgColor : lightenColor(orgColor, 10)}`,
                 height: `${heightPercentage}%`,
               }}
             >
@@ -115,4 +116,4 @@ const Sidebar: React.FC<SidebarProps> = ({ profileName, recommenders, organizati
   );
 };
 
-export default Sidebar;
+export default AllocationSidebar;

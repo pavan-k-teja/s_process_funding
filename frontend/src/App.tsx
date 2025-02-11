@@ -1,11 +1,12 @@
 import './App.css'
 import { useState, useEffect } from 'react'
+import { Loader2 } from 'lucide-react';
 import { ThemeProvider } from "@/components/theme-provider"
 import { LoginForm } from "@/components/login-form"
 // import Navbar from "@/components/Navbar"
 // import Sidebar from "@/components/Sidebar"
 // import UtilityTable from "@/components/UtilityTable"
-import Dashboard from "@/components/Dashboard"
+import UserRouter from "@/components/UserRouter"
 
 
 function App() {
@@ -28,12 +29,15 @@ function App() {
         if (!response.ok) {
           throw new Error("Failed to fetch protected data")
         }
+        console.log(response)
+        console.log(isAuthenticated)
 
         setIsAuthenticated(true)
+        setLoading(false)
       } catch (err) {
         setIsAuthenticated(false)
       } finally {
-        setLoading(false)
+
       }
     }
 
@@ -44,16 +48,23 @@ function App() {
     <div className="w-screen h-screen flex justify-center p-0 m-0">
       <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
         {loading ? (
-          <div>Loading...</div>
+          <div className="flex items-center justify-center">
+            <div className="flex flex-col items-center">
+              <Loader2 className="animate-spin text-gray-500" size={48} />
+            </div>
+          </div>
         ) : isAuthenticated ? (
-          <div className="w-full h-screen flex flex-col p-0 m-0">
+          <>
+          {console.log("Authenticated")}
+            {/* // <div className="w-full h-screen flex flex-col p-0 m-0"> */}
             {/* <Navbar profileName={"JT"} onLogout={() => { console.log("Logout is Clicked") }} /> */}
             {/* Add other components here */}
             {/* <Sidebar recommenders={example_recommenders} organizations={example_organizations} /> */}
             {/* <UtilityTable initialBudget={100} maxBudget={1000} companies={example_utility_table} /> */}
-            <Dashboard />
-          </div>
-          // <Navbar profileName={"JT"} onLogout={()=>{console.log("Logout is Clicked")}}/>
+            <UserRouter />
+            {/* // </div> */}
+            {/* // <Navbar profileName={"JT"} onLogout={()=>{console.log("Logout is Clicked")}}/> */}
+          </>
         ) : (
           <LoginForm onLoginSuccess={() => setIsAuthenticated(true)} />
         )}

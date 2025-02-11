@@ -7,7 +7,6 @@ export interface Profile {
 }
 
 export interface Utility {
-    _id: { $oid: string };
     username: string;
     utility_name: string;
     fdv: number;
@@ -16,16 +15,18 @@ export interface Utility {
 }
 
 export interface Allocation {
-    name: string;
+    from_name: string;
+    to_name: string;
+    allocation_type: string;
     allocation: number;
 }
 
 export interface User {
     username: string;
+    profile_name: string;
     role: string;
     budget: number;
     max_budget: number;
-    profile_name: string;
 }
 
 
@@ -33,24 +34,30 @@ export interface Colors {
     [key: string]: string;
 }
 
+export interface Disagreements {
+    [key: string]: Record<string, number>;
+}
 
-export interface RecommenderData {
-    user: User;
+
+export interface ApiData {
+    current_user: User;
+    users: User[];
     colors: Colors;
     utilities: Utility[];
     all_profiles: Profile[];
     allocations: Allocation[];
+    disagreements: Disagreements[];
 }
 
 
-export interface RecommenderSidebar {
-    name: string;
-    allocation: number;
-    color: string;
-}
+// export interface RecommenderSidebar {
+//     name: string;
+//     allocation: number;
+//     color: string;
+// }
 
-export interface OrganizationSidebar {
-    name: string;
-    allocation: number;
-    colorStrip: string;
-}
+// export interface OrganizationSidebar {
+//     name: string;
+//     allocation: number;
+//     colorStrip: string;
+// }

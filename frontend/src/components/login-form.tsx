@@ -54,7 +54,9 @@ export function LoginForm({
       // Redirect or perform further actions here
 
     } catch (err: any) {
-      setError(err.message);
+      // setError(err.message); just show the error in the console but not to the user
+      console.error(err);
+      setError("Login failed! Your account or password may be incorrect.");
     }
   };
 
