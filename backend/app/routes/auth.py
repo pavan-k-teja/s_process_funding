@@ -6,7 +6,7 @@ from flask_jwt_extended import (
 )
 from app.models.users import Users
 from datetime import timedelta
-from app.utils.utils import get_recommender_data, get_funder_data, get_sigma_data
+from app.utils.utils import get_recommender_data, get_funder_data, get_sigma_data, update_data
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/api")
 
@@ -56,5 +56,17 @@ def get_user_data():
         data = get_sigma_data(username)
     else:
         return jsonify({"msg": "Invalid role"}), 401
+    
+    print(data)
 
     return jsonify(data), 200
+
+
+@auth_bp.route("/save_data", methods=["POST"])
+@jwt_required()
+def save_user_data():
+    # get "budget" and "utilities" from request body
+    data = request.get_json()
+    print(data)
+    
+    update_data(data["budget"], data["utilities"])

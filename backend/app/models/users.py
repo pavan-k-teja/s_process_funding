@@ -64,3 +64,12 @@ class Users:
             return {"username": user["username"], "role": user["role"]}
 
         return False
+    
+    @staticmethod
+    def update_user_budget(username, budget):
+        mongo.db.users.update_one(
+            {"username": username},
+            {"$set": {"budget": budget}},
+        )
+            
+        

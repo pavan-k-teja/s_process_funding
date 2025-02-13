@@ -1,4 +1,4 @@
-import { User, Colors, Profile, Utility, Allocation, RecommenderData } from '@/lib/types';
+import { User, Colors, Profile, Utility, Allocation } from '@/lib/types';
 
 
 export const shortenNumber = (number: number, k_digits: number = 3, m_digits: number = 6, k_decimal_places: number = 3, m_decimal_places: number = 1): string => {
@@ -137,7 +137,9 @@ export const allocate_budget = (utilities: Utility[], budget: number): Allocatio
 
     return utilities.map((utility, i) => {
         return {
-            name: utility.utility_name,
+            from_name: utility.username,
+            to_name: utility.utility_name,
+            allocation_type: "budget",
             allocation: allocations[i]
         }
     });

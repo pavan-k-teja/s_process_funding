@@ -1,25 +1,32 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import * as d3 from "d3";
-import { debounce, throttle } from 'radash';
+import { debounce, throttle } from 'lodash';
 
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '@/store';
-// import { setActiveUtility } from '@/store/utilitiesSlice';
-
-import { Colors, Utility } from '@/lib/types';
+import { Colors, Utility, Allocation } from '@/lib/types';
 import { shortenNumber } from '@/helpers/helper';
+
+import { RootState, AppDispatch } from '@/store';
+import { useDispatch, useSelector } from 'react-redux';
+import { setDynamicUtilities, setActiveUtility, setAllocations } from '@/store';
+import { allocate_budget } from '@/helpers/helper';
+
+
 
 type Point = [number, number];
 
 interface AllocationChartProps {
-  utilities: Utility[];
-  setUtilities: (utilities: Utility[]) => void;
-  colors: Colors;
-  onActive: (utility_name: string) => void;
+  // utilities: Utility[];
+  // setUtilities: (utilities: Utility[]) => void;
+  // colors: Colors;
+  // onActive: (utility_name: string) => void;
   // onUtilitiesChange?: (newUtilities: Utility[]) => void;
+
+  enableUtilityHighlight: boolean;
+  fundViewCutoff: number;
 };
 
 interface currentUtility {
+  username: string;
   utility_name: string;
   fdv: number;
   ldt: number;
@@ -53,11 +60,9 @@ interface currentUtility {
 //   return [px, py];
 // }
 
-
-
-const distance = (x1: number, y1: number, x2: number, y2: number) => {
-  return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
-}
+// const distance = (x1: number, y1: number, x2: number, y2: number) => {
+//   return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+// }
 
 function solveForX(p: number, q: number, tolerance: number = 1e-7, maxIterations: number = 500): number | null {
   if (p <= 0 || q <= 0 || p > 1 || q > 1) {
@@ -78,9 +83,9 @@ function solveForX(p: number, q: number, tolerance: number = 1e-7, maxIterations
   return null; // No convergence
 }
 
-const findMidPoint = (fdv: number, ldt: number, conc: number, maxXValue: number): Point => {
+const findMidPoint = (fdv: number, ldt: number, conc: number, fundViewCutoff: number): Point => {
 
-  let midX = Math.min(0.5 * ldt, 0.5 * maxXValue);
+  let midX = Math.min(0.5 * ldt, 0.5 * fundViewCutoff);
 
   let exp_conc = Math.exp(conc);
   let midY = fdv * Math.pow(1 - Math.pow(midX / ldt, exp_conc), 1 / exp_conc);
@@ -90,89 +95,104 @@ const findMidPoint = (fdv: number, ldt: number, conc: number, maxXValue: number)
 }
 
 // const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, setUtilities, colors, onActive }) => {
-const AllocationChart: React.FC<AllocationChartProps> = () => {
+const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighlight, fundViewCutoff }) => {
+  const dispatch = useDispatch<AppDispatch>();
 
-  const dispatch = useDispatch();
-  const utilities = useSelector((state: RootState) => state.utilities.utilities);
-  const activeUtility = useSelector((state: RootState) => state.utilities.activeUtility);
-  
+  const originalUtilities = useSelector((state: RootState) => state.utilities);
+  const dynamicUtilities = useSelector((state: RootState) => state.dynamicUtilities);
+  const colors = useSelector((state: RootState) => state.colors);
+  const focusUtility = useSelector((state: RootState) => state.focusUtility);
+  const budget = useSelector((state: RootState) => state.currentUser?.viewUser?.budget);
+  const focusedUtility = (enableUtilityHighlight ? focusUtility.hoveredUtility || focusUtility.activeUtility : "");
+
+  const [currentUtilities, setCurrentUtilities] = useState<currentUtility[]>([]);
+  const [trigger, setTrigger] = useState<boolean>(false);
   const svgRef = useRef<SVGSVGElement>(null);
-  // const [activeUtility, setActiveUtility] = useState<string | null>(null);
-  // const [currentUtilities, setCurrentUtilities] = useState<currentUtility[]>([]);
 
-  const maxXValue = 3000000; // $3M cutoff on the x-axis
 
   useEffect(() => {
-    let newUtilities = utilities.map((utility) => {
-      let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, maxXValue);
-      return { utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
-    });
-    setCurrentUtilities(newUtilities);
-  }, [utilities]);
+    if (currentUtilities.length == 0) {
+      console.log("Setting Current Utilities");
+      // const filteredDynamicUtilities = dynamicUtilities.filter((utility) => utility.fdv !== 0 && utility.ldt !== 0);
+      const filteredDynamicUtilities = dynamicUtilities;
 
-  useEffect(() => {
-    if (!activeUtility) {
-      let maxLdt = 0;
-      let maxLdtUtility = "";
-      currentUtilities.forEach((utility) => {
-        if (utility.ldt > maxLdt) {
-          maxLdt = utility.ldt;
-          maxLdtUtility = utility.utility_name;
-        }
+      const newUtilities = filteredDynamicUtilities.map((utility) => {
+        let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
+        return { username: utility.username, utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
       });
-      if (maxLdtUtility) {
-        console.log("Setting active utility to max ldt utility", maxLdtUtility)
-        setActiveUtility(maxLdtUtility);
-      }
-      else {
-        console.log("No utility found with ldt > 0")
-      }
+
+      setCurrentUtilities(newUtilities);
+      setTrigger(!trigger);
     }
-  }, [activeUtility]);
+    else {
+      console.log("Current Utilities already set")
+    }
+
+
+  }, [dynamicUtilities]);
+
+
+  const utilityChangeDetected = () => {
+    console.log("INTO UTILITY CHANGE DETECTED", currentUtilities);
+    if (currentUtilities.length > 0) {
+      console.log("INTO ");
+      // update the dynamic utilities with username and utility_name but dont remove the old ones
+      // const upd
+
+      // remove mid from each
+
+      const updatedUtilities = currentUtilities.map((utility) => {
+        let { midPoint, ...rest } = utility;
+        return rest;
+      });
+
+      dispatch(setDynamicUtilities(updatedUtilities));
+      const allocations_now = allocate_budget(currentUtilities, budget ?? 0);
+      dispatch(setAllocations(allocations_now));
+
+    }
+  }
+
+  const ref = useRef(utilityChangeDetected);
 
   useEffect(() => {
-    onActive(activeUtility ?? "");
-  }, [activeUtility]);
-
-
-  const debouncedSetUtilities = useCallback(debounce({ "delay": 600 }, setUtilities), [setUtilities]);
-  const throttledSetUtilities = useCallback(throttle({ "interval": 600 }, setUtilities), [setUtilities]);
-
-  useEffect(() => {
-
-    const utilities = currentUtilities.map((utility) => {
-      return {
-        utility_name: utility.utility_name,
-        fdv: utility.fdv,
-        ldt: utility.ldt,
-        conc: utility.conc
-      } as Utility;
-    });
-
-    debouncedSetUtilities(utilities);
-    throttledSetUtilities(utilities);
-
+    ref.current = utilityChangeDetected;
   }, [currentUtilities]);
 
-  // const updateUtilities = useCallback((updatedUtility: Utility) => {
-  //   const updatedUtilities = currentUtilities.map(utility =>
-  //     utility.utility_name === updatedUtility.utility_name ? updatedUtility : utility
-  //   );
-  //   onUtilitiesChange?.(updatedUtilities);
-  // }, [currentUtilities, onUtilitiesChange]);
+
+  const throttledSetUtilities = useMemo(() => {
+    return throttle((() => { ref.current?.(); }), 600, { leading: true, trailing: true })
+  }, []);
+
+
+  const handleReset = () => {
+
+    const newUtilities = originalUtilities.map((utility) => {
+      let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
+      return { username: utility.username, utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
+    });
+
+    setCurrentUtilities(newUtilities);
+    setTrigger(!trigger);
+
+    dispatch(setDynamicUtilities(originalUtilities));
+    const allocations_now = allocate_budget(originalUtilities, budget ?? 0);
+    dispatch(setAllocations(allocations_now));
+
+  };
+
+
 
   useEffect(() => {
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
     const width = 700 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
-
-
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
     const focus = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
-    const x = d3.scaleLinear().domain([0, maxXValue]).range([0, width]);
+    const x = d3.scaleLinear().domain([0, fundViewCutoff]).range([0, width]);
     const y = d3.scaleLinear().domain([0, 1]).range([height, 0]);
 
     focus.append("g")
@@ -195,7 +215,7 @@ const AllocationChart: React.FC<AllocationChartProps> = () => {
 
     const line = d3
       .line<Point>()
-      .curve(d3.curveCatmullRom.alpha(0.5))
+      .curve(d3.curveMonotoneX)
       .x((d) => x(d[0]))
       .y((d) => y(d[1]));
 
@@ -205,144 +225,128 @@ const AllocationChart: React.FC<AllocationChartProps> = () => {
       let points: Point[] = [
         [0, utility.fdv], // First point on Y-axis.  Cap at max Y
         utility.midPoint, // Midpoint
-        [utility.ldt, 0], // Third point on X-axis.  Cap at maxXValue.
+        [utility.ldt, 0], // Third point on X-axis.  Cap at fundViewCutoff.
       ];
 
-      const minPxDist = 10;
-      const minXCoordDist = () => x.invert(minPxDist) - x.invert(0);
-      const minYCoordDist = () => y.invert(0) - y.invert(minPxDist);
+      // const minPxDist = 10;
+      // const minXCoordDist = x.invert(minPxDist) - x.invert(0);
+      // const minYCoordDist = y.invert(0) - y.invert(minPxDist);
 
-      const generateCurvePoints = (a: number, b: number, k: number, numPoints = 200) => {
+      const generateCurvePoints = (a: number, b: number, k: number, numPoints = 100) => {
         let curvePoints: [number, number][] = [];
+        if (k > Math.exp(3)) {
+          k = Math.exp(3);
+        }
         for (let i = 0; i <= numPoints; i++) {
           let xCoord = (i / numPoints) * a;
-          if (xCoord > maxXValue) break;
+          if (xCoord > fundViewCutoff) break;
           let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k), 1 / k);
+
           if (!isNaN(yCoord)) {
             curvePoints.push([xCoord, yCoord]);
           }
         }
 
-        // smooth the curve by adjusting the points with a minimum distance
-        // for (let i = 1; i < curvePoints.length; i++) {
-        //   let [x1, y1] = curvePoints[i - 1];
-        //   let [x2, y2] = curvePoints[i];
-        //   let dist = distance(x1, y1, x2, y2);
-        //   if (dist < minPxDist) {
-        //     let midX = (x1 + x2) / 2;
-        //     let midY = (y1 + y2) / 2;
-        //     let angle = Math.atan2(y2 - y1, x2 - x1);
-        //     let dx = Math.cos(angle) * minPxDist / 2;
-        //     let dy = Math.sin(angle) * minPxDist / 2;
-        //     curvePoints[i - 1] = [midX - dx, midY - dy];
-        //     curvePoints[i] = [midX + dx, midY + dy];
-        //   }
-        // }
-
         return curvePoints;
       };
 
-      // const generateCurvePoints = (a: number, b: number, k: number, numPoints = 200) => {
-      //   let curvePoints: [number, number][] = [];
-      //   let prevAngle: number | null = null;
-      //   const minArcXRadius = minXCoordDist();
-      //   const minArcYRadius = minYCoordDist();
-
-      //   for (let i = 0; i <= numPoints; i++) {
-      //     let xCoord = (i / numPoints) * a;
-      //     if (xCoord > maxXValue) break;
-      //     let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k), 1 / k);
-      //     if (!isNaN(yCoord)) {
-      //       if (curvePoints.length >= 2) {
-      //         let [x1, y1] = curvePoints[curvePoints.length - 2];
-      //         let [x2, y2] = curvePoints[curvePoints.length - 1];
-      //         let angle1 = Math.atan2(y2 - y1, x2 - x1);
-      //         let angle2 = Math.atan2(yCoord - y2, xCoord - x2);
-      //         let angleDiff = Math.abs(angle2 - angle1);
-
-      //         if (prevAngle !== null && angleDiff > Math.PI / 6) {
-      //           // Insert an arc to smooth the corner
-      //           let arcCenterX = x2 + minArcXRadius * Math.cos(angle1 + Math.PI / 2);
-      //           let arcCenterY = y2 + minArcYRadius * Math.sin(angle1 + Math.PI / 2);
-      //           // remove the last point
-      //           curvePoints.pop();
-      //           curvePoints.push([arcCenterX, arcCenterY]);
-      //         }
-
-      //         prevAngle = angle2;
-      //       }
-      //       curvePoints.push([xCoord, yCoord]);
-      //     }
-      //   }
-      //   return curvePoints;
-      // };
 
       const drag = d3.drag<SVGCircleElement, Point>().on("drag", function (event, d) {
-        setActiveUtility(utility.utility_name);
+        dispatch(setActiveUtility(utility.utility_name));
         const i = points.indexOf(d);
 
-        if (i === 0) {
-          d[0] = 0;
-          d[1] = Math.max(0.01, Math.min(height, y.invert(event.y)));
+        // Create a copy of the points array
+        const newPoints = points.map(point => [...point] as Point);
 
-          if (points[1][1] > d[1]) {
-            points[1][1] = d[1];
+        let k = null;
+        let conc = 0;
+        if (i === 0) {
+          newPoints[0][0] = 0;
+          newPoints[0][1] = Math.max(0.01, Math.min(height, y.invert(event.y)));
+
+          if (newPoints[1][1] > newPoints[0][1]) {
+            newPoints[1][1] = newPoints[0][1];
           }
 
         } else if (i === 2) {
-          d[0] = Math.max(0.01, Math.min(maxXValue, x.invert(event.x)));
-          d[1] = 0;
+          newPoints[2][0] = Math.max(0.01, Math.min(fundViewCutoff, x.invert(event.x)));
+          newPoints[2][1] = 0;
 
-          if (points[1][0] > d[0]) {
-            points[1][0] = d[0];
+          if (newPoints[1][0] > newPoints[2][0]) {
+            newPoints[1][0] = newPoints[2][0];
           }
 
         } else if (i === 1) {
-          d[0] = Math.max(0.001 * points[2][0], Math.min(points[2][0], x.invert(event.x)));
-          d[1] = Math.max(0.001 * points[0][1], Math.min(points[0][1], y.invert(event.y)));
+          newPoints[1][0] = Math.max(0.01 * newPoints[2][0], Math.min(newPoints[2][0], x.invert(event.x)));
+          newPoints[1][1] = Math.max(0.01 * newPoints[0][1], Math.min(newPoints[0][1], y.invert(event.y)));
+
+          if (newPoints[1][0] >= newPoints[2][0] && newPoints[1][1] >= newPoints[0][1]) {
+            newPoints[1][0] = 0.99 * newPoints[2][0];
+            newPoints[1][1] = 0.99 * newPoints[0][1];
+          }
         }
 
-        if (distance(points[1][0], points[1][1], points[2][0] - minXCoordDist(), points[0][1] - minYCoordDist()) <= distance(0, 0, minXCoordDist(), minYCoordDist()) && points[1][0] > points[2][0] - minXCoordDist() && points[1][1] > points[0][1] - minYCoordDist()) {
-          let new_x = points[2][0] - minXCoordDist() + Math.pow(minXCoordDist(), 0.5);
-          let new_y = points[0][1] - minYCoordDist() + Math.pow(minYCoordDist(), 0.5);
 
-          points[1][0] = new_x;
-          points[1][1] = new_y;
+        let p = newPoints[1][0] / newPoints[2][0];
+        let q = newPoints[1][1] / newPoints[0][1];
+
+        k = solveForX(p, q);
+        conc = Math.log(k ?? 1);
+
+        if (k && k > Math.exp(3)) {
+          let a = newPoints[2][0];
+          let b = newPoints[0][1];
+          let k_new = Math.exp(3);
+          k = k_new;
+          conc = Math.log(k_new);
+
+          if (p > Math.pow(0.5, 1 / k_new) && q > Math.pow(0.5, 1 / k_new)) {
+            newPoints[1][0] = a * Math.pow(0.5, 1 / k_new);
+            newPoints[1][1] = b * Math.pow(0.5, 1 / k_new);
+          } else if (p > q) {
+            let yCoord = newPoints[1][1];
+            let xCoord = a * Math.pow(1 - Math.pow(yCoord / b, k_new), 1 / k_new);
+            newPoints[1][0] = xCoord;
+          } else if (p < q) {
+            let xCoord = newPoints[1][0];
+            let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k_new), 1 / k_new);
+            newPoints[1][1] = yCoord;
+          } else {
+            newPoints[1][0] = a * Math.pow(0.5, 1 / k_new);
+            newPoints[1][1] = b * Math.pow(0.5, 1 / k_new);
+          }
         }
 
-        let p = points[1][0] / points[2][0];
-        let q = points[1][1] / points[0][1];
-
-        let k = solveForX(p, q);
-        let conc = Math.log(k ?? 1);
         let curvePoints: [number, number][] = [];
         if (k !== null) {
-          curvePoints = generateCurvePoints(points[2][0], points[0][1], k);
+          curvePoints = generateCurvePoints(newPoints[2][0], newPoints[0][1], k);
           curvePath.datum(curvePoints).attr("d", line);
-        }
-        else {
-          curvePath.datum([points[0], points[2]]).attr("d", line);
+        } else {
+          curvePath.datum([newPoints[0], newPoints[2]]).attr("d", line);
         }
 
-        d3.select(this).attr("cx", x(d[0])).attr("cy", y(d[1]));
+        d3.select(this).attr("cx", x(newPoints[i][0])).attr("cy", y(newPoints[i][1]));
 
-        points.forEach((point, i) => {
+        newPoints.forEach((point, i) => {
           focus.select(`#circle_${utility.utility_name}_${i}`).attr("cx", x(point[0])).attr("cy", y(point[1]));
         });
 
-        // Update the text and circle for the holder circle
-        if (points[2][0] > maxXValue) {
+        if (newPoints[2][0] > fundViewCutoff) {
           focus.select(`#holder_circle_${utility.utility_name}`).attr("cx", x(curvePoints[curvePoints.length - 1][0])).attr("cy", y(curvePoints[curvePoints.length - 1][1]));
           focus.select(`#holder_text_${utility.utility_name}`).attr("x", x(curvePoints[curvePoints.length - 1][0]) + 15).attr("y", y(curvePoints[curvePoints.length - 1][1]) + 5);
         }
 
+        // change points to newpoints
+        // points = newPoints;
+
         setCurrentUtilities((prevCurrentUtilities) => {
           let updatedUtility = {
+            username: utility.username,
             utility_name: utility.utility_name,
-            fdv: points[0][1],
-            ldt: points[2][0],
+            fdv: newPoints[0][1],
+            ldt: newPoints[2][0],
             conc: conc,
-            midPoint: [points[1][0], points[1][1]] as Point
+            midPoint: [newPoints[1][0], newPoints[1][1]] as Point
           };
 
           let updatedUtilities = prevCurrentUtilities.map((prevUtility) =>
@@ -351,6 +355,14 @@ const AllocationChart: React.FC<AllocationChartProps> = () => {
 
           return updatedUtilities;
         });
+
+        for (let i = 0; i < newPoints.length; i++) {
+          for (let j = 0; j < newPoints[i].length; j++) {
+            points[i][j] = newPoints[i][j];
+          }
+        }
+
+        throttledSetUtilities();
       });
 
 
@@ -361,8 +373,8 @@ const AllocationChart: React.FC<AllocationChartProps> = () => {
         .attr("stroke", colors[utility.utility_name] || "red")
         .attr("stroke-width", 2.5)
         .attr("d", line)
-        .style("opacity", activeUtility === utility.utility_name ? 1 : 0.3)
-        .on("click", () => setActiveUtility(utility.utility_name));
+        .style("opacity", focusedUtility === utility.utility_name ? 1 : 0.3)
+        .on("click", () => dispatch(setActiveUtility(utility.utility_name)));
 
       const circleGroup = focus.append("g").attr("id", `circle_${utility.utility_name}`);
 
@@ -379,10 +391,10 @@ const AllocationChart: React.FC<AllocationChartProps> = () => {
         .style("cursor", "pointer")
         .style("fill", colors[utility.utility_name] || "steelblue")
         .call(drag)
-        .style("opacity", activeUtility === utility.utility_name ? 1 : 0.3)
-        .on("click", () => setActiveUtility(utility.utility_name));
+        .style("opacity", focusedUtility === utility.utility_name ? 1 : 0.3)
+        .on("click", () => dispatch(setActiveUtility(utility.utility_name)));
 
-      if (points[2][0] > maxXValue) {
+      if (points[2][0] > fundViewCutoff) {
         circleGroup.append("circle")
           .attr("id", `holder_circle_${utility.utility_name}`)
           .attr("r", 5)
@@ -392,19 +404,20 @@ const AllocationChart: React.FC<AllocationChartProps> = () => {
           .attr("stroke-width", 2.5)
           .style("fill", colors[utility.utility_name] || "steelblue")
           .style("cursor", "default")
-          .style("opacity", activeUtility === utility.utility_name ? 1 : 0.3)
-          .on("click", () => setActiveUtility(utility.utility_name));
+          .style("opacity", focusedUtility === utility.utility_name ? 1 : 0.3)
+          .on("click", () => dispatch(setActiveUtility(utility.utility_name)));
+
 
         circleGroup.append("text")
           .attr("id", `holder_text_${utility.utility_name}`)
           .attr("x", x(curvePoints[curvePoints.length - 1][0]) + 15)
           .attr("y", y(curvePoints[curvePoints.length - 1][1]) + 5)
           .attr("fill", colors[utility.utility_name] || "steelblue")
-          .style("opacity", activeUtility === utility.utility_name ? 1 : 0.3)
+          .style("opacity", focusedUtility === utility.utility_name ? 1 : 0.3)
           .text(`$${shortenNumber(utility.ldt, 3, 7, 0, 0)}`)
       }
 
-      if (activeUtility === utility.utility_name) {
+      if (focusedUtility === utility.utility_name) {
         curvePath.raise();
         circleGroup.raise();
       }
@@ -415,9 +428,42 @@ const AllocationChart: React.FC<AllocationChartProps> = () => {
 
     });
 
-  }, [utilities, colors, activeUtility]);
+  }, [focusedUtility, trigger]);
 
-  return <svg ref={svgRef} width={750} height={400} ></svg>;
+  return (
+    // <svg ref={svgRef} width={750} height={400} ></svg>
+
+    <div style={{ position: 'relative' }}>
+      <svg ref={svgRef} width={750} height={400}></svg>
+      {/* <button
+        onClick={handleReset}
+        style={{
+          position: 'absolute',
+          bottom: '-30px',
+          right: '50px',
+          padding: '1px 5px',
+          backgroundColor: 'transparent',
+          color: 'black',
+          border: '1px solid #aaa',
+          borderRadius: '4px',
+          cursor: 'pointer',
+          fontSize: '12px',
+          hover: { backgroundColor: '#ddd' }
+        }}
+      >
+        Reset
+      </button> */}
+
+      <button
+        onClick={handleReset}
+        className="absolute bottom-[-30px] right-[45px] px-2 py-0 bg-transparent text-black font-medium border border-gray-400 rounded cursor-pointer text-xs hover:bg-gray-200 hover:border-gray-600"
+      >
+        Reset
+      </button>
+
+    </div>
+
+  );
 };
 
 export default AllocationChart;

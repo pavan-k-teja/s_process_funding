@@ -3,9 +3,6 @@ import { useState, useEffect } from 'react'
 import { Loader2 } from 'lucide-react';
 import { ThemeProvider } from "@/components/theme-provider"
 import { LoginForm } from "@/components/login-form"
-// import Navbar from "@/components/Navbar"
-// import Sidebar from "@/components/Sidebar"
-// import UtilityTable from "@/components/UtilityTable"
 import UserRouter from "@/components/UserRouter"
 
 
@@ -15,6 +12,7 @@ function App() {
 
   useEffect(() => {
     const checkAuthentication = async () => {
+      console.log("Checking authentication")
       try {
         const token = localStorage.getItem("jwt")
         if (!token) throw new Error("No token found")
@@ -33,11 +31,11 @@ function App() {
         console.log(isAuthenticated)
 
         setIsAuthenticated(true)
-        setLoading(false)
       } catch (err) {
         setIsAuthenticated(false)
+        console.log(err)
       } finally {
-
+        setLoading(false)
       }
     }
 
@@ -55,15 +53,8 @@ function App() {
           </div>
         ) : isAuthenticated ? (
           <>
-          {console.log("Authenticated")}
-            {/* // <div className="w-full h-screen flex flex-col p-0 m-0"> */}
-            {/* <Navbar profileName={"JT"} onLogout={() => { console.log("Logout is Clicked") }} /> */}
-            {/* Add other components here */}
-            {/* <Sidebar recommenders={example_recommenders} organizations={example_organizations} /> */}
-            {/* <UtilityTable initialBudget={100} maxBudget={1000} companies={example_utility_table} /> */}
+            {console.log("Authenticated")}
             <UserRouter />
-            {/* // </div> */}
-            {/* // <Navbar profileName={"JT"} onLogout={()=>{console.log("Logout is Clicked")}}/> */}
           </>
         ) : (
           <LoginForm onLoginSuccess={() => setIsAuthenticated(true)} />

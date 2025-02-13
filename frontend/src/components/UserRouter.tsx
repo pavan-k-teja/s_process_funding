@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Loader2 } from 'lucide-react';
-import { useSelector, useDispatch } from 'react-redux';
-import type { RootState, AppDispatch } from '@/store';
-import { setCurrentUser, setUsers, setColors, setUtilities, setAllocations, setDisagreements } from '@/store';
-import { User, Colors, Profile, Utility, Allocation, ApiData } from '@/lib/types';
+import { useDispatch } from 'react-redux';
+import type { AppDispatch } from '@/store';
+import { setApiData, setUsers, setColors, setDisagreements } from '@/store';
+import { ApiData, CurrentUser } from '@/lib/types';
 import RecommenderDashboard from '@/components/RecommenderDashboard'
 import FunderDashboard from '@/components/FunderDashboard'
 import SigmaDashboard from '@/components/SigmaDashboard'
@@ -12,7 +12,7 @@ import SigmaDashboard from '@/components/SigmaDashboard'
 const UserRouter: React.FC = () => {
 
     const [currentRole, setCurrentRole] = useState<string | null>(null);
-    const dispatch = useDispatch();
+    const dispatch = useDispatch<AppDispatch>();
 
     useEffect(() => {
 
@@ -34,13 +34,17 @@ const UserRouter: React.FC = () => {
 
                 const apiData: ApiData = await response.json()
                 console.log(apiData)
+                dispatch(setApiData(apiData));
 
-                dispatch(setCurrentUser(apiData.current_user));
-                dispatch(setUsers(apiData.users));
-                dispatch(setColors(apiData.colors));
-                dispatch(setUtilities(apiData.utilities));
-                dispatch(setAllocations(apiData.allocations));
-                dispatch(setDisagreements(apiData.disagreements));
+                const users = apiData.users;
+                dispatch(setUsers(users));
+
+                const colors = apiData.colors;
+                dispatch(setColors(colors));
+
+                const disagreements = apiData.disagreements;
+                dispatch(setDisagreements(disagreements));
+
                 console.log(apiData.current_user.role)
                 setCurrentRole(apiData.current_user.role);
 
@@ -65,9 +69,7 @@ const UserRouter: React.FC = () => {
                     </div>
                 ) : (
                     <>
-                        {currentRole === "recommender" && <RecommenderDashboard />}
-                        {currentRole === "funder" && <FunderDashboard />}
-                        {currentRole === "sigma" && <SigmaDashboard />}
+                        {currentRole === "recommender" ? <RecommenderDashboard /> : currentRole === "funder" ? <FunderDashboard /> : currentRole === "sigma" ? <SigmaDashboard /> : <div>Role not found</div>}
                     </>
                 )}
             </div>

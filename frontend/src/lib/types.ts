@@ -29,6 +29,16 @@ export interface User {
     max_budget: number;
 }
 
+// create another interface CurrentUser. It is same as user but it also has another field called viewName
+// export interface CurrentUser extends User {
+//     viewName: string;
+// }
+
+export interface CurrentUser {
+    user: User
+    viewUser: User
+}
+
 
 export interface Colors {
     [key: string]: string;
@@ -44,11 +54,26 @@ export interface ApiData {
     users: User[];
     colors: Colors;
     utilities: Utility[];
-    all_profiles: Profile[];
     allocations: Allocation[];
     disagreements: Disagreements[];
 }
 
+
+export interface FocusUtility {
+    activeUtility: string;
+    hoveredUtility: string;
+}
+
+
+
+// export interface CurrentUserData {
+//     user: User;
+//     userInView: User;
+//     activeUtility: string;
+//     hoveredUtility: string;
+//     utilities: Utility[];
+//     allocations: Allocation[];
+// }
 
 // export interface RecommenderSidebar {
 //     name: string;

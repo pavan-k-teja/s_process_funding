@@ -41,3 +41,12 @@ class Utilities:
     def get_all_utilities():
         utilities = mongo.db.utilities.find()
         return utilities
+
+    @staticmethod
+    def update_utilities(utilities):
+        # utility with same username and utility_name will be updated
+        for utility in utilities:
+            mongo.db.utilities.update_one(
+                {"username": utility["username"], "utility_name": utility["utility_name"]},
+                {"$set": utility},
+            )

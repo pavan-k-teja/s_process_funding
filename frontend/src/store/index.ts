@@ -1,13 +1,36 @@
 import { createSlice, configureStore, PayloadAction } from "@reduxjs/toolkit";
-import { Allocation, Colors, Disagreements, User, Utility } from "@/lib/types";
+import { Allocation, Colors, Disagreements, User, Utility, ApiData, FocusUtility, CurrentUser } from "@/lib/types";
+import { set } from "date-fns";
+
+
+const initialStateApiData = {
+  "current_user": {} as User,
+  "users": [] as User[],
+  "colors": {} as Colors,
+  "utilities": [] as Utility[],
+  "allocations": [] as Allocation[],
+  "disagreements": [] as Disagreements[],
+} as ApiData;
+
+
+const apiDataSlice = createSlice({
+  name: "apiData",
+  initialState: initialStateApiData,
+  reducers: {
+    setApiData: (state, action: PayloadAction<ApiData>) => action.payload,
+    resetApiData: () => initialStateApiData,
+  },
+
+})
+
 
 // Current User Slice
 const currentUserSlice = createSlice({
   name: "currentUser",
-  initialState: {} as User,
+  initialState: {} as CurrentUser,
   reducers: {
-    setCurrentUser: (state, action: PayloadAction<User>) => action.payload,
-    resetCurrentUser: () => { return {} as User; }
+    setCurrentUser: (state, action: PayloadAction<CurrentUser>) => action.payload,
+    resetCurrentUser: () => { return {} as CurrentUser; }
   },
 });
 
@@ -46,12 +69,24 @@ const utilitiesSlice = createSlice({
   },
 });
 
+// Dynamic Utilities Slice
+const dynamicUtilitiesSlice = createSlice({
+  name: "dynamicUtilities",
+  initialState: [] as Utility[],
+  reducers: {
+    setDynamicUtilities: (state, action: PayloadAction<Utility[]>) => action.payload,
+    resetDynamicUtilities: () => { return [] as Utility[]; }
+  },
+});
+
 // Allocations Slice
 const allocationsSlice = createSlice({
   name: "allocations",
   initialState: [] as Allocation[],
   reducers: {
-    setAllocations: (state, action: PayloadAction<Allocation[]>) => action.payload,
+    setAllocations: (state, action: PayloadAction<Allocation[]>) => {
+      return action.payload;
+    },
     resetAllocations: () => { return [] as Allocation[]; }
   },
 });
@@ -66,26 +101,70 @@ const disagreementsSlice = createSlice({
   },
 });
 
-// Configure Store
+// Focus utility Slice
+const focusUtilitySlice = createSlice({
+  name: "focusUtility",
+  initialState: {
+    "activeUtility": "",
+    "hoveredUtility": "",
+  } as FocusUtility,
+  reducers: {
+    setFocusUtility: (state, action: PayloadAction<FocusUtility>) => action.payload,
+    resetFocusUtility: () => {
+      return {
+        "activeUtility": "",
+        "hoveredUtility": "",
+      } as FocusUtility;
+    },
+    setActiveUtility: (state, action: PayloadAction<string>) => {
+      state.activeUtility = action.payload;
+    },
+    setHoveredUtility: (state, action: PayloadAction<string>) => {
+      state.hoveredUtility = action.payload;
+    },
+  },
+});
+
+const logout = () => (dispatch: AppDispatch) => {
+  dispatch(apiDataSlice.actions.resetApiData());
+  dispatch(currentUserSlice.actions.resetCurrentUser());
+  dispatch(usersSlice.actions.resetUsers());
+  dispatch(colorsSlice.actions.resetColors());
+  dispatch(utilitiesSlice.actions.resetUtilities());
+  dispatch(dynamicUtilitiesSlice.actions.resetDynamicUtilities());
+  dispatch(allocationsSlice.actions.resetAllocations());
+  dispatch(disagreementsSlice.actions.resetDisagreements());
+  dispatch(focusUtilitySlice.actions.resetFocusUtility());
+};
+
+// Configure Storee
 const store = configureStore({
   reducer: {
+    apiData: apiDataSlice.reducer,
     currentUser: currentUserSlice.reducer,
     users: usersSlice.reducer,
     colors: colorsSlice.reducer,
     utilities: utilitiesSlice.reducer,
+    dynamicUtilities: dynamicUtilitiesSlice.reducer,
     allocations: allocationsSlice.reducer,
     disagreements: disagreementsSlice.reducer,
+    focusUtility: focusUtilitySlice.reducer,
   },
 });
+
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
+
+export const { setApiData, resetApiData } = apiDataSlice.actions;
 export const { setCurrentUser, resetCurrentUser } = currentUserSlice.actions;
 export const { setUsers, updateUser, resetUsers } = usersSlice.actions;
 export const { setColors, resetColors } = colorsSlice.actions;
 export const { setUtilities, resetUtilities } = utilitiesSlice.actions;
+export const { setDynamicUtilities, resetDynamicUtilities } = dynamicUtilitiesSlice.actions;
 export const { setAllocations, resetAllocations } = allocationsSlice.actions;
 export const { setDisagreements, resetDisagreements } = disagreementsSlice.actions;
-
+export const { setFocusUtility, resetFocusUtility, setActiveUtility, setHoveredUtility } = focusUtilitySlice.actions;
+export { logout };
 export default store;

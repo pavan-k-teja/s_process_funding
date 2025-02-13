@@ -1,55 +1,89 @@
-import React, { useEffect, useState, useCallback, memo } from "react";
-import { debounce, throttle } from 'radash';
+import React, { useEffect, useState, useRef, useMemo } from "react";
+import { throttle } from 'lodash';
 import { Utility } from "@/lib/types";
 import { shortenNumber } from "@/helpers/helper";
 
+import { RootState, AppDispatch } from '@/store';
+import { useSelector, useDispatch } from 'react-redux';
+import { setAllocations } from '@/store';
+
+import { allocate_budget } from '@/helpers/helper';
 
 
-interface UtilityTableProps {
-  maxBudget: number;
-  utilities: Utility[];
-  currBudget: number;
-  setCurrBudget: (currBudget: number) => void;
-}
+// interface UtilityTableProps {
+//   maxBudget: number;
+//   utilities: Utility[];
+//   currBudget: number;
+//   setCurrBudget: (currBudget: number) => void;
+// }
 
-const UtilityTable: React.FC<UtilityTableProps> = ({
-  maxBudget,
-  utilities,
-  currBudget,
-  setCurrBudget,
-}) => {
+const UtilityTable: React.FC = () => {
 
-  const [sliderValue, setSliderValue] = useState<number>(currBudget);
+  const dispatch = useDispatch<AppDispatch>();
 
-  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const utilities = useSelector((state: RootState) => state.dynamicUtilities);
+  const viewUser = useSelector((state: RootState) => state.currentUser?.viewUser);
+  const maxBudget = viewUser?.max_budget || 1000;
+  // const budget = viewUser?.budget || maxBudget;
+
+  const [currBudget, setCurrBudget] = useState<number>(maxBudget);
+
+  useEffect(() => {
+    setCurrBudget(maxBudget);
+  }, [maxBudget]);
+
+
+  const updateAllocations = () => {
+    const newAllocations = allocate_budget(utilities, currBudget);
+    dispatch(setAllocations(newAllocations));
+  }
+
+  const ref = useRef(updateAllocations);
+
+  useEffect(() => {
+    // updating ref when state changes
+    // now, ref.current will have the latest sendRequest with access to the latest state
+    ref.current = updateAllocations;
+  }, [currBudget]);
+
+  
+  const throttledUpdateAllocations = useMemo(() => {
+    return throttle((() => { ref.current?.(); }), 600, { leading: true, trailing: true })
+  }, []);
+
+
+
+  const handleBudgetChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newBudget = Number(event.target.value);
-    if (newBudget < 0 || newBudget > maxBudget) return;
+    if (newBudget < 1000 || newBudget > maxBudget) return;
     if (newBudget == currBudget) return;
-    setSliderValue(newBudget);
+    setCurrBudget(newBudget);
+
+    throttledUpdateAllocations();
   };
 
 
-  useEffect(() => {
-    if (sliderValue !== currBudget) {
-      setSliderValue(currBudget);
-    }
+  // useEffect(() => {
+  //   if (sliderValue !== currBudget) {
+  //     setSliderValue(currBudget);
+  //   }
 
-  }, [currBudget, sliderValue]);
+  // }, [currBudget]);
 
 
-  const debouncedOnAction = useCallback(debounce({ delay: 600 }, setCurrBudget), [setCurrBudget]);
-  const throttledOnAction = useCallback(throttle({ interval: 600 }, setCurrBudget), [setCurrBudget]);
+  // const debouncedOnAction = useCallback(debounce({ delay: 600 }, setCurrBudget), [setCurrBudget]);
+  // const throttledOnAction = useCallback(throttle({ interval: 600 }, setCurrBudget), [setCurrBudget]);
 
-  useEffect(() => {
-    debouncedOnAction(sliderValue);
-    // throttledOnAction(sliderValue);
+  // useEffect(() => {
+  //   debouncedOnAction(sliderValue);
+  //   // throttledOnAction(sliderValue);
 
-    return () => {
-      debouncedOnAction.cancel();
-      // throttledOnAction.cancel();
-    };
+  //   return () => {
+  //     debouncedOnAction.cancel();
+  //     // throttledOnAction.cancel();
+  //   };
 
-  }, [sliderValue]);
+  // }, [sliderValue]);
 
   console.log('currentBudget', currBudget)
   console.log('setCurrentBudget', setCurrBudget)
@@ -61,18 +95,18 @@ const UtilityTable: React.FC<UtilityTableProps> = ({
       <div className="mb-4">
         <input
           type="range"
-          min="0"
+          min="1000"
           max={maxBudget}
-          value={sliderValue}
-          onChange={handleSliderChange}
+          value={currBudget}
+          onChange={handleBudgetChange}
           className="w-full h-2 appearance-none bg-gray-200 rounded-full focus:outline-none focus:ring-blue-400 slider-thumb"
           style={{
-            background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${(sliderValue / maxBudget) * 100 - 2
-              }%, #e5e7eb ${(sliderValue / maxBudget) * 100}%, #e5e7eb 100%)`,
+            background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${(currBudget / maxBudget) * 100 - 2
+              }%, #e5e7eb ${(currBudget / maxBudget) * 100}%, #e5e7eb 100%)`,
           }}
         />
         <div className="text-sm text-gray-600 mb-2 text-left">
-          Simulated Budget: {shortenNumber(sliderValue, 3, 10, 0, 1)}
+          Simulated Budget: {shortenNumber(currBudget, 3, 10, 0, 1)}
         </div>
       </div>
 
@@ -129,5 +163,5 @@ const UtilityTable: React.FC<UtilityTableProps> = ({
   );
 };
 
-export default memo(UtilityTable);
+export default UtilityTable;
 

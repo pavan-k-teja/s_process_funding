@@ -1,11 +1,8 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import * as d3 from 'd3';
-import { Profile } from '@/lib/types';
 
-interface NetworkGraphProps {
-  profiles: Profile[];
-  user: string;
-}
+import { RootState } from '@/store';
+import { useSelector } from 'react-redux';
 
 interface Node {
   id: string;
@@ -18,11 +15,15 @@ interface Link {
   target: Node;
 }
 
-const levelSpacing = 60;  // Vertical gap between levels
-const nodeRadius = 16;    // Radius of the node circles
+const levelSpacing = 60;
+const nodeRadius = 16;
 const horizontalSpacing = 70;
 
-const NetworkGraph: React.FC<NetworkGraphProps> = ({ profiles, user }) => {
+const NetworkGraph: React.FC = () => {
+  const profiles = useSelector((state: RootState) => state.users);
+  const viewProfile = useSelector((state: RootState) => state.currentUser);
+  const viewProfileName = viewProfile?.user?.profile_name;
+
   const svgRef = useRef<SVGSVGElement>(null);
 
   // Create nodes from profiles
@@ -85,44 +86,44 @@ const NetworkGraph: React.FC<NetworkGraphProps> = ({ profiles, user }) => {
 
   const { width, height, nodes: positionedNodes } = calculatePositions(nodes);
 
-  useEffect(() => {
-    const svg = d3.select(svgRef.current)
-      .attr("width", width)
-      .attr("height", height);
+  const svg = d3.select(svgRef.current)
+    .attr("width", width)
+    .attr("height", height);
 
-    // Draw links first (so they appear behind nodes)
-    svg.selectAll(".link")
-      .data(links)
-      .enter().append("line")
-      .attr("stroke", "lightgray")
-      .attr("stroke-width", 1.5)
-      .attr("stroke-linecap", "round")
-      .attr("x1", d => positionedNodes.find(n => n.id === d.source.id)?.x ?? 0)
-      .attr("y1", d => positionedNodes.find(n => n.id === d.source.id)?.y ?? 0)
-      .attr("x2", d => positionedNodes.find(n => n.id === d.target.id)?.x ?? 0)
-      .attr("y2", d => positionedNodes.find(n => n.id === d.target.id)?.y ?? 0)
-      .lower();
+  svg.selectAll(".link")
+    .data(links)
+    .enter().append("line")
+    .attr("stroke", "lightgray")
+    .attr("stroke-width", 1.5)
+    .attr("stroke-linecap", "round")
+    .attr("x1", d => positionedNodes.find(n => n.id === d.source.id)?.x ?? 0)
+    .attr("y1", d => positionedNodes.find(n => n.id === d.source.id)?.y ?? 0)
+    .attr("x2", d => positionedNodes.find(n => n.id === d.target.id)?.x ?? 0)
+    .attr("y2", d => positionedNodes.find(n => n.id === d.target.id)?.y ?? 0)
+    .lower();
 
-    const nodeGroup = svg.selectAll(".node")
-      .data(positionedNodes)
-      .enter().append("g")
-      .attr("class", "node")
-      .attr("transform", d => `translate(${d.x}, ${d.y})`);
+  const nodeGroup = svg.selectAll(".node")
+    .data(positionedNodes)
+    .enter().append("g")
+    .attr("class", "node")
+    .attr("transform", d => `translate(${d.x}, ${d.y})`);
 
-    nodeGroup.append("circle")
-      .attr("r", nodeRadius)
-      .attr("fill", d => (user && d.name === user) ? "steelblue" : "black")
-      .attr("stroke", "white")
-      .attr("stroke-width", 2.5)
+  nodeGroup.append("circle")
+    .attr("r", nodeRadius)
+    .attr("fill", d => {
+      return (d.name.trim() === viewProfileName.trim()) ? "steelblue" : "black";
+    })
+    .attr("stroke", "white")
+    .attr("stroke-width", 2.5)
 
-    // Text inside nodes
-    nodeGroup.append("text")
-      .attr("text-anchor", "middle")
-      .attr("dy", "0.35em")
-      .attr("fill", "white")
-      .style("font-size", "12px")
-      .text(d => d.id);
-  }, [width, height, positionedNodes, links]);
+
+  // Text inside nodes
+  nodeGroup.append("text")
+    .attr("text-anchor", "middle")
+    .attr("dy", "0.35em")
+    .attr("fill", "white")
+    .style("font-size", "12px")
+    .text(d => d.id);
 
   return (
     <div className="p-0 m-0">

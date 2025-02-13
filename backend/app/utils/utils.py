@@ -3,7 +3,7 @@ from app.models.colors import Colors
 from app.models.utilities import Utilities
 from app.models.allocations import Allocations
 from app.models.disagreements import Disagreements
-
+from app.utils.update_collections import update_collections
 
 def get_recommender_data(recommender_name):
 
@@ -54,7 +54,7 @@ def get_funder_data(funder_name):
             allocation["from_name"] == funder_name
             or allocation["from_name"] in recommender_names
         )
-        and allocation["budget_type"] == "budget"
+        and allocation["allocation_type"] == "budget"
     ]
 
     return {
@@ -85,3 +85,13 @@ def get_sigma_data(sigma_name):
         "allocations": allocations,
         "disagreements": disagreements,
     }
+    
+
+def update_data(username, budget, utilities):
+    
+    Utilities.update_utilities(utilities)
+    Users.update_user_budget(username, budget["budget"])
+    
+    update_collections()
+    
+    pass
