@@ -1,6 +1,5 @@
 import { createSlice, configureStore, PayloadAction } from "@reduxjs/toolkit";
 import { Allocation, Colors, Disagreements, User, Utility, ApiData, FocusUtility, CurrentUser } from "@/lib/types";
-import { set } from "date-fns";
 
 
 const initialStateApiData = {
@@ -9,7 +8,7 @@ const initialStateApiData = {
   "colors": {} as Colors,
   "utilities": [] as Utility[],
   "allocations": [] as Allocation[],
-  "disagreements": [] as Disagreements[],
+  "disagreements": {} as Disagreements,
 } as ApiData;
 
 
@@ -30,7 +29,10 @@ const currentUserSlice = createSlice({
   initialState: {} as CurrentUser,
   reducers: {
     setCurrentUser: (state, action: PayloadAction<CurrentUser>) => action.payload,
-    resetCurrentUser: () => { return {} as CurrentUser; }
+    resetCurrentUser: () => { return {} as CurrentUser; },
+    updateViewUser: (state, action: PayloadAction<User>) => {
+      state.viewUser = action.payload
+    },
   },
 });
 
@@ -94,10 +96,10 @@ const allocationsSlice = createSlice({
 // Disagreements Slice
 const disagreementsSlice = createSlice({
   name: "disagreements",
-  initialState: [] as Disagreements[],
+  initialState: {} as Disagreements,
   reducers: {
-    setDisagreements: (state, action: PayloadAction<Disagreements[]>) => action.payload,
-    resetDisagreements: () => { return [] as Disagreements[]; }
+    setDisagreements: (state, action: PayloadAction<Disagreements>) => action.payload,
+    resetDisagreements: () => { return {} as Disagreements; }
   },
 });
 
@@ -158,7 +160,7 @@ export type AppDispatch = typeof store.dispatch;
 
 
 export const { setApiData, resetApiData } = apiDataSlice.actions;
-export const { setCurrentUser, resetCurrentUser } = currentUserSlice.actions;
+export const { setCurrentUser, resetCurrentUser, updateViewUser } = currentUserSlice.actions;
 export const { setUsers, updateUser, resetUsers } = usersSlice.actions;
 export const { setColors, resetColors } = colorsSlice.actions;
 export const { setUtilities, resetUtilities } = utilitiesSlice.actions;

@@ -60,16 +60,16 @@
         "password": "JM",
         "profile_name": "JM",
         "role": "funder",
-        "budget": 10000000,
-        "max_budget": 10000000
+        "budget": 250000,
+        "max_budget": 250000
     },
     {
         "username": "DM",
         "password": "DM",
         "profile_name": "DM",
         "role": "funder",
-        "budget": 10000000,
-        "max_budget": 10000000
+        "budget": 500000,
+        "max_budget": 500000
     },
     {
         "username": "SIGMA",

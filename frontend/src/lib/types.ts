@@ -45,7 +45,9 @@ export interface Colors {
 }
 
 export interface Disagreements {
-    [key: string]: Record<string, number>;
+    [key: string]: {
+        [key: string]: number;
+    }
 }
 
 
@@ -55,7 +57,7 @@ export interface ApiData {
     colors: Colors;
     utilities: Utility[];
     allocations: Allocation[];
-    disagreements: Disagreements[];
+    disagreements: Disagreements;
 }
 
 
@@ -64,6 +66,11 @@ export interface FocusUtility {
     hoveredUtility: string;
 }
 
+export enum UserRole {
+    Recommender = "recommender",
+    Funder = "funder",
+    Sigma = "sigma"
+};
 
 
 // export interface CurrentUserData {

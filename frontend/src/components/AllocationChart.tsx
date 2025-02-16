@@ -1,28 +1,24 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import * as d3 from "d3";
-import { debounce, throttle } from 'lodash';
+import { throttle } from 'lodash';
 
-import { Colors, Utility, Allocation } from '@/lib/types';
+import { Colors, Utility, Allocation, UserRole } from '@/lib/types';
 import { shortenNumber } from '@/helpers/helper';
 
 import { RootState, AppDispatch } from '@/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { setDynamicUtilities, setActiveUtility, setAllocations } from '@/store';
-import { allocate_budget } from '@/helpers/helper';
+import { allocate_budget, funder_allocations } from '@/helpers/helper';
 
 
 
 type Point = [number, number];
 
 interface AllocationChartProps {
-  // utilities: Utility[];
-  // setUtilities: (utilities: Utility[]) => void;
-  // colors: Colors;
-  // onActive: (utility_name: string) => void;
-  // onUtilitiesChange?: (newUtilities: Utility[]) => void;
 
+  enableReadOnly: boolean,
   enableUtilityHighlight: boolean;
-  fundViewCutoff: number;
+  viewType: UserRole;
 };
 
 interface currentUtility {
@@ -36,33 +32,6 @@ interface currentUtility {
 
 
 
-// const isOutOfBounds = (a: number, b: number, x: number, y: number, cx: number, cy: number) => {
-// let check_below = Math.pow(x / a, Math.exp(-3)) + Math.pow(y / b, Math.exp(-3)) < 1
-// if (check_below) {
-//   return true;
-// }
-// let check_above = Math.pow(x / a, Math.exp(3)) + Math.pow(y / b, Math.exp(3)) > 1;
-// if (check_above) {
-//   return true;
-// }
-// return false;
-// }
-// const nearestPoint = (a: number, b: number, px: number, py: number): [number, number] => {
-//   if (px < 0 && py > b) return [0, b];
-//   if (px > a && py < 0) return [a, 0];
-//   let check_below = Math.pow(px / a, Math.exp(-3)) + Math.pow(py / b, Math.exp(-3)) < 1
-//   if (check_below) {
-//     const k = Math.exp(-3);
-//     let slope = Math.pow((b / a), k) * Math.pow((px / py), k - 1)
-//     // equation for x: (x/a)^k + ((slope*(x-px)+py)/b)^k = 1
-//     // equation for y given x is found: b * (1 - (x/a)^(k))^1/k
-//   }
-//   return [px, py];
-// }
-
-// const distance = (x1: number, y1: number, x2: number, y2: number) => {
-//   return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
-// }
 
 function solveForX(p: number, q: number, tolerance: number = 1e-7, maxIterations: number = 500): number | null {
   if (p <= 0 || q <= 0 || p > 1 || q > 1) {
@@ -95,7 +64,7 @@ const findMidPoint = (fdv: number, ldt: number, conc: number, fundViewCutoff: nu
 }
 
 // const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, setUtilities, colors, onActive }) => {
-const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighlight, fundViewCutoff }) => {
+const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enableUtilityHighlight, viewType }) => {
   const dispatch = useDispatch<AppDispatch>();
 
   const originalUtilities = useSelector((state: RootState) => state.utilities);
@@ -104,19 +73,35 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
   const focusUtility = useSelector((state: RootState) => state.focusUtility);
   const budget = useSelector((state: RootState) => state.currentUser?.viewUser?.budget);
   const focusedUtility = (enableUtilityHighlight ? focusUtility.hoveredUtility || focusUtility.activeUtility : "");
+  const apiData = useSelector((state: RootState) => state.apiData);
+  const funderName: string = useSelector((state: RootState) => state.currentUser?.user?.username) || "";
+  const recommenderNames = useSelector((state: RootState) => state.users.filter(user => user.role === "recommender").map(user => user.username));
+  const recommenderToOrgUtilities = apiData.utilities.filter(utility => recommenderNames.includes(utility.username));
+
+  const second_max_ldt = dynamicUtilities.map(utility => utility.ldt).sort((a, b) => b - a)[1];
+  const fundViewCutoff = Math.ceil(second_max_ldt / 3000000) * 3000000;
 
   const [currentUtilities, setCurrentUtilities] = useState<currentUtility[]>([]);
   const [trigger, setTrigger] = useState<boolean>(false);
   const svgRef = useRef<SVGSVGElement>(null);
 
+  useEffect(() => {
+    const newUtilities = originalUtilities.map((utility) => {
+      let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
+      return { username: utility.username, utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
+    });
+
+    setCurrentUtilities(newUtilities);
+
+    setTrigger(!trigger);
+  }, [originalUtilities]);
+
 
   useEffect(() => {
     if (currentUtilities.length == 0) {
       console.log("Setting Current Utilities");
-      // const filteredDynamicUtilities = dynamicUtilities.filter((utility) => utility.fdv !== 0 && utility.ldt !== 0);
-      const filteredDynamicUtilities = dynamicUtilities;
 
-      const newUtilities = filteredDynamicUtilities.map((utility) => {
+      const newUtilities = dynamicUtilities.map((utility) => {
         let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
         return { username: utility.username, utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
       });
@@ -136,10 +121,6 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
     console.log("INTO UTILITY CHANGE DETECTED", currentUtilities);
     if (currentUtilities.length > 0) {
       console.log("INTO ");
-      // update the dynamic utilities with username and utility_name but dont remove the old ones
-      // const upd
-
-      // remove mid from each
 
       const updatedUtilities = currentUtilities.map((utility) => {
         let { midPoint, ...rest } = utility;
@@ -147,8 +128,19 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
       });
 
       dispatch(setDynamicUtilities(updatedUtilities));
-      const allocations_now = allocate_budget(currentUtilities, budget ?? 0);
-      dispatch(setAllocations(allocations_now));
+
+      let newAllocations: Allocation[] = [] as Allocation[]
+      if (viewType == UserRole.Recommender) {
+        newAllocations = allocate_budget(updatedUtilities, budget ?? 0);
+
+      }
+      else if (viewType = UserRole.Funder) {
+        const allUtilities = recommenderToOrgUtilities.concat(updatedUtilities);
+        newAllocations = funder_allocations(allUtilities, budget, funderName, recommenderNames);
+      }
+
+      console.log("ALLOCATIONS_NOW", newAllocations);
+      dispatch(setAllocations(newAllocations));
 
     }
   }
@@ -176,9 +168,22 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
     setTrigger(!trigger);
 
     dispatch(setDynamicUtilities(originalUtilities));
-    const allocations_now = allocate_budget(originalUtilities, budget ?? 0);
-    dispatch(setAllocations(allocations_now));
+    // const allocations_now = allocate_budget(originalUtilities, budget ?? 0);
+    // const allocations_now = funder_allocations(apiData.utilities, budget, funderName, recommenderNames);
+    // dispatch(setAllocations(allocations_now));
 
+
+    let newAllocations: Allocation[] = [] as Allocation[]
+    if (viewType == UserRole.Recommender) {
+      newAllocations = allocate_budget(originalUtilities, budget ?? 0);
+
+    }
+    else if (viewType = UserRole.Funder) {
+      const allUtilities = recommenderToOrgUtilities.concat(originalUtilities);
+      newAllocations = funder_allocations(allUtilities, budget, funderName, recommenderNames);
+    }
+
+    dispatch(setAllocations(newAllocations));
   };
 
 
@@ -262,7 +267,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
         let conc = 0;
         if (i === 0) {
           newPoints[0][0] = 0;
-          newPoints[0][1] = Math.max(0.01, Math.min(height, y.invert(event.y)));
+          newPoints[0][1] = Math.max(0.01, Math.min(1, y.invert(event.y)));
 
           if (newPoints[1][1] > newPoints[0][1]) {
             newPoints[1][1] = newPoints[0][1];
@@ -373,7 +378,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
         .attr("stroke", colors[utility.utility_name] || "red")
         .attr("stroke-width", 2.5)
         .attr("d", line)
-        .style("opacity", focusedUtility === utility.utility_name ? 1 : 0.3)
+        .style("opacity", enableUtilityHighlight ? (focusedUtility === utility.utility_name ? 1 : 0.3) : 1)
         .on("click", () => dispatch(setActiveUtility(utility.utility_name)));
 
       const circleGroup = focus.append("g").attr("id", `circle_${utility.utility_name}`);
@@ -391,7 +396,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
         .style("cursor", "pointer")
         .style("fill", colors[utility.utility_name] || "steelblue")
         .call(drag)
-        .style("opacity", focusedUtility === utility.utility_name ? 1 : 0.3)
+        .style("opacity", enableUtilityHighlight ? (focusedUtility === utility.utility_name ? 1 : 0.3) : 1)
         .on("click", () => dispatch(setActiveUtility(utility.utility_name)));
 
       if (points[2][0] > fundViewCutoff) {
@@ -404,7 +409,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
           .attr("stroke-width", 2.5)
           .style("fill", colors[utility.utility_name] || "steelblue")
           .style("cursor", "default")
-          .style("opacity", focusedUtility === utility.utility_name ? 1 : 0.3)
+          .style("opacity", enableUtilityHighlight ? (focusedUtility === utility.utility_name ? 1 : 0.3) : 1)
           .on("click", () => dispatch(setActiveUtility(utility.utility_name)));
 
 
@@ -413,17 +418,20 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
           .attr("x", x(curvePoints[curvePoints.length - 1][0]) + 15)
           .attr("y", y(curvePoints[curvePoints.length - 1][1]) + 5)
           .attr("fill", colors[utility.utility_name] || "steelblue")
-          .style("opacity", focusedUtility === utility.utility_name ? 1 : 0.3)
+          .style("opacity", enableUtilityHighlight ? (focusedUtility === utility.utility_name ? 1 : 0.3) : 1)
           .text(`$${shortenNumber(utility.ldt, 3, 7, 0, 0)}`)
       }
 
-      if (focusedUtility === utility.utility_name) {
-        curvePath.raise();
-        circleGroup.raise();
-      }
-      else {
-        circleGroup.lower();
-        curvePath.lower();
+      if (enableUtilityHighlight) {
+
+        if (focusedUtility === utility.utility_name) {
+          curvePath.raise();
+          circleGroup.raise();
+        }
+        else {
+          circleGroup.lower();
+          curvePath.lower();
+        }
       }
 
     });
@@ -434,7 +442,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
     // <svg ref={svgRef} width={750} height={400} ></svg>
 
     <div style={{ position: 'relative' }}>
-      <svg ref={svgRef} width={750} height={400}></svg>
+      <svg ref={svgRef} width={750} height={400} style={{ pointerEvents: enableReadOnly ? "none" : "auto" }}></svg>
       {/* <button
         onClick={handleReset}
         style={{
@@ -454,13 +462,16 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableUtilityHighligh
         Reset
       </button> */}
 
-      <button
-        onClick={handleReset}
-        className="absolute bottom-[-30px] right-[45px] px-2 py-0 bg-transparent text-black font-medium border border-gray-400 rounded cursor-pointer text-xs hover:bg-gray-200 hover:border-gray-600"
-      >
-        Reset
-      </button>
-
+      {
+        enableReadOnly ? null : (
+          <button
+            onClick={handleReset}
+            className="absolute bottom-[-30px] right-[45px] px-2 py-0 bg-transparent text-black font-medium border border-gray-400 rounded cursor-pointer text-xs hover:bg-gray-200 hover:border-gray-600"
+          >
+            Reset
+          </button>
+        )
+      }
     </div>
 
   );

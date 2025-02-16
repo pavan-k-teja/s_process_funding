@@ -1,30 +1,31 @@
 import React, { useEffect, useState, useRef, useMemo } from "react";
 import { throttle } from 'lodash';
-import { Utility } from "@/lib/types";
+import { Allocation } from "@/lib/types";
 import { shortenNumber } from "@/helpers/helper";
 
 import { RootState, AppDispatch } from '@/store';
 import { useSelector, useDispatch } from 'react-redux';
 import { setAllocations } from '@/store';
+import { allocate_budget, funder_allocations } from '@/helpers/helper';
 
-import { allocate_budget } from '@/helpers/helper';
+interface UtilityTableProps {
+  enableReadOnly: boolean;
+  viewType: "recommender" | "funder" | "sigma";
+}
 
-
-// interface UtilityTableProps {
-//   maxBudget: number;
-//   utilities: Utility[];
-//   currBudget: number;
-//   setCurrBudget: (currBudget: number) => void;
-// }
-
-const UtilityTable: React.FC = () => {
+const UtilityTable: React.FC<UtilityTableProps> = ({ enableReadOnly, viewType }) => {
 
   const dispatch = useDispatch<AppDispatch>();
 
   const utilities = useSelector((state: RootState) => state.dynamicUtilities);
   const viewUser = useSelector((state: RootState) => state.currentUser?.viewUser);
   const maxBudget = viewUser?.max_budget || 1000;
-  // const budget = viewUser?.budget || maxBudget;
+
+
+  const funderName: string = useSelector((state: RootState) => state.currentUser?.user?.username) || "";
+  const recommenderNames = useSelector((state: RootState) => state.users.filter(user => user.role === "recommender").map(user => user.username));
+  const apiData = useSelector((state: RootState) => state.apiData);
+  const recommenderToOrgUtilities = apiData.utilities.filter(utility => recommenderNames.includes(utility.username));
 
   const [currBudget, setCurrBudget] = useState<number>(maxBudget);
 
@@ -34,8 +35,24 @@ const UtilityTable: React.FC = () => {
 
 
   const updateAllocations = () => {
-    const newAllocations = allocate_budget(utilities, currBudget);
+    // const newAllocations = allocate_budget(utilities, currBudget);
+    // dispatch(setAllocations(newAllocations));
+
+
+    let newAllocations: Allocation[] = [] as Allocation[]
+    if (viewType == "recommender") {
+      newAllocations = allocate_budget(utilities, currBudget ?? (maxBudget ?? 0));
+
+    }
+    else if (viewType = "funder") {
+      const allUtilities = recommenderToOrgUtilities.concat(utilities);
+      newAllocations = funder_allocations(allUtilities, currBudget ?? (maxBudget ?? 0), funderName, recommenderNames);
+    }
+
+    console.log("ALLOCATIONS_NOW", newAllocations);
     dispatch(setAllocations(newAllocations));
+
+
   }
 
   const ref = useRef(updateAllocations);
@@ -46,7 +63,7 @@ const UtilityTable: React.FC = () => {
     ref.current = updateAllocations;
   }, [currBudget]);
 
-  
+
   const throttledUpdateAllocations = useMemo(() => {
     return throttle((() => { ref.current?.(); }), 600, { leading: true, trailing: true })
   }, []);
@@ -63,34 +80,13 @@ const UtilityTable: React.FC = () => {
   };
 
 
-  // useEffect(() => {
-  //   if (sliderValue !== currBudget) {
-  //     setSliderValue(currBudget);
-  //   }
-
-  // }, [currBudget]);
-
-
-  // const debouncedOnAction = useCallback(debounce({ delay: 600 }, setCurrBudget), [setCurrBudget]);
-  // const throttledOnAction = useCallback(throttle({ interval: 600 }, setCurrBudget), [setCurrBudget]);
-
-  // useEffect(() => {
-  //   debouncedOnAction(sliderValue);
-  //   // throttledOnAction(sliderValue);
-
-  //   return () => {
-  //     debouncedOnAction.cancel();
-  //     // throttledOnAction.cancel();
-  //   };
-
-  // }, [sliderValue]);
 
   console.log('currentBudget', currBudget)
   console.log('setCurrentBudget', setCurrBudget)
   console.log('maxBudget', maxBudget)
 
   return (
-    <div className="flex flex-col w-full h-full p-4 bg-gray-50 m-0">
+    <div className="flex flex-col w-full h-max p-4 bg-gray-50 m-0 opacity-30 hover:opacity-100" style={{ pointerEvents: enableReadOnly ? "none" : "auto" }}>
       {/* Budget Slider */}
       <div className="mb-4">
         <input

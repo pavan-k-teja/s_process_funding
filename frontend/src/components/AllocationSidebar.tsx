@@ -27,12 +27,20 @@ const lightenColor = (color: string, percent: number) => {
   return lighten;
 }
 
+const getFontSize = (heightPercentage: number) => {
+  if (heightPercentage < 2) return 'hidden';
+  if (heightPercentage < 5) return 'text-xs';
+  if (heightPercentage < 10) return 'text-sm';
+  return 'text-sm';
+};
+
+
 const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, recommenders, organizations, enableUtilityHighlight }) => {
 
   const dispatch = useDispatch<AppDispatch>();
   const colors = useSelector((state: RootState) => state.colors);
   const focusUtility = useSelector((state: RootState) => state.focusUtility);
-  
+
   const lastHoveredUtility = useRef<string | null>(null);
 
   // const focusedUtility = useMemo(() => (enableUtilityHighlight ? lastHoveredUtility.current || activeUtility : ""), [enableUtilityHighlight, lastHoveredUtility.current, activeUtility]);
@@ -45,24 +53,33 @@ const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, reco
   const totalOrganizationAllocation = useMemo(() => filteredOrganizations?.reduce((sum, o) => sum + o.allocation, 0) || 1, [filteredOrganizations]);
   const totalRecommenderAllocation = useMemo(() => filteredRecommenders?.reduce((sum, r) => sum + r.allocation, 0) || 1, [filteredRecommenders]);
 
+  console.log("filteredOrganizations", filteredOrganizations);
+  console.log("filteredRecommenders", filteredRecommenders);
+
   useEffect(() => {
-    if (focusedUtility=="" && enableUtilityHighlight && filteredOrganizations && filteredOrganizations.length > 0) {
+    if (enableUtilityHighlight && focusedUtility == "" && enableUtilityHighlight && filteredOrganizations && filteredOrganizations.length > 0) {
       dispatch(setActiveUtility(filteredOrganizations[0].to_name));
     }
   }, [enableUtilityHighlight, filteredOrganizations, dispatch]);
 
 
   const handleMouseEnter = (utilityName: string) => {
-    if (lastHoveredUtility.current !== utilityName) {
+    if (enableUtilityHighlight && lastHoveredUtility.current !== utilityName) {
       lastHoveredUtility.current = utilityName;
       dispatch(setHoveredUtility(utilityName));
     }
   };
 
   const handleMouseLeave = () => {
-    if (lastHoveredUtility.current !== "") {
+    if (enableUtilityHighlight && lastHoveredUtility.current !== "") {
       lastHoveredUtility.current = "";
       dispatch(setHoveredUtility(""));
+    }
+  };
+
+  const handleClick = (utilityName: string) => {
+    if (enableUtilityHighlight) {
+      dispatch(setActiveUtility(utilityName));
     }
   };
 
@@ -70,17 +87,18 @@ const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, reco
 
   return (
     <div className="w-72 h-full bg-gray-100 flex pt-1 flex-col overflow-x-hidden">
-      <h4 className='font-semibold p-1'>{profileName}'s UNILATERAL ALLOCATION</h4>
+      <h4 className='font-semibold p-1'>{(profileName?.length == 2)? `${profileName} UNILATERAL ALLOCATION` : "PROJECTED FINAL ALLOCATION"}</h4>
       {/* Recommenders Section */}
       {filteredRecommenders && filteredRecommenders.length > 0 && (
-        <div className="flex flex-col space-y-0.5 mb-1" style={{ flex: '0 0 20%' }}>
+        <div className="flex flex-col space-y-0.5 mb-0.5" style={{ flex: '0 0 25%' }}>
           {filteredRecommenders?.map((recommender) => {
             const heightPercentage = (recommender.allocation / (totalRecommenderAllocation ?? 1)) * 100;
-            const fontSize = heightPercentage < 10 ? 'text-xs' : 'text-sm';
+            // const fontSize = heightPercentage < 10 ? 'text-xs' : 'text-sm';
+            const fontSize = getFontSize(heightPercentage);
             return (
               <div
                 key={recommender.to_name}
-                className={`flex items-center justify-between px-2 text-white text-sm font-medium rounded ${fontSize}`}
+                className={`flex items-center justify-between px-2 text-white text-sm font-medium  ${fontSize}`}
                 style={{ backgroundColor: colors ? colors[recommender.to_name] : "#ffffff", height: `${heightPercentage}%` }}
               >
                 <span>{recommender.to_name}</span>
@@ -93,22 +111,23 @@ const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, reco
 
       {/* Organizations Section */}
       {filteredOrganizations && filteredOrganizations.length > 0 && (
-        <div className="flex-1 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200  space-y-0.5">
+        <div className="flex-1">
           {filteredOrganizations?.map((organization) => {
             const heightPercentage = (organization.allocation / (totalOrganizationAllocation ?? 1)) * 100;
             const orgColor = colors ? colors[organization.to_name] : '#000000';
-            const fontSize = heightPercentage < 10 ? 'text-xs' : 'text-sm';
+            // const fontSize = heightPercentage < 10 ? 'text-xs' : 'text-sm';
+            const fontSize = getFontSize(heightPercentage);
             return (
               <div
                 key={organization.to_name}
-                className={`flex items-center px-0 py-0 text-sm font-semibold ${fontSize}`} /* round */
+                className={`flex items-center px-0 py-0 mb-0.5 text-sm font-semibold ${fontSize}`} /* round */
                 style={{
                   backgroundColor: `${(focusedUtility === organization.to_name) ? orgColor : lightenColor(orgColor, 10)}`,
                   height: `${heightPercentage}%`,
                 }}
                 onMouseEnter={() => handleMouseEnter(organization.to_name)}
                 onMouseLeave={handleMouseLeave}
-                onClick={() => dispatch(setActiveUtility(organization.to_name))}
+                onClick={() => handleClick(organization.to_name)}
               >
                 <div
                   className="w-3 h-full mr-2 ml-0 pl-0 " /* round */

@@ -4,22 +4,21 @@ import AllocationSidebar from '@/components/AllocationSidebar';
 import UtilityTable from '@/components/UtilityTable';
 import NetworkGraph from '@/components/NetworkGraph';
 import AllocationChart from '@/components/AllocationChart';
-
-import { CurrentUser } from '@/lib/types';
+import { CurrentUser, UserRole } from '@/lib/types';
 
 // use selector and dispatch
+import { useSelector, useDispatch } from 'react-redux';
 import { RootState, AppDispatch } from '@/store';
 import { setCurrentUser, setAllocations, setUtilities, setDynamicUtilities } from '@/store';
-import { useSelector, useDispatch } from 'react-redux';
 
 const RecommenderDashboard: React.FC = () => {
 
     const enableUtilityHighlight = true;
-    const fundViewCutoff = 3000000;
-
     const dispatch = useDispatch<AppDispatch>();
-
     const apiData = useSelector((state: RootState) => state.apiData);
+    const [showSaveButton, setShowSaveButton] = useState(false);
+
+
     useEffect(() => {
 
         // Set the current user from apiData
@@ -43,15 +42,20 @@ const RecommenderDashboard: React.FC = () => {
 
     const currentUser = useSelector((state: RootState) => state.currentUser);
     const profileName = currentUser?.user?.profile_name ?? "";
-    
-    // const utilities = currentUser.utilities;
     const allocations = useSelector((state: RootState) => state.allocations);
-    // console.log("ALLOCATIONS", allocations);
+
+    const handleDragChange = () => {
+        setShowSaveButton(true);
+    };
+
+    const handleReset = () => {
+        setShowSaveButton(false);
+    };
 
     return (
         <div className="w-full h-screen flex flex-col">
             {/* Navbar at the top */}
-            <Navbar profileName={profileName}/>
+            <Navbar profileName={profileName} />
 
             <div className="flex flex-1 overflow-hidden">
                 {/* Sidebar on the left */}
@@ -65,15 +69,24 @@ const RecommenderDashboard: React.FC = () => {
                         <NetworkGraph />
                     </div>
                     <div className="w-max flex justify-center m-0 p-0 border-r-0">
-                        <AllocationChart enableUtilityHighlight={enableUtilityHighlight} fundViewCutoff={fundViewCutoff} />
+                        <AllocationChart enableReadOnly={false} enableUtilityHighlight={enableUtilityHighlight} viewType={"recommender" as UserRole} />
                     </div>
                 </div>
 
                 {/* Utility Table on the right */}
                 <div className=" h-full overflow-y-auto p-0 z-0 width-full">
-                    <UtilityTable  />
+                    <UtilityTable enableReadOnly={false} viewType={"recommender"} />
                 </div>
             </div>
+
+            {/* Save Changes Button */}
+            {showSaveButton && (
+                <div className="fixed bottom-4 right-4">
+                    <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={() => alert('Changes saved!')}>
+                        Save Changes
+                    </button>
+                </div>
+            )}
         </div>
     )
 }

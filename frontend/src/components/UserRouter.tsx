@@ -3,7 +3,7 @@ import { Loader2 } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import type { AppDispatch } from '@/store';
 import { setApiData, setUsers, setColors, setDisagreements } from '@/store';
-import { ApiData, CurrentUser } from '@/lib/types';
+import { ApiData } from '@/lib/types';
 import RecommenderDashboard from '@/components/RecommenderDashboard'
 import FunderDashboard from '@/components/FunderDashboard'
 import SigmaDashboard from '@/components/SigmaDashboard'
@@ -33,7 +33,7 @@ const UserRouter: React.FC = () => {
                 }
 
                 const apiData: ApiData = await response.json()
-                console.log(apiData)
+                console.log("apiData", apiData)
                 dispatch(setApiData(apiData));
 
                 const users = apiData.users;
@@ -43,6 +43,7 @@ const UserRouter: React.FC = () => {
                 dispatch(setColors(colors));
 
                 const disagreements = apiData.disagreements;
+                console.log("DISAGREEMENTS__", disagreements)
                 dispatch(setDisagreements(disagreements));
 
                 console.log(apiData.current_user.role)

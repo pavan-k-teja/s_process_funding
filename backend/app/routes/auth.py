@@ -51,6 +51,7 @@ def get_user_data():
     if role == "recommender":
         data = get_recommender_data(username)
     elif role == "funder":
+        print("data for funder")
         data = get_funder_data(username)
     elif role == "sigma":
         data = get_sigma_data(username)
