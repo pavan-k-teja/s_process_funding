@@ -33,7 +33,6 @@ const UserRouter: React.FC = () => {
                 }
 
                 const apiData: ApiData = await response.json()
-                console.log("apiData", apiData)
                 dispatch(setApiData(apiData));
 
                 const users = apiData.users;
@@ -43,16 +42,14 @@ const UserRouter: React.FC = () => {
                 dispatch(setColors(colors));
 
                 const disagreements = apiData.disagreements;
-                console.log("DISAGREEMENTS__", disagreements)
                 dispatch(setDisagreements(disagreements));
 
-                console.log(apiData.current_user.role)
                 setCurrentRole(apiData.current_user.role);
 
             } catch (err) {
-                console.log(err)
+                console.error(err)
             } finally {
-                console.log("fetch recommender data")
+                console.log("User data fetched")
             }
         }
 

@@ -9,12 +9,11 @@ const DisagreementMatrix: React.FC = () => {
     const recommenders = useSelector((state: RootState) =>
         state.users.filter(user => user.role === "recommender").map(user => user.username)
     );
-    // sort the recommenders based on recommender[i].username alphabetically
+
     recommenders.sort((a, b) => a.localeCompare(b));
 
     const recommenderUtilities = utilities.filter(utility => recommenders.includes(utility.username));
 
-    // Organizing data by utility
     let utilitiesData: Record<string, Record<string, number>> = {};
 
     let allFDV: number[] = [], allLDT: number[] = [], allConc: number[] = [], allDiff: number[] = [];
@@ -122,7 +121,6 @@ const DisagreementMatrix: React.FC = () => {
     );
 };
 
-// Helper function to generate a color based on normalized value
 const getNormalizedColor = (value: number, min: number, max: number, type: string) => {
 
     const normalizedToColor = (value: number) => {
@@ -131,19 +129,12 @@ const getNormalizedColor = (value: number, min: number, max: number, type: strin
         const deepRed = [199, 19, 7];
 
         if (value < 0) {
-            // Negative values: More red as it moves towards -1
-            // const intensity = Math.round(255 * Math.abs(value));
-            // return `rgb(255, ${255 - intensity}, ${255 - intensity})`; // Shades of red
             const r = Math.round(deepRed[0] * (Math.abs(value)) + 255 * (1 - Math.abs(value)));
             const g = Math.round(deepRed[1] * (Math.abs(value)) + 255 * (1 - Math.abs(value)));
             const b = Math.round(deepRed[2] * (Math.abs(value)) + 255 * (1 - Math.abs(value)));
 
             return `rgb(${r}, ${g}, ${b})`;
         } else {
-            // Positive values: More green as it moves towards 1
-            // const intensity = Math.round(255 * value);
-            // return `rgb(${255 - intensity}, 255, ${255 - intensity})`; // Shades of green
-
             const r = Math.round(deepGreen[0] * value + 255 * (1 - value));
             const g = Math.round(deepGreen[1] * value + 255 * (1 - value));
             const b = Math.round(deepGreen[2] * value + 255 * (1 - value));
@@ -153,7 +144,6 @@ const getNormalizedColor = (value: number, min: number, max: number, type: strin
     }
 
     if (type == "fdv") {
-        // keep 0 white and 1 medium green
         let minVal = 0;
         let maxVal = 3;
         let norm = (value - minVal) / (maxVal - minVal);
@@ -194,12 +184,6 @@ const getNormalizedColor = (value: number, min: number, max: number, type: strin
         return normalizedToColor(norm);
     }
 
-
-
-    // const norm = (value - min) / (max - min); // Normalize between 0 and 1
-    // const red = Math.round((1 - norm) * 255); // Low values are red
-    // const green = Math.round(norm * 255); // High values are green
-    // return `rgb(${red}, ${green}, 255)`; // White midpoint
 };
 
 export default DisagreementMatrix;

@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store";
-import { Colors, Disagreements } from "@/lib/types";
 import { shortenNumber } from "@/helpers/helper";
 
 const DisagreementsSidebar: React.FC = () => {
     const colors = useSelector((state: RootState) => state.colors);
     const disagreements = useSelector((state: RootState) => state.disagreements);
-
     const [selectedRecommender, setSelectedRecommender] = useState<string | null>("JT");
-    const [showAll, setShowAll] = useState<boolean>(false);
-
     const recommenders = Object.keys(disagreements);
 
     const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -62,15 +58,6 @@ const DisagreementsSidebar: React.FC = () => {
                     }
                 </div>
             )}
-
-            {/* {selectedRecommender && getSortedDisagreements(selectedRecommender).length > 10 && (
-                <button
-                    onClick={() => setShowAll(!showAll)}
-                    className="mt-2 px-2 py-1 border rounded bg-gray-100 hover:bg-gray-200 text-xs w-full"
-                >
-                    {showAll ? "Show Top 10" : "Show All"}
-                </button>
-            )} */}
         </div>
     );
 };

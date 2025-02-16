@@ -42,9 +42,6 @@ const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, reco
   const focusUtility = useSelector((state: RootState) => state.focusUtility);
 
   const lastHoveredUtility = useRef<string | null>(null);
-
-  // const focusedUtility = useMemo(() => (enableUtilityHighlight ? lastHoveredUtility.current || activeUtility : ""), [enableUtilityHighlight, lastHoveredUtility.current, activeUtility]);
-
   const focusedUtility = (enableUtilityHighlight ? focusUtility.hoveredUtility || focusUtility.activeUtility : "");
 
   const filteredRecommenders = useMemo(() => recommenders?.filter(r => r.allocation > 0).sort((a, b) => b.allocation - a.allocation), [recommenders]);
@@ -52,9 +49,6 @@ const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, reco
 
   const totalOrganizationAllocation = useMemo(() => filteredOrganizations?.reduce((sum, o) => sum + o.allocation, 0) || 1, [filteredOrganizations]);
   const totalRecommenderAllocation = useMemo(() => filteredRecommenders?.reduce((sum, r) => sum + r.allocation, 0) || 1, [filteredRecommenders]);
-
-  console.log("filteredOrganizations", filteredOrganizations);
-  console.log("filteredRecommenders", filteredRecommenders);
 
   useEffect(() => {
     if (enableUtilityHighlight && focusedUtility == "" && enableUtilityHighlight && filteredOrganizations && filteredOrganizations.length > 0) {
@@ -87,13 +81,12 @@ const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, reco
 
   return (
     <div className="w-72 h-full bg-gray-100 flex pt-1 flex-col overflow-x-hidden">
-      <h4 className='font-semibold p-1'>{(profileName?.length == 2)? `${profileName} UNILATERAL ALLOCATION` : "PROJECTED FINAL ALLOCATION"}</h4>
+      <h4 className='font-semibold p-1'>{(profileName?.length == 2) ? `${profileName} UNILATERAL ALLOCATION` : "PROJECTED FINAL ALLOCATION"}</h4>
       {/* Recommenders Section */}
       {filteredRecommenders && filteredRecommenders.length > 0 && (
         <div className="flex flex-col space-y-0.5 mb-0.5" style={{ flex: '0 0 25%' }}>
           {filteredRecommenders?.map((recommender) => {
             const heightPercentage = (recommender.allocation / (totalRecommenderAllocation ?? 1)) * 100;
-            // const fontSize = heightPercentage < 10 ? 'text-xs' : 'text-sm';
             const fontSize = getFontSize(heightPercentage);
             return (
               <div
@@ -115,12 +108,11 @@ const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, reco
           {filteredOrganizations?.map((organization) => {
             const heightPercentage = (organization.allocation / (totalOrganizationAllocation ?? 1)) * 100;
             const orgColor = colors ? colors[organization.to_name] : '#000000';
-            // const fontSize = heightPercentage < 10 ? 'text-xs' : 'text-sm';
             const fontSize = getFontSize(heightPercentage);
             return (
               <div
                 key={organization.to_name}
-                className={`flex items-center px-0 py-0 mb-0.5 text-sm font-semibold ${fontSize}`} /* round */
+                className={`flex items-center px-0 py-0 mb-0.5 text-sm font-semibold ${fontSize}`}
                 style={{
                   backgroundColor: `${(focusedUtility === organization.to_name) ? orgColor : lightenColor(orgColor, 10)}`,
                   height: `${heightPercentage}%`,
@@ -130,7 +122,7 @@ const AllocationSidebar: React.FC<AllocationSidebarProps> = ({ profileName, reco
                 onClick={() => handleClick(organization.to_name)}
               >
                 <div
-                  className="w-3 h-full mr-2 ml-0 pl-0 " /* round */
+                  className="w-3 h-full mr-2 ml-0 pl-0 "
                   style={{ backgroundColor: orgColor }}
                 ></div>
                 <span>{organization.to_name}</span>

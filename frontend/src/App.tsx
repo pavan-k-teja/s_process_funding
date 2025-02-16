@@ -27,13 +27,11 @@ function App() {
         if (!response.ok) {
           throw new Error("Failed to fetch protected data")
         }
-        console.log(response)
-        console.log(isAuthenticated)
 
         setIsAuthenticated(true)
       } catch (err) {
         setIsAuthenticated(false)
-        console.log(err)
+        console.error(err)
       } finally {
         setLoading(false)
       }
@@ -53,7 +51,6 @@ function App() {
           </div>
         ) : isAuthenticated ? (
           <>
-            {console.log("Authenticated")}
             <UserRouter />
           </>
         ) : (

@@ -1,6 +1,6 @@
 class Users:
     """
-    collection format:
+    document format:
     {
         "username": "XO",
         "password": "scrypt:32768:8:1$OjGUz...",
@@ -10,25 +10,18 @@ class Users:
         "max_budget": 10750000
     },
 
-
     """
 
 
 class Colors:
     """
-    collection format:
+    document format:
     {
         "SIGMA": "#ff5733",
         "JT": "#33ff57",
         "JM": "#3357ff",
         "ThunderRecords": "#ff6633",
         "TribeofSpite": "#33ff66",
-        "TribeofWarlords": "#b74",
-        "Twist": "#048",
-        "VortexPoint": "#6633ff",
-        "Whisper": "#0ab",
-        "YellowShade": "#ff3366",
-        "Yeworks": "#db6",
         "Zaamtech": "#66ff33",
         "Zooin": "#3366ff",
         "_hold_": "#a2b"
@@ -39,7 +32,7 @@ class Colors:
 
 class Utilities:
     """
-    collection format:
+    document format:
     {
         "username": "BO",
         "utility_name": "BehemothCorps",
@@ -47,12 +40,13 @@ class Utilities:
         "ldt": 3000000,
         "conc": -0.54
     }
+
     """
 
 
 class Allocations:
     """
-    collection format:
+    document format:
     {
         "from_name": "XO",
         "to_name": "BehemothCorps",
@@ -64,7 +58,7 @@ class Allocations:
 
 class Disagreements:
     """
-    collection format:
+    document format:
     {
         "XO": {
             "Flowerscape": 93318,
@@ -73,6 +67,7 @@ class Disagreements:
             "ThunderRecords": 0,
             "Nimbletainment": 1712330,
             "Whisper": 1566105,
+            ...
         }
     }
     """

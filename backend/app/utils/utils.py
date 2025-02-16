@@ -95,11 +95,11 @@ def get_sigma_data(sigma_name):
     }
 
 
-def update_data(username, budget, utilities):
+def update_data(username, utilities, budget):
 
-    Utilities.update_utilities(utilities)
-    Users.update_user_budget(username, budget["budget"])
+    Utilities.update_utilities(username, utilities)
+    if budget and budget >= 0 :
+        Users.update_user_budget(username, budget)
 
     update_collections()
 
-    pass

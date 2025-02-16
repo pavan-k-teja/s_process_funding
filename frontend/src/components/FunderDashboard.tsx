@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import AllocationSidebar from '@/components/AllocationSidebar';
 import UtilityTable from '@/components/UtilityTable';
@@ -6,11 +6,11 @@ import NetworkGraph from '@/components/NetworkGraph';
 import AllocationChart from '@/components/AllocationChart';
 import { isEmpty } from "lodash";
 
-import { CurrentUser, User, UserRole } from '@/lib/types';
+import { CurrentUser, UserRole } from '@/lib/types';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState, AppDispatch } from '@/store';
-import { setCurrentUser, setAllocations, setUtilities, setDynamicUtilities } from '@/store';
+import { setCurrentUser, setAllocations, setUtilities, setDynamicUtilities, resetChangeDetection } from '@/store';
 
 const FunderDashboard: React.FC = () => {
     const enableUtilityHighlight = false;
@@ -20,27 +20,23 @@ const FunderDashboard: React.FC = () => {
     const currentUser = useSelector((state: RootState) => state.currentUser);
     const viewUserRole = currentUser?.viewUser?.role ?? "";
     const viewUserName = currentUser?.viewUser?.profile_name ?? ""
+    const [showSaveButton, setShowSaveButton] = useState(false);
 
 
     useEffect(() => {
 
         if (apiData && isEmpty(currentUser)) {
-            // set current user
             const currentUser: CurrentUser = {
                 user: apiData.current_user,
                 viewUser: apiData.current_user
             }
             dispatch(setCurrentUser(currentUser));
-            console.log("CURRENT_USER", currentUser);
-            // set allocations
+            
             dispatch(setAllocations(apiData.allocations));
-            console.log("ALLOCATIONS", apiData.allocations);
-            // set utilities
-            // const recommenderUtilities = apiData.utilities.filter(utility => recommenderNames.includes(utility.utility_name) && utility.username === currentUser?.user?.username);
+            
             const funderToRecommenderUtilities = apiData.utilities.filter(utility => utility.username === currentUser?.user?.username);
             dispatch(setUtilities(funderToRecommenderUtilities));
-            console.log("UTILITIES", funderToRecommenderUtilities);
-
+            
             dispatch(setDynamicUtilities(funderToRecommenderUtilities));
 
         }
@@ -83,6 +79,52 @@ const FunderDashboard: React.FC = () => {
     const organizationAllocations = allocations.filter(allocation => (recommenderNames.includes(allocation.to_name) === false && allocation.from_name === (currentUser?.user?.username ?? "") && allocation.allocation_type === "budget"));
 
     const recommenderToOrganizationAllocations = allocations.filter(allocation => (allocation.from_name === viewUserName && allocation.allocation_type === "budget"));
+
+    const utilities = useSelector((state: RootState) => state.dynamicUtilities);
+
+    const changeDetection = useSelector((state: RootState) => state.changeDetection);
+    const currBudget = changeDetection?.isBudgetChanged;
+
+    useEffect(() => {
+        if (changeDetection.isUtilityChanged || changeDetection.isBudgetChanged >= 0) {
+            setShowSaveButton(true);
+        }
+        else {
+            setShowSaveButton(false);
+        }
+
+    }, [changeDetection]);
+
+
+    const handleSaveChanges = async () => {
+
+        const confirmed = window.confirm("Are you sure you want to save the changes?");
+        if (!confirmed) {
+            return;
+        }
+
+        try {
+            await fetch('/api/save_data', {
+                method: 'POST',
+                headers: {
+                    "Authorization": `Bearer ${localStorage.getItem("jwt")}`,
+                    "Access-Control-Allow-Origin": "*",
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ "utilities": utilities, "budget": currBudget < 0 ? null : currBudget })
+            })
+        }
+        catch (error) {
+            console.error(error);
+        }
+
+        dispatch(setUtilities(utilities));
+        dispatch(setDynamicUtilities(utilities));
+
+        dispatch(resetChangeDetection());
+        setShowSaveButton(false);
+    }
+
     return (
         <div className="w-full h-screen flex flex-col">
             {/* Navbar at the top */}
@@ -115,6 +157,15 @@ const FunderDashboard: React.FC = () => {
                     <UtilityTable enableReadOnly={profileName != viewUserName} viewType={viewUserRole as UserRole} />
                 </div>
             </div>
+
+            {/* Save Changes Button */}
+            {showSaveButton && (
+                <div className="fixed bottom-4 right-4">
+                    <button className="bg-[#005a16] text-white px-4 py-2 rounded transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none hover:border-transparent" onClick={handleSaveChanges}>
+                        Save Changes
+                    </button>
+                </div>
+            )}
         </div>
     )
 }

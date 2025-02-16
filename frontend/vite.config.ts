@@ -10,6 +10,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    exclude: ['sw.js'],
+  },
   server: {
     proxy: {
       "/api": {
@@ -20,7 +23,4 @@ export default defineConfig({
       }
     }
   },
-  // optimizeDeps: {
-  //   include: ["react-plotly.js", "plotly.js"],
-  // },
 })

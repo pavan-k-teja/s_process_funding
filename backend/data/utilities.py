@@ -37,8 +37,8 @@ import json
 
 data = []
 
-csv_file = "data.csv"
-json_file = "utilities.json"
+csv_file = "./initial_files/data.csv"
+json_file = "./initial_files/utilities.json"
 
 
 with open(csv_file, newline="", encoding="utf-8") as f:

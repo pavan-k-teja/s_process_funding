@@ -6,7 +6,14 @@ from flask_jwt_extended import (
 )
 from app.models.users import Users
 from datetime import timedelta
-from app.utils.utils import get_recommender_data, get_funder_data, get_sigma_data, update_data
+from app.utils.utils import (
+    get_recommender_data,
+    get_funder_data,
+    get_sigma_data,
+    update_data,
+)
+from json import loads
+import threading
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/api")
 
@@ -32,7 +39,6 @@ def login():
     return jsonify({"msg": "Invalid username or password"}), 401
 
 
-# one route to check if jwt is valid
 @auth_bp.route("/check_jwt", methods=["GET"])
 @jwt_required()
 def check_jwt():
@@ -57,17 +63,29 @@ def get_user_data():
         data = get_sigma_data(username)
     else:
         return jsonify({"msg": "Invalid role"}), 401
-    
+
     print(data)
 
     return jsonify(data), 200
 
 
+def update_user_data(username, utility_data, budget):
+    update_data(username, utility_data, budget)
+
+
 @auth_bp.route("/save_data", methods=["POST"])
 @jwt_required()
 def save_user_data():
-    # get "budget" and "utilities" from request body
+    complete_jwt = get_jwt()
+    username, role = complete_jwt["sub"], complete_jwt["role"]
     data = request.get_json()
-    print(data)
-    
-    update_data(data["budget"], data["utilities"])
+
+    utility_data = data["utilities"]
+    budget = data["budget"]
+
+    thread = threading.Thread(
+        target=update_user_data, args=(username, utility_data, budget)
+    )
+    thread.start()
+
+    return jsonify({"msg": "Data is being processed"}), 202

@@ -373,9 +373,9 @@ def main():
     db = get_database()
     clear_database(db)
 
-    insert_users(db, "users.json")
-    insert_data(db, "utilities", "utilities.json", insert_many=True)
-    insert_data(db, "colors", "colors.json", insert_many=False)
+    insert_users(db, "./initial_files/users.json")
+    insert_data(db, "utilities", "./initial_files/utilities.json", insert_many=True)
+    insert_data(db, "colors", "./initial_files/colors.json", insert_many=False)
     insert_allocations(db)
     insert_disagreements(db)
 

@@ -1,17 +1,13 @@
 import math
-import json
 from ..extensions import mongo
-
-db = mongo.db
 
 
 def clear_allocations_disagreements():
-    collections = db.list_collection_names()
+    collections = mongo.db.list_collection_names()
     if "allocations" in collections:
-        db["allocations"].drop()
+        mongo.db["allocations"].drop()
     if "disagreements" in collections:
-        db["disagreements"].drop()
-
+        mongo.db["disagreements"].drop()
 
 
 def compute_y(x, fdv, ldt, conc):
@@ -54,7 +50,7 @@ def allocate_budget(utilities, budget):
         remaining_budget -= lowest_amount
 
     if hold_index is not None:
-        allocations[hold_index] += remaining_budget  # Assign remaining budget to '_hold_'
+        allocations[hold_index] += remaining_budget
 
     return {
         utility["utility_name"]: allocation
@@ -106,7 +102,6 @@ def projected_final_allocations(funder_info, utilities):
     recommender_to_organization_allocation = []
     organization_allocation = {}
 
-    # separate the utilities based on username
     user_to_utilities = {}
     for utility in utilities:
         if utility["username"] not in user_to_utilities:
@@ -120,7 +115,10 @@ def projected_final_allocations(funder_info, utilities):
             funder_utilities, funder_budget
         )
 
-        for recommender_name, recommender_budget in funder_recommender_allocations.items():
+        for (
+            recommender_name,
+            recommender_budget,
+        ) in funder_recommender_allocations.items():
             funder_to_recommender_allocation.append(
                 {
                     "funder_name": funder_name,
@@ -164,7 +162,7 @@ def projected_final_allocations(funder_info, utilities):
 def insert_own_allocations(user, utilities, total_funds):
     own_recommender_alloc = recommender_allocations(utilities, user["budget"])
     total_recommender_alloc = recommender_allocations(utilities, total_funds)
-    
+
     complete_own_allocations = []
 
     for recommender, alloc in own_recommender_alloc.items():
@@ -186,27 +184,31 @@ def insert_own_allocations(user, utilities, total_funds):
                 "allocation": alloc,
             }
         )
-        
+
     return complete_own_allocations
 
 
-def insert_funder_allocations(user, funder_utilities, recommender_utilities, total_funds):
+def insert_funder_allocations(
+    user, funder_utilities, recommender_utilities, total_funds
+):
     own_funder_alloc = funder_allocations(
         user["budget"], funder_utilities, recommender_utilities
     )
     total_funder_alloc = funder_allocations(
         total_funds, funder_utilities, recommender_utilities
     )
-    
+
     complete_funder_allocations = []
 
     for recommender, alloc in own_funder_alloc["recommender_allocation"].items():
-        complete_funder_allocations.append({
-            "from_name": user["username"],
-            "to_name": recommender,
-            "allocation_type": "budget",
-            "allocation": alloc,
-        })
+        complete_funder_allocations.append(
+            {
+                "from_name": user["username"],
+                "to_name": recommender,
+                "allocation_type": "budget",
+                "allocation": alloc,
+            }
+        )
 
     for org, alloc in own_funder_alloc["organization_allocation"].items():
         complete_funder_allocations.append(
@@ -237,13 +239,13 @@ def insert_funder_allocations(user, funder_utilities, recommender_utilities, tot
                 "allocation": alloc,
             }
         )
-        
+
     return complete_funder_allocations
 
 
 def insert_projected_final_allocations(projected_final_alloc):
     complete_final_allocations = []
-    
+
     for recommender, alloc in projected_final_alloc["recommender_allocation"].items():
         complete_final_allocations.append(
             {
@@ -273,53 +275,63 @@ def insert_projected_final_allocations(projected_final_alloc):
                 "allocation": alloc["organization_allocation"],
             }
         )
-        
+
     return complete_final_allocations
 
 
 def insert_allocations():
-    recommenders = list(db["users"].find({"role": "recommender"}))
-    funders = list(db["users"].find({"role": "funder"}))
-    utilities = list(db["utilities"].find())
+    recommenders = list(mongo.db["users"].find({"role": "recommender"}))
+    funders = list(mongo.db["users"].find({"role": "funder"}))
+    utilities = list(mongo.db["utilities"].find())
 
     total_funds = sum([f["budget"] for f in funders])
-    
+
     complete_allocations = []
-    
 
     for user in recommenders:
         recommender_utilities = [
             u for u in utilities if u["username"] == user["username"]
         ]
-        complete_allocations.append(insert_own_allocations(user, recommender_utilities, total_funds))
+        complete_allocations.extend(
+            insert_own_allocations(user, recommender_utilities, total_funds)
+        )
 
     for user in funders:
         funder_utilities = [u for u in utilities if u["username"] == user["username"]]
         recommender_utilities = [
-            u for u in utilities if u["username"] in [r["username"] for r in recommenders]
+            u
+            for u in utilities
+            if u["username"] in [r["username"] for r in recommenders]
         ]
-        complete_allocations.append(insert_funder_allocations(
-            user, funder_utilities, recommender_utilities, total_funds
-        ))
+        complete_allocations.extend(
+            insert_funder_allocations(
+                user, funder_utilities, recommender_utilities, total_funds
+            )
+        )
 
     funder_info = {funder["username"]: funder["budget"] for funder in funders}
     projected_final_alloc = projected_final_allocations(funder_info, utilities)
-    complete_allocations.append(insert_projected_final_allocations(projected_final_alloc))
-    
+    complete_allocations.extend(
+        insert_projected_final_allocations(projected_final_alloc)
+    )
+
     return complete_allocations
 
 
 def insert_disagreements():
-    
+
     complete_disagreements = []
-    
-    users = list(db["users"].find())
-    recommenders = list(db["users"].find({"role": "recommender"}))
-    funders = list(db["users"].find({"role": "funder"}))
-    allocations = list(db["allocations"].find())
+
+    users = list(mongo.db["users"].find())
+    recommenders = list(mongo.db["users"].find({"role": "recommender"}))
+    funders = list(mongo.db["users"].find({"role": "funder"}))
+    allocations = list(mongo.db["allocations"].find())
 
     sigma_allocations = [
-        a for a in allocations if a["from_name"] == "sigma" and a["to_name"] not in [u["username"] for u in users]
+        a
+        for a in allocations
+        if a["from_name"] == "sigma"
+        and a["to_name"] not in [u["username"] for u in users]
     ]
 
     organizations = list(set([a["to_name"] for a in sigma_allocations]))
@@ -327,59 +339,74 @@ def insert_disagreements():
     recommender_disagreements = []
     for recommender in recommenders:
         recommender_total_allocations = [
-            a for a in allocations if a["from_name"] == recommender["username"] and a["allocation_type"] == "total_funds"
+            a
+            for a in allocations
+            if a["from_name"] == recommender["username"]
+            and a["allocation_type"] == "total_funds"
         ]
 
         disagreements = {}
         for org in organizations:
-            sigma_allocation = next((a for a in sigma_allocations if a["to_name"] == org), None)
-            recommender_allocation = next((a for a in recommender_total_allocations if a["to_name"] == org), None)
+            sigma_allocation = next(
+                (a for a in sigma_allocations if a["to_name"] == org), None
+            )
+            recommender_allocation = next(
+                (a for a in recommender_total_allocations if a["to_name"] == org), None
+            )
 
             if sigma_allocation and recommender_allocation:
-                disagreements[org] = sigma_allocation["allocation"] - recommender_allocation["allocation"]
+                disagreements[org] = (
+                    sigma_allocation["allocation"]
+                    - recommender_allocation["allocation"]
+                )
             else:
                 disagreements[org] = None
 
         recommender_disagreements.append({recommender["username"]: disagreements})
 
-    complete_disagreements.append(recommender_disagreements)
-    # db["disagreements"].insert_many(recommender_disagreements)
+    complete_disagreements.extend(recommender_disagreements)
 
     funder_disagreements = []
     for funder in funders:
         funder_total_allocations = [
-            a for a in allocations if a["from_name"] == funder["username"] and a["allocation_type"] == "total_funds"
+            a
+            for a in allocations
+            if a["from_name"] == funder["username"]
+            and a["allocation_type"] == "total_funds"
         ]
 
         disagreements = {}
         for org in organizations:
-            sigma_allocation = next((a for a in sigma_allocations if a["to_name"] == org), None)
-            funder_allocation = next((a for a in funder_total_allocations if a["to_name"] == org), None)
+            sigma_allocation = next(
+                (a for a in sigma_allocations if a["to_name"] == org), None
+            )
+            funder_allocation = next(
+                (a for a in funder_total_allocations if a["to_name"] == org), None
+            )
 
             if sigma_allocation and funder_allocation:
-                disagreements[org] = sigma_allocation["allocation"] - funder_allocation["allocation"]
+                disagreements[org] = (
+                    sigma_allocation["allocation"] - funder_allocation["allocation"]
+                )
             else:
                 disagreements[org] = None
 
         funder_disagreements.append({funder["username"]: disagreements})
 
-    complete_disagreements.append(funder_disagreements)
-    # db["disagreements"].insert_many(funder_disagreements)
-    
+    complete_disagreements.extend(funder_disagreements)
+
     return complete_disagreements
 
 
 def update_collections():
-    # clear_allocations_disagreements()
     complete_allocations = insert_allocations()
     complete_disagreements = insert_disagreements()
-    
-    # remove existing allocations and disagreements and complete change
-    db["allocations"].drop()
-    db["disagreements"].drop()
-    
-    db["allocations"].insert_many([a for a in complete_allocations])
-    db["disagreements"].insert_many([d for d in complete_disagreements])
+
+    mongo.db["allocations"].drop()
+    mongo.db["disagreements"].drop()
+
+    mongo.db["allocations"].insert_many(complete_allocations)
+    mongo.db["disagreements"].insert_many(complete_disagreements)
 
 
 if __name__ == "__main__":

@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef, useMemo } from "react";
 import * as d3 from "d3";
 import { throttle } from 'lodash';
 
-import { Colors, Utility, Allocation, UserRole } from '@/lib/types';
+import { Allocation, UserRole } from '@/lib/types';
 import { shortenNumber } from '@/helpers/helper';
 
 import { RootState, AppDispatch } from '@/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { setDynamicUtilities, setActiveUtility, setAllocations } from '@/store';
 import { allocate_budget, funder_allocations } from '@/helpers/helper';
-
+import { setUtilityChange, setBudgetChange } from "@/store";
 
 
 type Point = [number, number];
@@ -38,7 +38,7 @@ function solveForX(p: number, q: number, tolerance: number = 1e-7, maxIterations
     throw new Error("p and q must be in the range (0,1] for real solutions.");
   }
 
-  let x = 0.5; // Initial guess, adjust if needed
+  let x = 0.5;
 
   for (let i = 0; i < maxIterations; i++) {
     let fx = Math.pow(p, x) + Math.pow(q, x) - 1;
@@ -63,7 +63,7 @@ const findMidPoint = (fdv: number, ldt: number, conc: number, fundViewCutoff: nu
 
 }
 
-// const AllocationChart: React.FC<AllocationChartProps> = ({ utilities, setUtilities, colors, onActive }) => {
+
 const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enableUtilityHighlight, viewType }) => {
   const dispatch = useDispatch<AppDispatch>();
 
@@ -79,7 +79,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
   const recommenderToOrgUtilities = apiData.utilities.filter(utility => recommenderNames.includes(utility.username));
 
   const second_max_ldt = dynamicUtilities.map(utility => utility.ldt).sort((a, b) => b - a)[1];
-  const fundViewCutoff = Math.ceil(second_max_ldt / 3000000) * 3000000;
+  const fundViewCutoff = Math.ceil(second_max_ldt / 4000000) * 4000000;
 
   const [currentUtilities, setCurrentUtilities] = useState<currentUtility[]>([]);
   const [trigger, setTrigger] = useState<boolean>(false);
@@ -99,7 +99,6 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
 
   useEffect(() => {
     if (currentUtilities.length == 0) {
-      console.log("Setting Current Utilities");
 
       const newUtilities = dynamicUtilities.map((utility) => {
         let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
@@ -118,9 +117,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
 
 
   const utilityChangeDetected = () => {
-    console.log("INTO UTILITY CHANGE DETECTED", currentUtilities);
     if (currentUtilities.length > 0) {
-      console.log("INTO ");
 
       const updatedUtilities = currentUtilities.map((utility) => {
         let { midPoint, ...rest } = utility;
@@ -139,7 +136,6 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
         newAllocations = funder_allocations(allUtilities, budget, funderName, recommenderNames);
       }
 
-      console.log("ALLOCATIONS_NOW", newAllocations);
       dispatch(setAllocations(newAllocations));
 
     }
@@ -158,6 +154,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
 
 
   const handleReset = () => {
+    if (enableReadOnly) return;
 
     const newUtilities = originalUtilities.map((utility) => {
       let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
@@ -168,10 +165,6 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
     setTrigger(!trigger);
 
     dispatch(setDynamicUtilities(originalUtilities));
-    // const allocations_now = allocate_budget(originalUtilities, budget ?? 0);
-    // const allocations_now = funder_allocations(apiData.utilities, budget, funderName, recommenderNames);
-    // dispatch(setAllocations(allocations_now));
-
 
     let newAllocations: Allocation[] = [] as Allocation[]
     if (viewType == UserRole.Recommender) {
@@ -184,6 +177,9 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
     }
 
     dispatch(setAllocations(newAllocations));
+
+    dispatch(setUtilityChange(false));
+    dispatch(setBudgetChange(-2));
   };
 
 
@@ -233,10 +229,6 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
         [utility.ldt, 0], // Third point on X-axis.  Cap at fundViewCutoff.
       ];
 
-      // const minPxDist = 10;
-      // const minXCoordDist = x.invert(minPxDist) - x.invert(0);
-      // const minYCoordDist = y.invert(0) - y.invert(minPxDist);
-
       const generateCurvePoints = (a: number, b: number, k: number, numPoints = 100) => {
         let curvePoints: [number, number][] = [];
         if (k > Math.exp(3)) {
@@ -257,6 +249,10 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
 
 
       const drag = d3.drag<SVGCircleElement, Point>().on("drag", function (event, d) {
+        if (enableReadOnly) return;
+
+        dispatch(setUtilityChange(true));
+
         dispatch(setActiveUtility(utility.utility_name));
         const i = points.indexOf(d);
 
@@ -321,6 +317,29 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
             newPoints[1][1] = b * Math.pow(0.5, 1 / k_new);
           }
         }
+        else if (k && k < Math.exp(-3)) {
+          let a = newPoints[2][0];
+          let b = newPoints[0][1];
+          let k_new = Math.exp(-3);
+          k = k_new;
+          conc = Math.log(k_new);
+
+          if (p > Math.pow(0.5, 1 / k_new) && q > Math.pow(0.5, 1 / k_new)) {
+            newPoints[1][0] = a * Math.pow(0.5, 1 / k_new);
+            newPoints[1][1] = b * Math.pow(0.5, 1 / k_new);
+          } else if (p > q) {
+            let yCoord = newPoints[1][1];
+            let xCoord = a * Math.pow(1 - Math.pow(yCoord / b, k_new), 1 / k_new);
+            newPoints[1][0] = xCoord;
+          } else if (p < q) {
+            let xCoord = newPoints[1][0];
+            let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k_new), 1 / k_new);
+            newPoints[1][1] = yCoord;
+          } else {
+            newPoints[1][0] = a * Math.pow(0.5, 1 / k_new);
+            newPoints[1][1] = b * Math.pow(0.5, 1 / k_new);
+          }
+        }
 
         let curvePoints: [number, number][] = [];
         if (k !== null) {
@@ -340,9 +359,6 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
           focus.select(`#holder_circle_${utility.utility_name}`).attr("cx", x(curvePoints[curvePoints.length - 1][0])).attr("cy", y(curvePoints[curvePoints.length - 1][1]));
           focus.select(`#holder_text_${utility.utility_name}`).attr("x", x(curvePoints[curvePoints.length - 1][0]) + 15).attr("y", y(curvePoints[curvePoints.length - 1][1]) + 5);
         }
-
-        // change points to newpoints
-        // points = newPoints;
 
         setCurrentUtilities((prevCurrentUtilities) => {
           let updatedUtility = {
@@ -439,34 +455,15 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
   }, [focusedUtility, trigger]);
 
   return (
-    // <svg ref={svgRef} width={750} height={400} ></svg>
 
     <div style={{ position: 'relative' }}>
       <svg ref={svgRef} width={750} height={400} style={{ pointerEvents: enableReadOnly ? "none" : "auto" }}></svg>
-      {/* <button
-        onClick={handleReset}
-        style={{
-          position: 'absolute',
-          bottom: '-30px',
-          right: '50px',
-          padding: '1px 5px',
-          backgroundColor: 'transparent',
-          color: 'black',
-          border: '1px solid #aaa',
-          borderRadius: '4px',
-          cursor: 'pointer',
-          fontSize: '12px',
-          hover: { backgroundColor: '#ddd' }
-        }}
-      >
-        Reset
-      </button> */}
 
       {
         enableReadOnly ? null : (
           <button
             onClick={handleReset}
-            className="absolute bottom-[-30px] right-[45px] px-2 py-0 bg-transparent text-black font-medium border border-gray-400 rounded cursor-pointer text-xs hover:bg-gray-200 hover:border-gray-600"
+            className="absolute bottom-[-30px] right-[45px] px-2 py-0 bg-transparent text-black font-medium border border-gray-400 rounded cursor-pointer text-xs hover:bg-black-200 focus:outline-none"
           >
             Reset
           </button>

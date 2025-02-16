@@ -73,7 +73,7 @@ for role, usernames in users.items():
 
 print(data)
 
-with open("users.json", "w", encoding="utf-8") as f:
+with open("./initial_files/users.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4)
 
 print(f"JSON data saved to users.json")

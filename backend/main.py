@@ -8,14 +8,11 @@ from app.extensions import mongo, jwt
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(auth_bp)
-    CORS(app,  resources={r"/*": {"origins": "*"}})
-    # CORS(app, resources={r"/*/*": {"origins": "*"}})
+    CORS(app, resources={r"/*": {"origins": "*"}})
 
     app.config.from_object(Config)
     mongo.init_app(app)
-    # print("DB initialized", mongo.db.list_collection_names())
     jwt.init_app(app)
-
 
     return app
 

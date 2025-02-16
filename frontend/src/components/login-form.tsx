@@ -31,8 +31,6 @@ export function LoginForm({
     setError("");
 
     try {
-      console.log("username", username);
-      console.log("password", password);
       const response = await fetch("/api/auth", {
         method: "POST",
         headers: {
@@ -40,7 +38,6 @@ export function LoginForm({
           "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify({ username, password }),
-        // mode: "cors",
       });
 
       const data = await response.json();
@@ -49,12 +46,9 @@ export function LoginForm({
       }
 
       localStorage.setItem("jwt", data.access_token);
-      // alert("Login successful!");
       onLoginSuccess();
-      // Redirect or perform further actions here
 
     } catch (err: any) {
-      // setError(err.message); just show the error in the console but not to the user
       console.error(err);
       setError("Login failed! Your account or password may be incorrect.");
     }
@@ -64,7 +58,7 @@ export function LoginForm({
 
   return (
     <div className={cn("flex flex-col gap-6 justify-center items-center", className)} {...props}>
-      <Card /*center the card*/  >
+      <Card>
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>
@@ -76,7 +70,6 @@ export function LoginForm({
             <div className="flex flex-col gap-6">
               <div className="grid gap-2">
                 <div className="flex items-center">
-
                   <Label htmlFor="username">Username</Label>
                 </div>
                 <Input
@@ -84,19 +77,12 @@ export function LoginForm({
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  // placeholder="m@example.com"
                   required
                 />
               </div>
               <div className="grid gap-2">
                 <div className="flex items-center">
                   <Label htmlFor="password">Password</Label>
-                  {/* <a
-                    href="#"
-                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                  >
-                    Forgot your password?
-                  </a> */}
                 </div>
                 <Input
                   id="password"
@@ -110,16 +96,7 @@ export function LoginForm({
               <Button type="submit" className="w-full">
                 Login
               </Button>
-              {/* <Button variant="outline" className="w-full">
-                Login with Google
-              </Button> */}
             </div>
-            {/* <div className="mt-4 text-center text-sm">
-              Don&apos;t have an account?{" "}
-              <a href="#" className="underline underline-offset-4">
-                Sign up
-              </a>
-            </div> */}
           </form>
         </CardContent>
       </Card>

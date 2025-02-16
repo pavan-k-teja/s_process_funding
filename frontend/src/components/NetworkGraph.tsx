@@ -6,7 +6,6 @@ import { updateViewUser } from "@/store";
 
 interface Node {
   id: string;
-  // name: string;
   level: number;
 }
 
@@ -36,13 +35,10 @@ const NetworkGraph: React.FC = () => {
   const currentUser = useSelector((state: RootState) => state.currentUser);
   const currentUserLevel = userToLevel(currentUser?.user?.role ?? "");
   const svgRef = useRef<SVGSVGElement>(null);
-  const viewUser = currentUser?.viewUser;
-  console.log("View User", viewUser);
 
   // Create nodes from profiles
   const nodes: Node[] = profiles.map((profile) => ({
     id: profile.profile_name,
-    // name: profile.username,
     level: userToLevel(profile.role),
   }));
 
@@ -92,11 +88,9 @@ const NetworkGraph: React.FC = () => {
   const { width, height, nodes: positionedNodes } = calculatePositions(nodes);
 
   const handleViewChange = (profileName: string) => {
-    console.log(`Changing view to: ${profileName}`);
     const newViewUser = profiles.find((profile) => profile.profile_name === profileName);
     if (newViewUser) {
       dispatch(updateViewUser(newViewUser));
-      console.log("Modified View User", newViewUser);
     }
   };
 
@@ -129,13 +123,12 @@ const NetworkGraph: React.FC = () => {
         .append("g")
         .attr("class", "node")
         .attr("transform", (d) => `translate(${d.x}, ${d.y})`)
-        .each(function (d) {  
+        .each(function (d) {
           if (
             (d.level > currentUserLevel || d.id === currentUser?.user?.profile_name) &&
             currentUser?.viewUser?.profile_name !== d.id
           ) {
             d3.select(this).style("cursor", "pointer").on("click", () => {
-              console.log(`Node clicked: ${d.id}`);
               handleViewChange(d.id);
             });
           }

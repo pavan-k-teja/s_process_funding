@@ -3,19 +3,6 @@ from app.extensions import mongo
 
 
 class Users:
-    """
-    collection format:
-    {
-        "username": "XO",
-        "password": "scrypt:32768:8:1$OjGUz...",
-        "profile_name": "XO",
-        "role": "recommender",
-        "budget": 10750000,
-        "max_budget": 10750000
-    },
-
-
-    """
 
     @staticmethod
     def find_by_username(username):
@@ -45,7 +32,6 @@ class Users:
                 "username": user["username"],
                 "profile_name": user["profile_name"],
                 "role": user["role"],
-                # now only add budget and max_budget if role is recommender
                 "budget": user["budget"] if user["role"] in limited_roles else None,
                 "max_budget": (
                     user["max_budget"] if user["role"] in limited_roles else None
@@ -64,12 +50,10 @@ class Users:
             return {"username": user["username"], "role": user["role"]}
 
         return False
-    
+
     @staticmethod
     def update_user_budget(username, budget):
         mongo.db.users.update_one(
             {"username": username},
             {"$set": {"budget": budget}},
         )
-            
-        

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import NetworkGraph from '@/components/NetworkGraph';
 import AllocationSidebar from '@/components/AllocationSidebar';
@@ -27,18 +27,10 @@ const SigmaDashboard: React.FC = () => {
     const viewUserRole = currentUser?.viewUser?.role ?? "";
     const viewUserName = currentUser?.viewUser?.profile_name ?? ""
 
-
-
-    // const viewUserRole = currentUser?.viewUser?.role ?? "";
-    // const viewUserName = currentUser?.viewUser?.profile_name ?? ""
-    // const recommenderNames = useSelector((state: RootState) => state.users.filter(user => user.role === "recommender").map(user => user.username));
-
-
-
     useEffect(() => {
 
         if (apiData && isEmpty(currentUser)) {
-            // set current user
+
             const currentUser: CurrentUser = {
                 user: apiData.current_user,
                 viewUser: apiData.current_user
@@ -59,7 +51,6 @@ const SigmaDashboard: React.FC = () => {
 
         else if (apiData && viewUserRole && viewUserRole == "recommender") {
 
-            // const allAllocations = apiData.allocations;
             const filteredAllocations = apiData.allocations.filter((allocation) =>
                 allocation.from_name == currentUser?.viewUser?.username && allocation.allocation_type == "budget");
             dispatch(setAllocations(filteredAllocations))
@@ -128,7 +119,6 @@ const SigmaDashboard: React.FC = () => {
                                 ) : (viewUserRole == "funder") ? (
                                     <AllocationSidebar profileName={viewUserName} recommenders={recommenderAllocations} organizations={organizationAllocations} enableUtilityHighlight={false} />
                                 ) : (viewUserRole == "sigma") ? (
-                                    // <SankeyAllocation />
                                     <AllocationSidebar profileName={viewUserName} organizations={sigmaToOrganizationAllocations} enableUtilityHighlight={false} />
                                 ) : null
                             }
@@ -175,13 +165,8 @@ const SigmaDashboard: React.FC = () => {
                             )
                         }
                     </>
-
-
                 </div>
-
-
             </div>
-
         </>
     )
 }

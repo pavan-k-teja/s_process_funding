@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import AllocationSidebar from '@/components/AllocationSidebar';
 import UtilityTable from '@/components/UtilityTable';
@@ -9,7 +9,7 @@ import { CurrentUser, UserRole } from '@/lib/types';
 // use selector and dispatch
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState, AppDispatch } from '@/store';
-import { setCurrentUser, setAllocations, setUtilities, setDynamicUtilities } from '@/store';
+import { setCurrentUser, setAllocations, setUtilities, setDynamicUtilities, resetChangeDetection } from '@/store';
 
 const RecommenderDashboard: React.FC = () => {
 
@@ -44,13 +44,47 @@ const RecommenderDashboard: React.FC = () => {
     const profileName = currentUser?.user?.profile_name ?? "";
     const allocations = useSelector((state: RootState) => state.allocations);
 
-    const handleDragChange = () => {
-        setShowSaveButton(true);
-    };
+    const utilities = useSelector((state: RootState) => state.dynamicUtilities);
 
-    const handleReset = () => {
+    const changeDetection = useSelector((state: RootState) => state.changeDetection);
+    const currBudget = changeDetection?.isBudgetChanged;
+
+    useEffect(() => {
+        if (changeDetection.isUtilityChanged || changeDetection.isBudgetChanged >= 0) {
+            setShowSaveButton(true);
+        }
+        else {
+            setShowSaveButton(false);
+        }
+
+    }, [changeDetection]);
+
+    const handleSaveChanges = async () => {
+        const confirmed = window.confirm("Are you sure you want to save the changes?");
+        if (!confirmed) {
+            return;
+        }
+        try {
+            await fetch('/api/save_data', {
+                method: 'POST',
+                headers: {
+                    "Authorization": `Bearer ${localStorage.getItem("jwt")}`,
+                    "Access-Control-Allow-Origin": "*",
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ "utilities": utilities, "budget": currBudget < 0 ? null : currBudget })
+            })
+        }
+        catch (error) {
+            console.error(error);
+        }
+
+        dispatch(setUtilities(utilities));
+        dispatch(setDynamicUtilities(utilities));
+
+        dispatch(resetChangeDetection());
         setShowSaveButton(false);
-    };
+    }
 
     return (
         <div className="w-full h-screen flex flex-col">
@@ -82,7 +116,7 @@ const RecommenderDashboard: React.FC = () => {
             {/* Save Changes Button */}
             {showSaveButton && (
                 <div className="fixed bottom-4 right-4">
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={() => alert('Changes saved!')}>
+                    <button className="bg-[#005a16] text-white px-4 py-2 rounded" onClick={handleSaveChanges}>
                         Save Changes
                     </button>
                 </div>

@@ -1,5 +1,5 @@
 import { createSlice, configureStore, PayloadAction } from "@reduxjs/toolkit";
-import { Allocation, Colors, Disagreements, User, Utility, ApiData, FocusUtility, CurrentUser } from "@/lib/types";
+import { Allocation, Colors, Disagreements, User, Utility, ApiData, FocusUtility, CurrentUser, ChangeDetection } from "@/lib/types";
 
 
 const initialStateApiData = {
@@ -127,6 +127,30 @@ const focusUtilitySlice = createSlice({
   },
 });
 
+// Changes utility Slice
+const changeSlice = createSlice({
+  name: "focusUtility",
+  initialState: {
+    "isUtilityChanged": false,
+    "isBudgetChanged": -1,
+  } as ChangeDetection,
+  reducers: {
+    setChangeDetection: (state, action: PayloadAction<ChangeDetection>) => action.payload,
+    resetChangeDetection: () => {
+      return {
+        "isUtilityChanged": false,
+        "isBudgetChanged": -1,
+      } as ChangeDetection;
+    },
+    setUtilityChange: (state, action: PayloadAction<boolean>) => {
+      state.isUtilityChanged = action.payload;
+    },
+    setBudgetChange: (state, action: PayloadAction<number>) => {
+      state.isBudgetChanged = action.payload;
+    },
+  },
+});
+
 const logout = () => (dispatch: AppDispatch) => {
   dispatch(apiDataSlice.actions.resetApiData());
   dispatch(currentUserSlice.actions.resetCurrentUser());
@@ -137,6 +161,7 @@ const logout = () => (dispatch: AppDispatch) => {
   dispatch(allocationsSlice.actions.resetAllocations());
   dispatch(disagreementsSlice.actions.resetDisagreements());
   dispatch(focusUtilitySlice.actions.resetFocusUtility());
+  dispatch(changeSlice.actions.resetChangeDetection());
 };
 
 // Configure Storee
@@ -151,6 +176,7 @@ const store = configureStore({
     allocations: allocationsSlice.reducer,
     disagreements: disagreementsSlice.reducer,
     focusUtility: focusUtilitySlice.reducer,
+    changeDetection: changeSlice.reducer,
   },
 });
 
@@ -168,5 +194,6 @@ export const { setDynamicUtilities, resetDynamicUtilities } = dynamicUtilitiesSl
 export const { setAllocations, resetAllocations } = allocationsSlice.actions;
 export const { setDisagreements, resetDisagreements } = disagreementsSlice.actions;
 export const { setFocusUtility, resetFocusUtility, setActiveUtility, setHoveredUtility } = focusUtilitySlice.actions;
+export const { setChangeDetection, resetChangeDetection, setUtilityChange, setBudgetChange } = changeSlice.actions;
 export { logout };
 export default store;
