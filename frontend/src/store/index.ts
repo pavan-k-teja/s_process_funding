@@ -86,7 +86,7 @@ const allocationsSlice = createSlice({
   name: "allocations",
   initialState: [] as Allocation[],
   reducers: {
-    setAllocations: (state, action: PayloadAction<Allocation[]>) => {
+    setAllocations: (_, action: PayloadAction<Allocation[]>) => {
       return action.payload;
     },
     resetAllocations: () => { return [] as Allocation[]; }
