@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef, useMemo } from "react";
 import { throttle } from 'lodash';
-import { Allocation } from "@/lib/types";
+import { Allocation, Utility } from "@/lib/types";
 import { shortenNumber } from "@/helpers/helper";
 
 import { RootState, AppDispatch } from '@/store';
@@ -20,7 +20,7 @@ const UtilityTable: React.FC<UtilityTableProps> = ({ enableReadOnly, viewType })
 
   const originalUtilities = useSelector((state: RootState) => state.utilities);
 
-  const formattedOriginalUtilities: { [key: string]: any } = {};
+  const formattedOriginalUtilities: { [key: string]: Utility; } = {};
   for (const utility of originalUtilities) {
     formattedOriginalUtilities[utility.utility_name] = utility;
   }
@@ -63,7 +63,7 @@ const UtilityTable: React.FC<UtilityTableProps> = ({ enableReadOnly, viewType })
       newAllocations = allocate_budget(utilities, currBudget ?? (userBudget ?? 0));
 
     }
-    else if (viewType = "funder") {
+    else if (viewType == "funder") {
       const allUtilities = recommenderToOrgUtilities.concat(utilities);
       newAllocations = funder_allocations(allUtilities, currBudget ?? (userBudget ?? 0), funderName, recommenderNames);
     }

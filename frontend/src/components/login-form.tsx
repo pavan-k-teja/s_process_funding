@@ -48,8 +48,8 @@ export function LoginForm({
       localStorage.setItem("jwt", data.access_token);
       onLoginSuccess();
 
-    } catch (err: any) {
-      console.error(err);
+    } catch (err) {
+      console.error(err as Error);
       setError("Login failed! Your account or password may be incorrect.");
     }
   };

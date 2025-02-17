@@ -14,11 +14,11 @@ const DisagreementMatrix: React.FC = () => {
 
     const recommenderUtilities = utilities.filter(utility => recommenders.includes(utility.username));
 
-    let utilitiesData: Record<string, Record<string, number>> = {};
+    const utilitiesData: Record<string, Record<string, number>> = {};
 
-    let allFDV: number[] = [], allLDT: number[] = [], allConc: number[] = [], allDiff: number[] = [];
+    const allFDV: number[] = [], allLDT: number[] = [], allConc: number[] = [], allDiff: number[] = [];
 
-    for (let utility of recommenderUtilities) {
+    for (const utility of recommenderUtilities) {
         const { utility_name, username, fdv, ldt, conc } = utility;
         const disagreement = disagreements[username]?.[utility_name] || 0;
 
@@ -144,43 +144,43 @@ const getNormalizedColor = (value: number, min: number, max: number, type: strin
     }
 
     if (type == "fdv") {
-        let minVal = 0;
-        let maxVal = 3;
-        let norm = (value - minVal) / (maxVal - minVal);
+        const minVal = 0;
+        const maxVal = 3;
+        const norm = (value - minVal) / (maxVal - minVal);
         return normalizedToColor(norm);
     }
 
     else if (type == "ldt") {
-        let minVal = 0;
-        let maxVal = max;
-        let norm = (value - minVal) / (maxVal - minVal);
+        const minVal = 0;
+        const maxVal = max;
+        const norm = (value - minVal) / (maxVal - minVal);
         return normalizedToColor(norm);
     }
 
     else if (type == "conc") {
         if (value < 0) {
-            let minVal = 0;
-            let maxVal = -3;
-            let norm = (value - minVal) / (maxVal - minVal);
+            const minVal = 0;
+            const maxVal = -3;
+            const norm = (value - minVal) / (maxVal - minVal);
             return normalizedToColor(-norm);
 
         }
-        let minVal = 0;
-        let maxVal = 3;
-        let norm = (value - minVal) / (maxVal - minVal);
+        const minVal = 0;
+        const maxVal = 3;
+        const norm = (value - minVal) / (maxVal - minVal);
         return normalizedToColor(norm);
     }
 
     else if (type == "diff") {
         if (value < 0) {
-            let minVal = 0;
-            let maxVal = min;
-            let norm = (value - minVal) / (maxVal - minVal);
+            const minVal = 0;
+            const maxVal = min;
+            const norm = (value - minVal) / (maxVal - minVal);
             return normalizedToColor(-norm);
         }
-        let minVal = 0;
-        let maxVal = max;
-        let norm = (value - minVal) / (maxVal - minVal);
+        const minVal = 0;
+        const maxVal = max;
+        const norm = (value - minVal) / (maxVal - minVal);
         return normalizedToColor(norm);
     }
 

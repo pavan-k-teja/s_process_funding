@@ -41,8 +41,8 @@ function solveForX(p: number, q: number, tolerance: number = 1e-7, maxIterations
   let x = 0.5;
 
   for (let i = 0; i < maxIterations; i++) {
-    let fx = Math.pow(p, x) + Math.pow(q, x) - 1;
-    let dfx = Math.log(p) * Math.pow(p, x) + Math.log(q) * Math.pow(q, x); // Derivative
+    const fx = Math.pow(p, x) + Math.pow(q, x) - 1;
+    const dfx = Math.log(p) * Math.pow(p, x) + Math.log(q) * Math.pow(q, x); // Derivative
 
     if (Math.abs(fx) < tolerance) return x;
 
@@ -54,10 +54,10 @@ function solveForX(p: number, q: number, tolerance: number = 1e-7, maxIterations
 
 const findMidPoint = (fdv: number, ldt: number, conc: number, fundViewCutoff: number): Point => {
 
-  let midX = Math.min(0.5 * ldt, 0.5 * fundViewCutoff);
+  const midX = Math.min(0.5 * ldt, 0.5 * fundViewCutoff);
 
-  let exp_conc = Math.exp(conc);
-  let midY = fdv * Math.pow(1 - Math.pow(midX / ldt, exp_conc), 1 / exp_conc);
+  const exp_conc = Math.exp(conc);
+  const midY = fdv * Math.pow(1 - Math.pow(midX / ldt, exp_conc), 1 / exp_conc);
 
   return [midX, midY];
 
@@ -87,7 +87,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
 
   useEffect(() => {
     const newUtilities = originalUtilities.map((utility) => {
-      let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
+      const midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
       return { username: utility.username, utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
     });
 
@@ -101,7 +101,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
     if (currentUtilities.length == 0) {
 
       const newUtilities = dynamicUtilities.map((utility) => {
-        let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
+        const midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
         return { username: utility.username, utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
       });
 
@@ -120,7 +120,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
     if (currentUtilities.length > 0) {
 
       const updatedUtilities = currentUtilities.map((utility) => {
-        let { midPoint, ...rest } = utility;
+        const { midPoint, ...rest } = utility; // eslint-disable-line @typescript-eslint/no-unused-vars
         return rest;
       });
 
@@ -131,7 +131,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
         newAllocations = allocate_budget(updatedUtilities, budget ?? 0);
 
       }
-      else if (viewType = UserRole.Funder) {
+      else if (viewType == UserRole.Funder) {
         const allUtilities = recommenderToOrgUtilities.concat(updatedUtilities);
         newAllocations = funder_allocations(allUtilities, budget, funderName, recommenderNames);
       }
@@ -157,7 +157,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
     if (enableReadOnly) return;
 
     const newUtilities = originalUtilities.map((utility) => {
-      let midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
+      const midPoint = findMidPoint(utility.fdv, utility.ldt, utility.conc, fundViewCutoff);
       return { username: utility.username, utility_name: utility.utility_name, fdv: utility.fdv, ldt: utility.ldt, conc: utility.conc, midPoint: midPoint };
     });
 
@@ -171,7 +171,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
       newAllocations = allocate_budget(originalUtilities, budget ?? 0);
 
     }
-    else if (viewType = UserRole.Funder) {
+    else if (viewType == UserRole.Funder) {
       const allUtilities = recommenderToOrgUtilities.concat(originalUtilities);
       newAllocations = funder_allocations(allUtilities, budget, funderName, recommenderNames);
     }
@@ -223,21 +223,21 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
     currentUtilities.forEach((utility) => {
       if (utility.fdv === 0 || utility.ldt === 0) return;
 
-      let points: Point[] = [
+      const points: Point[] = [
         [0, utility.fdv], // First point on Y-axis.  Cap at max Y
         utility.midPoint, // Midpoint
         [utility.ldt, 0], // Third point on X-axis.  Cap at fundViewCutoff.
       ];
 
       const generateCurvePoints = (a: number, b: number, k: number, numPoints = 100) => {
-        let curvePoints: [number, number][] = [];
+        const curvePoints: [number, number][] = [];
         if (k > Math.exp(3)) {
           k = Math.exp(3);
         }
         for (let i = 0; i <= numPoints; i++) {
-          let xCoord = (i / numPoints) * a;
+          const xCoord = (i / numPoints) * a;
           if (xCoord > fundViewCutoff) break;
-          let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k), 1 / k);
+          const yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k), 1 / k);
 
           if (!isNaN(yCoord)) {
             curvePoints.push([xCoord, yCoord]);
@@ -288,16 +288,16 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
         }
 
 
-        let p = newPoints[1][0] / newPoints[2][0];
-        let q = newPoints[1][1] / newPoints[0][1];
+        const p = newPoints[1][0] / newPoints[2][0];
+        const q = newPoints[1][1] / newPoints[0][1];
 
         k = solveForX(p, q);
         conc = Math.log(k ?? 1);
 
         if (k && k > Math.exp(3)) {
-          let a = newPoints[2][0];
-          let b = newPoints[0][1];
-          let k_new = Math.exp(3);
+          const a = newPoints[2][0];
+          const b = newPoints[0][1];
+          const k_new = Math.exp(3);
           k = k_new;
           conc = Math.log(k_new);
 
@@ -305,12 +305,12 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
             newPoints[1][0] = a * Math.pow(0.5, 1 / k_new);
             newPoints[1][1] = b * Math.pow(0.5, 1 / k_new);
           } else if (p > q) {
-            let yCoord = newPoints[1][1];
-            let xCoord = a * Math.pow(1 - Math.pow(yCoord / b, k_new), 1 / k_new);
+            const yCoord = newPoints[1][1];
+            const xCoord = a * Math.pow(1 - Math.pow(yCoord / b, k_new), 1 / k_new);
             newPoints[1][0] = xCoord;
           } else if (p < q) {
-            let xCoord = newPoints[1][0];
-            let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k_new), 1 / k_new);
+            const xCoord = newPoints[1][0];
+            const yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k_new), 1 / k_new);
             newPoints[1][1] = yCoord;
           } else {
             newPoints[1][0] = a * Math.pow(0.5, 1 / k_new);
@@ -318,9 +318,9 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
           }
         }
         else if (k && k < Math.exp(-3)) {
-          let a = newPoints[2][0];
-          let b = newPoints[0][1];
-          let k_new = Math.exp(-3);
+          const a = newPoints[2][0];
+          const b = newPoints[0][1];
+          const k_new = Math.exp(-3);
           k = k_new;
           conc = Math.log(k_new);
 
@@ -328,12 +328,12 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
             newPoints[1][0] = a * Math.pow(0.5, 1 / k_new);
             newPoints[1][1] = b * Math.pow(0.5, 1 / k_new);
           } else if (p > q) {
-            let yCoord = newPoints[1][1];
-            let xCoord = a * Math.pow(1 - Math.pow(yCoord / b, k_new), 1 / k_new);
+            const yCoord = newPoints[1][1];
+            const xCoord = a * Math.pow(1 - Math.pow(yCoord / b, k_new), 1 / k_new);
             newPoints[1][0] = xCoord;
           } else if (p < q) {
-            let xCoord = newPoints[1][0];
-            let yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k_new), 1 / k_new);
+            const xCoord = newPoints[1][0];
+            const yCoord = b * Math.pow(1 - Math.pow(xCoord / a, k_new), 1 / k_new);
             newPoints[1][1] = yCoord;
           } else {
             newPoints[1][0] = a * Math.pow(0.5, 1 / k_new);
@@ -361,7 +361,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
         }
 
         setCurrentUtilities((prevCurrentUtilities) => {
-          let updatedUtility = {
+          const updatedUtility = {
             username: utility.username,
             utility_name: utility.utility_name,
             fdv: newPoints[0][1],
@@ -370,7 +370,7 @@ const AllocationChart: React.FC<AllocationChartProps> = ({ enableReadOnly, enabl
             midPoint: [newPoints[1][0], newPoints[1][1]] as Point
           };
 
-          let updatedUtilities = prevCurrentUtilities.map((prevUtility) =>
+          const updatedUtilities = prevCurrentUtilities.map((prevUtility) =>
             prevUtility.utility_name === updatedUtility.utility_name ? updatedUtility : prevUtility
           );
 

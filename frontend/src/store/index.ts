@@ -16,7 +16,7 @@ const apiDataSlice = createSlice({
   name: "apiData",
   initialState: initialStateApiData,
   reducers: {
-    setApiData: (state, action: PayloadAction<ApiData>) => action.payload,
+    setApiData: (_, action: PayloadAction<ApiData>) => action.payload,
     resetApiData: () => initialStateApiData,
   },
 
@@ -28,7 +28,7 @@ const currentUserSlice = createSlice({
   name: "currentUser",
   initialState: {} as CurrentUser,
   reducers: {
-    setCurrentUser: (state, action: PayloadAction<CurrentUser>) => action.payload,
+    setCurrentUser: (_, action: PayloadAction<CurrentUser>) => action.payload,
     resetCurrentUser: () => { return {} as CurrentUser; },
     updateViewUser: (state, action: PayloadAction<User>) => {
       state.viewUser = action.payload
@@ -41,7 +41,7 @@ const usersSlice = createSlice({
   name: "users",
   initialState: [] as User[],
   reducers: {
-    setUsers: (state, action: PayloadAction<User[]>) => action.payload,
+    setUsers: (_, action: PayloadAction<User[]>) => action.payload,
     updateUser: (state, action: PayloadAction<{ username: string; updates: Partial<User> }>) => {
       const { username, updates } = action.payload;
       const user = state.find((u) => u.username === username);
@@ -56,7 +56,7 @@ const colorsSlice = createSlice({
   name: "colors",
   initialState: {} as Colors,
   reducers: {
-    setColors: (state, action: PayloadAction<Colors>) => action.payload,
+    setColors: (_, action: PayloadAction<Colors>) => action.payload,
     resetColors: () => { return {} as Colors; }
   },
 });
@@ -66,7 +66,7 @@ const utilitiesSlice = createSlice({
   name: "utilities",
   initialState: [] as Utility[],
   reducers: {
-    setUtilities: (state, action: PayloadAction<Utility[]>) => action.payload,
+    setUtilities: (_, action: PayloadAction<Utility[]>) => action.payload,
     resetUtilities: () => { return [] as Utility[]; }
   },
 });
@@ -76,7 +76,7 @@ const dynamicUtilitiesSlice = createSlice({
   name: "dynamicUtilities",
   initialState: [] as Utility[],
   reducers: {
-    setDynamicUtilities: (state, action: PayloadAction<Utility[]>) => action.payload,
+    setDynamicUtilities: (_, action: PayloadAction<Utility[]>) => action.payload,
     resetDynamicUtilities: () => { return [] as Utility[]; }
   },
 });
@@ -98,7 +98,7 @@ const disagreementsSlice = createSlice({
   name: "disagreements",
   initialState: {} as Disagreements,
   reducers: {
-    setDisagreements: (state, action: PayloadAction<Disagreements>) => action.payload,
+    setDisagreements: (_, action: PayloadAction<Disagreements>) => action.payload,
     resetDisagreements: () => { return {} as Disagreements; }
   },
 });
@@ -111,7 +111,7 @@ const focusUtilitySlice = createSlice({
     "hoveredUtility": "",
   } as FocusUtility,
   reducers: {
-    setFocusUtility: (state, action: PayloadAction<FocusUtility>) => action.payload,
+    setFocusUtility: (_, action: PayloadAction<FocusUtility>) => action.payload,
     resetFocusUtility: () => {
       return {
         "activeUtility": "",
@@ -135,7 +135,7 @@ const changeSlice = createSlice({
     "isBudgetChanged": -1,
   } as ChangeDetection,
   reducers: {
-    setChangeDetection: (state, action: PayloadAction<ChangeDetection>) => action.payload,
+    setChangeDetection: (_, action: PayloadAction<ChangeDetection>) => action.payload,
     resetChangeDetection: () => {
       return {
         "isUtilityChanged": false,

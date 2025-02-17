@@ -15,7 +15,7 @@ const DisagreementsSidebar: React.FC = () => {
 
     const getSortedDisagreements = (recommender: string) => {
         const orgDisagreements = disagreements[recommender] || {};
-        const filteredDisagreements = Object.fromEntries(Object.entries(orgDisagreements).filter(([org, value]) => value !== 0));
+        const filteredDisagreements = Object.fromEntries(Object.entries(orgDisagreements).filter(([, value]) => value !== 0));
 
         return Object.entries(filteredDisagreements)
             .sort(([, a], [, b]) => Math.abs(b) - Math.abs(a));
