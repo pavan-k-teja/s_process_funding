@@ -17,6 +17,10 @@ import threading
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/api")
 
+@auth_bp.route("/health", methods=["GET"])
+def health():
+    return jsonify({"msg": "Healthy"}), 200
+
 
 @auth_bp.route("/auth", methods=["POST"])
 def login():
