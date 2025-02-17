@@ -6,6 +6,7 @@ old*/
 instance/*
 !instance/.gitignore
 .webassets-cache
+.vercel
 
 .env*
 !.env.example
