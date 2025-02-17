@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696a6"
+  },
+  "username": "XO",
+  "password": "scrypt:32768:8:1$w3gLemCyPSodX6xJ$de7f9b06b7b90f47eb5e73207fb5425f1377ced01ad2bb21ecbc4f873152235b565e699f1dbe58ed20bce9c83179b26ce454fb0ceb79b173cd3c76a4bd6b23bf",
+  "profile_name": "XO",
+  "role": "recommender",
+  "budget": 10750000,
+  "max_budget": 10750000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696a7"
+  },
+  "username": "VA",
+  "password": "scrypt:32768:8:1$Yz7xZw7WEiqGxkan$28c14ac089d48a5e53db70904f70c03290d435c3a6ee49856e462326c6fe59322515251b3636108c3b1e765990e39ec60f42a67d8057bcec8428ef539d204bea",
+  "profile_name": "VA",
+  "role": "recommender",
+  "budget": 10750000,
+  "max_budget": 10750000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696a8"
+  },
+  "username": "IF",
+  "password": "scrypt:32768:8:1$22P8r92ZDZtyX06t$5e234d6c8bd4bf772c188cb891524700a2a37ef7493854c9f81c5d343cc1fea98f19d31b10cf1d181b3a5def3dbeed5175e909d40ff3f0abe06ec97a709223d1",
+  "profile_name": "IF",
+  "role": "recommender",
+  "budget": 10750000,
+  "max_budget": 10750000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696a9"
+  },
+  "username": "GZ",
+  "password": "scrypt:32768:8:1$eb5m39a24b4hHjvt$899e3655c9a07312ea02c65e3874919158d222616393b460d7ce89004e92d00b2fc33625267d75d478ca3f7e5745b004ac2700a5ccf618ce75018ca759bdf97e",
+  "profile_name": "GZ",
+  "role": "recommender",
+  "budget": 10750000,
+  "max_budget": 10750000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696aa"
+  },
+  "username": "CF",
+  "password": "scrypt:32768:8:1$fbt2ZPFGbCdmycWM$c42fbb235df162ff8cdc155fcf20d72d642089c992889bc32e4adc0b12fc95ad7637cb4185ebad5f4ad7c80359029bd533a00cd75d8610f0b50dba4c92319c2b",
+  "profile_name": "CF",
+  "role": "recommender",
+  "budget": 10750000,
+  "max_budget": 10750000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ab"
+  },
+  "username": "BO",
+  "password": "scrypt:32768:8:1$F6SCZbLvIvXyUuaD$cac650b8e197909f77e0aac3dac86cc209c1bd49098d4ed7615e72bdf13fce068d50a3628d31f1f3aadfc9b1a6336b8111d53665c263b5bc5b77a3eaa1e566ea",
+  "profile_name": "BO",
+  "role": "recommender",
+  "budget": 10750000,
+  "max_budget": 10750000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ac"
+  },
+  "username": "JT",
+  "password": "scrypt:32768:8:1$pnQ3srOvY3NWHgUb$5ab127e5ef2ca4a586db616ec6c34029c6089c55bae5f2dc0f951dddc16a091e79e136adb917fc42bdae5a5b939b3792bdb8dfa9e0e95c3b84c4102e840d1d1c",
+  "profile_name": "JT",
+  "role": "funder",
+  "budget": 10000000,
+  "max_budget": 10000000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ad"
+  },
+  "username": "JM",
+  "password": "scrypt:32768:8:1$y2kFBLAlUdjfOWj2$18f5e521b1186d892c0241d992ca28a34c03f42a746e31351f5f95533c6c14ffe34b82d751df6a7ebb1229978b33b51324d33fe5df23c16e9cc3e67bf3651cab",
+  "profile_name": "JM",
+  "role": "funder",
+  "budget": 250000,
+  "max_budget": 250000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ae"
+  },
+  "username": "DM",
+  "password": "scrypt:32768:8:1$lLxgrpITXt0VRUxr$e6310ee633be6367b2ef09c96322ec56f060bbce813e0be734fdbb1d36203de7a29fa127ad1aa14f8f1e4bb499b3d0e4e00a4ca377a297c6ce5ea73eaf61983f",
+  "profile_name": "DM",
+  "role": "funder",
+  "budget": 500000,
+  "max_budget": 500000
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696af"
+  },
+  "username": "SIGMA",
+  "password": "scrypt:32768:8:1$LutJKetlwPZtHfVZ$1e5682f696bdc2acf2b680293ab8630b2fe5a9c424fc6200e02093ab61c732c0e5032cfdff2de409ad0451b931b01216640e71cac242f52bcd214512bc7ee289",
+  "profile_name": "Σ",
+  "role": "sigma",
+  "budget": 0,
+  "max_budget": 0
+}]

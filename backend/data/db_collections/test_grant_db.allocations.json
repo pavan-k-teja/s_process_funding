@@ -1,0 +1,10503 @@
+[{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d1"
+  },
+  "from_name": "XO",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d2"
+  },
+  "from_name": "XO",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d3"
+  },
+  "from_name": "XO",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d4"
+  },
+  "from_name": "XO",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 1613575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d5"
+  },
+  "from_name": "XO",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d6"
+  },
+  "from_name": "XO",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d7"
+  },
+  "from_name": "XO",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d8"
+  },
+  "from_name": "XO",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697d9"
+  },
+  "from_name": "XO",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 202100
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697da"
+  },
+  "from_name": "XO",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 1613575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697db"
+  },
+  "from_name": "XO",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697dc"
+  },
+  "from_name": "XO",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697dd"
+  },
+  "from_name": "XO",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697de"
+  },
+  "from_name": "XO",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697df"
+  },
+  "from_name": "XO",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e0"
+  },
+  "from_name": "XO",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e1"
+  },
+  "from_name": "XO",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e2"
+  },
+  "from_name": "XO",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e3"
+  },
+  "from_name": "XO",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e4"
+  },
+  "from_name": "XO",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e5"
+  },
+  "from_name": "XO",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e6"
+  },
+  "from_name": "XO",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e7"
+  },
+  "from_name": "XO",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e8"
+  },
+  "from_name": "XO",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 1642600
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697e9"
+  },
+  "from_name": "XO",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697ea"
+  },
+  "from_name": "XO",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697eb"
+  },
+  "from_name": "XO",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697ec"
+  },
+  "from_name": "XO",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697ed"
+  },
+  "from_name": "XO",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697ee"
+  },
+  "from_name": "XO",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697ef"
+  },
+  "from_name": "XO",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f0"
+  },
+  "from_name": "XO",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f1"
+  },
+  "from_name": "XO",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 67725
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f2"
+  },
+  "from_name": "XO",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f3"
+  },
+  "from_name": "XO",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f4"
+  },
+  "from_name": "XO",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f5"
+  },
+  "from_name": "XO",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 371950
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f6"
+  },
+  "from_name": "XO",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f7"
+  },
+  "from_name": "XO",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f8"
+  },
+  "from_name": "XO",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697f9"
+  },
+  "from_name": "XO",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697fa"
+  },
+  "from_name": "XO",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 1353425
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697fb"
+  },
+  "from_name": "XO",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697fc"
+  },
+  "from_name": "XO",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697fd"
+  },
+  "from_name": "XO",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 3885050
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697fe"
+  },
+  "from_name": "XO",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518697ff"
+  },
+  "from_name": "XO",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869800"
+  },
+  "from_name": "XO",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869801"
+  },
+  "from_name": "XO",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 1613575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869802"
+  },
+  "from_name": "XO",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869803"
+  },
+  "from_name": "XO",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869804"
+  },
+  "from_name": "XO",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869805"
+  },
+  "from_name": "XO",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869806"
+  },
+  "from_name": "XO",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 202100
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869807"
+  },
+  "from_name": "XO",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 1613575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869808"
+  },
+  "from_name": "XO",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869809"
+  },
+  "from_name": "XO",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186980a"
+  },
+  "from_name": "XO",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186980b"
+  },
+  "from_name": "XO",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186980c"
+  },
+  "from_name": "XO",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186980d"
+  },
+  "from_name": "XO",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186980e"
+  },
+  "from_name": "XO",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186980f"
+  },
+  "from_name": "XO",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869810"
+  },
+  "from_name": "XO",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869811"
+  },
+  "from_name": "XO",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869812"
+  },
+  "from_name": "XO",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869813"
+  },
+  "from_name": "XO",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869814"
+  },
+  "from_name": "XO",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869815"
+  },
+  "from_name": "XO",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 1642600
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869816"
+  },
+  "from_name": "XO",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869817"
+  },
+  "from_name": "XO",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869818"
+  },
+  "from_name": "XO",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869819"
+  },
+  "from_name": "XO",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186981a"
+  },
+  "from_name": "XO",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186981b"
+  },
+  "from_name": "XO",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186981c"
+  },
+  "from_name": "XO",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186981d"
+  },
+  "from_name": "XO",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186981e"
+  },
+  "from_name": "XO",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 67725
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186981f"
+  },
+  "from_name": "XO",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869820"
+  },
+  "from_name": "XO",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869821"
+  },
+  "from_name": "XO",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869822"
+  },
+  "from_name": "XO",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 371950
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869823"
+  },
+  "from_name": "XO",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869824"
+  },
+  "from_name": "XO",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869825"
+  },
+  "from_name": "XO",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869826"
+  },
+  "from_name": "XO",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869827"
+  },
+  "from_name": "XO",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 1353425
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869828"
+  },
+  "from_name": "XO",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869829"
+  },
+  "from_name": "XO",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186982a"
+  },
+  "from_name": "XO",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 3885050
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186982b"
+  },
+  "from_name": "VA",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 232200
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186982c"
+  },
+  "from_name": "VA",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 612750
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186982d"
+  },
+  "from_name": "VA",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186982e"
+  },
+  "from_name": "VA",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 952450
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186982f"
+  },
+  "from_name": "VA",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869830"
+  },
+  "from_name": "VA",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869831"
+  },
+  "from_name": "VA",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869832"
+  },
+  "from_name": "VA",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869833"
+  },
+  "from_name": "VA",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 153725
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869834"
+  },
+  "from_name": "VA",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 1008350
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869835"
+  },
+  "from_name": "VA",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869836"
+  },
+  "from_name": "VA",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869837"
+  },
+  "from_name": "VA",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 109650
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869838"
+  },
+  "from_name": "VA",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869839"
+  },
+  "from_name": "VA",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186983a"
+  },
+  "from_name": "VA",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186983b"
+  },
+  "from_name": "VA",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186983c"
+  },
+  "from_name": "VA",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186983d"
+  },
+  "from_name": "VA",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186983e"
+  },
+  "from_name": "VA",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186983f"
+  },
+  "from_name": "VA",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869840"
+  },
+  "from_name": "VA",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869841"
+  },
+  "from_name": "VA",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869842"
+  },
+  "from_name": "VA",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 1056725
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869843"
+  },
+  "from_name": "VA",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869844"
+  },
+  "from_name": "VA",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869845"
+  },
+  "from_name": "VA",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869846"
+  },
+  "from_name": "VA",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869847"
+  },
+  "from_name": "VA",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869848"
+  },
+  "from_name": "VA",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869849"
+  },
+  "from_name": "VA",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186984a"
+  },
+  "from_name": "VA",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186984b"
+  },
+  "from_name": "VA",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186984c"
+  },
+  "from_name": "VA",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186984d"
+  },
+  "from_name": "VA",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186984e"
+  },
+  "from_name": "VA",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186984f"
+  },
+  "from_name": "VA",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 323575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869850"
+  },
+  "from_name": "VA",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869851"
+  },
+  "from_name": "VA",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869852"
+  },
+  "from_name": "VA",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 1113700
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869853"
+  },
+  "from_name": "VA",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 98900
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869854"
+  },
+  "from_name": "VA",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 649300
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869855"
+  },
+  "from_name": "VA",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 125775
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869856"
+  },
+  "from_name": "VA",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869857"
+  },
+  "from_name": "VA",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 4312900
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869858"
+  },
+  "from_name": "VA",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 232200
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869859"
+  },
+  "from_name": "VA",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 612750
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186985a"
+  },
+  "from_name": "VA",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186985b"
+  },
+  "from_name": "VA",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 952450
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186985c"
+  },
+  "from_name": "VA",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186985d"
+  },
+  "from_name": "VA",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186985e"
+  },
+  "from_name": "VA",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186985f"
+  },
+  "from_name": "VA",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869860"
+  },
+  "from_name": "VA",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 153725
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869861"
+  },
+  "from_name": "VA",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 1008350
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869862"
+  },
+  "from_name": "VA",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869863"
+  },
+  "from_name": "VA",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869864"
+  },
+  "from_name": "VA",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 109650
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869865"
+  },
+  "from_name": "VA",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869866"
+  },
+  "from_name": "VA",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869867"
+  },
+  "from_name": "VA",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869868"
+  },
+  "from_name": "VA",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869869"
+  },
+  "from_name": "VA",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186986a"
+  },
+  "from_name": "VA",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186986b"
+  },
+  "from_name": "VA",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186986c"
+  },
+  "from_name": "VA",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186986d"
+  },
+  "from_name": "VA",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186986e"
+  },
+  "from_name": "VA",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186986f"
+  },
+  "from_name": "VA",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 1056725
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869870"
+  },
+  "from_name": "VA",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869871"
+  },
+  "from_name": "VA",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869872"
+  },
+  "from_name": "VA",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869873"
+  },
+  "from_name": "VA",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869874"
+  },
+  "from_name": "VA",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869875"
+  },
+  "from_name": "VA",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869876"
+  },
+  "from_name": "VA",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869877"
+  },
+  "from_name": "VA",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869878"
+  },
+  "from_name": "VA",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869879"
+  },
+  "from_name": "VA",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186987a"
+  },
+  "from_name": "VA",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186987b"
+  },
+  "from_name": "VA",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186987c"
+  },
+  "from_name": "VA",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 323575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186987d"
+  },
+  "from_name": "VA",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186987e"
+  },
+  "from_name": "VA",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186987f"
+  },
+  "from_name": "VA",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 1113700
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869880"
+  },
+  "from_name": "VA",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 98900
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869881"
+  },
+  "from_name": "VA",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 649300
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869882"
+  },
+  "from_name": "VA",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 125775
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869883"
+  },
+  "from_name": "VA",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869884"
+  },
+  "from_name": "VA",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 4312900
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869885"
+  },
+  "from_name": "IF",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 250475
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869886"
+  },
+  "from_name": "IF",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869887"
+  },
+  "from_name": "IF",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 600925
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869888"
+  },
+  "from_name": "IF",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 2000575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869889"
+  },
+  "from_name": "IF",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186988a"
+  },
+  "from_name": "IF",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186988b"
+  },
+  "from_name": "IF",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186988c"
+  },
+  "from_name": "IF",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186988d"
+  },
+  "from_name": "IF",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 108575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186988e"
+  },
+  "from_name": "IF",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 500950
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186988f"
+  },
+  "from_name": "IF",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869890"
+  },
+  "from_name": "IF",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869891"
+  },
+  "from_name": "IF",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869892"
+  },
+  "from_name": "IF",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869893"
+  },
+  "from_name": "IF",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869894"
+  },
+  "from_name": "IF",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869895"
+  },
+  "from_name": "IF",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869896"
+  },
+  "from_name": "IF",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869897"
+  },
+  "from_name": "IF",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 500950
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869898"
+  },
+  "from_name": "IF",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f051869899"
+  },
+  "from_name": "IF",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186989a"
+  },
+  "from_name": "IF",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186989b"
+  },
+  "from_name": "IF",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 2500450
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186989c"
+  },
+  "from_name": "IF",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 800875
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186989d"
+  },
+  "from_name": "IF",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186989e"
+  },
+  "from_name": "IF",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f05186989f"
+  },
+  "from_name": "IF",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a0"
+  },
+  "from_name": "IF",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a1"
+  },
+  "from_name": "IF",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a2"
+  },
+  "from_name": "IF",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a3"
+  },
+  "from_name": "IF",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 1000825
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a4"
+  },
+  "from_name": "IF",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a5"
+  },
+  "from_name": "IF",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a6"
+  },
+  "from_name": "IF",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a7"
+  },
+  "from_name": "IF",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a8"
+  },
+  "from_name": "IF",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698a9"
+  },
+  "from_name": "IF",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 175225
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698aa"
+  },
+  "from_name": "IF",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698ab"
+  },
+  "from_name": "IF",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698ac"
+  },
+  "from_name": "IF",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 1000825
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698ad"
+  },
+  "from_name": "IF",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698ae"
+  },
+  "from_name": "IF",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 320350
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698af"
+  },
+  "from_name": "IF",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b0"
+  },
+  "from_name": "IF",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b1"
+  },
+  "from_name": "IF",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 989000
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b2"
+  },
+  "from_name": "IF",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 250475
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b3"
+  },
+  "from_name": "IF",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b4"
+  },
+  "from_name": "IF",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 600925
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b5"
+  },
+  "from_name": "IF",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 2000575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b6"
+  },
+  "from_name": "IF",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b7"
+  },
+  "from_name": "IF",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b8"
+  },
+  "from_name": "IF",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698b9"
+  },
+  "from_name": "IF",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698ba"
+  },
+  "from_name": "IF",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 108575
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698bb"
+  },
+  "from_name": "IF",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 500950
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698bc"
+  },
+  "from_name": "IF",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698bd"
+  },
+  "from_name": "IF",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698be"
+  },
+  "from_name": "IF",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698bf"
+  },
+  "from_name": "IF",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c0"
+  },
+  "from_name": "IF",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c1"
+  },
+  "from_name": "IF",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c2"
+  },
+  "from_name": "IF",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c3"
+  },
+  "from_name": "IF",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c4"
+  },
+  "from_name": "IF",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 500950
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c5"
+  },
+  "from_name": "IF",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c6"
+  },
+  "from_name": "IF",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c7"
+  },
+  "from_name": "IF",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c8"
+  },
+  "from_name": "IF",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 2500450
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698c9"
+  },
+  "from_name": "IF",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 800875
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698ca"
+  },
+  "from_name": "IF",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698cb"
+  },
+  "from_name": "IF",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698cc"
+  },
+  "from_name": "IF",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698cd"
+  },
+  "from_name": "IF",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698ce"
+  },
+  "from_name": "IF",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698cf"
+  },
+  "from_name": "IF",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d0"
+  },
+  "from_name": "IF",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 1000825
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d1"
+  },
+  "from_name": "IF",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d2"
+  },
+  "from_name": "IF",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d3"
+  },
+  "from_name": "IF",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d4"
+  },
+  "from_name": "IF",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d5"
+  },
+  "from_name": "IF",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d6"
+  },
+  "from_name": "IF",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 175225
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d7"
+  },
+  "from_name": "IF",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d8"
+  },
+  "from_name": "IF",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698d9"
+  },
+  "from_name": "IF",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 1000825
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698da"
+  },
+  "from_name": "IF",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698db"
+  },
+  "from_name": "IF",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 320350
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698dc"
+  },
+  "from_name": "IF",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698dd"
+  },
+  "from_name": "IF",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5fb812c0f0518698de"
+  },
+  "from_name": "IF",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 989000
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698df"
+  },
+  "from_name": "GZ",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 1414700
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e0"
+  },
+  "from_name": "GZ",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e1"
+  },
+  "from_name": "GZ",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 448275
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e2"
+  },
+  "from_name": "GZ",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 1408250
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e3"
+  },
+  "from_name": "GZ",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 27950
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e4"
+  },
+  "from_name": "GZ",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e5"
+  },
+  "from_name": "GZ",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e6"
+  },
+  "from_name": "GZ",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e7"
+  },
+  "from_name": "GZ",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e8"
+  },
+  "from_name": "GZ",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 279500
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698e9"
+  },
+  "from_name": "GZ",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 11825
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698ea"
+  },
+  "from_name": "GZ",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698eb"
+  },
+  "from_name": "GZ",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698ec"
+  },
+  "from_name": "GZ",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698ed"
+  },
+  "from_name": "GZ",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698ee"
+  },
+  "from_name": "GZ",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 58050
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698ef"
+  },
+  "from_name": "GZ",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f0"
+  },
+  "from_name": "GZ",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f1"
+  },
+  "from_name": "GZ",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f2"
+  },
+  "from_name": "GZ",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f3"
+  },
+  "from_name": "GZ",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f4"
+  },
+  "from_name": "GZ",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f5"
+  },
+  "from_name": "GZ",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 29025
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f6"
+  },
+  "from_name": "GZ",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 26875
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f7"
+  },
+  "from_name": "GZ",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f8"
+  },
+  "from_name": "GZ",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698f9"
+  },
+  "from_name": "GZ",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698fa"
+  },
+  "from_name": "GZ",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698fb"
+  },
+  "from_name": "GZ",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698fc"
+  },
+  "from_name": "GZ",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698fd"
+  },
+  "from_name": "GZ",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 273050
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698fe"
+  },
+  "from_name": "GZ",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518698ff"
+  },
+  "from_name": "GZ",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 80625
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869900"
+  },
+  "from_name": "GZ",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869901"
+  },
+  "from_name": "GZ",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869902"
+  },
+  "from_name": "GZ",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869903"
+  },
+  "from_name": "GZ",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 500950
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869904"
+  },
+  "from_name": "GZ",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 235425
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869905"
+  },
+  "from_name": "GZ",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869906"
+  },
+  "from_name": "GZ",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869907"
+  },
+  "from_name": "GZ",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869908"
+  },
+  "from_name": "GZ",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869909"
+  },
+  "from_name": "GZ",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186990a"
+  },
+  "from_name": "GZ",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186990b"
+  },
+  "from_name": "GZ",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 5955500
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186990c"
+  },
+  "from_name": "GZ",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 1414700
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186990d"
+  },
+  "from_name": "GZ",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186990e"
+  },
+  "from_name": "GZ",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 448275
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186990f"
+  },
+  "from_name": "GZ",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 1408250
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869910"
+  },
+  "from_name": "GZ",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 27950
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869911"
+  },
+  "from_name": "GZ",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869912"
+  },
+  "from_name": "GZ",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869913"
+  },
+  "from_name": "GZ",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869914"
+  },
+  "from_name": "GZ",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869915"
+  },
+  "from_name": "GZ",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 279500
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869916"
+  },
+  "from_name": "GZ",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 11825
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869917"
+  },
+  "from_name": "GZ",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869918"
+  },
+  "from_name": "GZ",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869919"
+  },
+  "from_name": "GZ",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186991a"
+  },
+  "from_name": "GZ",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186991b"
+  },
+  "from_name": "GZ",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 58050
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186991c"
+  },
+  "from_name": "GZ",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186991d"
+  },
+  "from_name": "GZ",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186991e"
+  },
+  "from_name": "GZ",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186991f"
+  },
+  "from_name": "GZ",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869920"
+  },
+  "from_name": "GZ",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869921"
+  },
+  "from_name": "GZ",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869922"
+  },
+  "from_name": "GZ",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 29025
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869923"
+  },
+  "from_name": "GZ",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 26875
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869924"
+  },
+  "from_name": "GZ",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869925"
+  },
+  "from_name": "GZ",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869926"
+  },
+  "from_name": "GZ",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869927"
+  },
+  "from_name": "GZ",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869928"
+  },
+  "from_name": "GZ",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869929"
+  },
+  "from_name": "GZ",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186992a"
+  },
+  "from_name": "GZ",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 273050
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186992b"
+  },
+  "from_name": "GZ",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186992c"
+  },
+  "from_name": "GZ",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 80625
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186992d"
+  },
+  "from_name": "GZ",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186992e"
+  },
+  "from_name": "GZ",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186992f"
+  },
+  "from_name": "GZ",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869930"
+  },
+  "from_name": "GZ",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 500950
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869931"
+  },
+  "from_name": "GZ",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 235425
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869932"
+  },
+  "from_name": "GZ",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869933"
+  },
+  "from_name": "GZ",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869934"
+  },
+  "from_name": "GZ",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869935"
+  },
+  "from_name": "GZ",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869936"
+  },
+  "from_name": "GZ",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869937"
+  },
+  "from_name": "GZ",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869938"
+  },
+  "from_name": "GZ",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 5955500
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869939"
+  },
+  "from_name": "CF",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 875050
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186993a"
+  },
+  "from_name": "CF",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 370875
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186993b"
+  },
+  "from_name": "CF",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186993c"
+  },
+  "from_name": "CF",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 417100
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186993d"
+  },
+  "from_name": "CF",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186993e"
+  },
+  "from_name": "CF",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 126850
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186993f"
+  },
+  "from_name": "CF",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869940"
+  },
+  "from_name": "CF",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869941"
+  },
+  "from_name": "CF",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 133300
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869942"
+  },
+  "from_name": "CF",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 193500
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869943"
+  },
+  "from_name": "CF",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869944"
+  },
+  "from_name": "CF",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869945"
+  },
+  "from_name": "CF",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869946"
+  },
+  "from_name": "CF",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869947"
+  },
+  "from_name": "CF",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869948"
+  },
+  "from_name": "CF",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869949"
+  },
+  "from_name": "CF",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186994a"
+  },
+  "from_name": "CF",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186994b"
+  },
+  "from_name": "CF",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 457950
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186994c"
+  },
+  "from_name": "CF",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186994d"
+  },
+  "from_name": "CF",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186994e"
+  },
+  "from_name": "CF",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186994f"
+  },
+  "from_name": "CF",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 492350
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869950"
+  },
+  "from_name": "CF",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 454725
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869951"
+  },
+  "from_name": "CF",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869952"
+  },
+  "from_name": "CF",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869953"
+  },
+  "from_name": "CF",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869954"
+  },
+  "from_name": "CF",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869955"
+  },
+  "from_name": "CF",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869956"
+  },
+  "from_name": "CF",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869957"
+  },
+  "from_name": "CF",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869958"
+  },
+  "from_name": "CF",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869959"
+  },
+  "from_name": "CF",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186995a"
+  },
+  "from_name": "CF",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186995b"
+  },
+  "from_name": "CF",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186995c"
+  },
+  "from_name": "CF",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186995d"
+  },
+  "from_name": "CF",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 350450
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186995e"
+  },
+  "from_name": "CF",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 135450
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186995f"
+  },
+  "from_name": "CF",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869960"
+  },
+  "from_name": "CF",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869961"
+  },
+  "from_name": "CF",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869962"
+  },
+  "from_name": "CF",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 240800
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869963"
+  },
+  "from_name": "CF",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869964"
+  },
+  "from_name": "CF",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869965"
+  },
+  "from_name": "CF",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 6501600
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869966"
+  },
+  "from_name": "CF",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 875050
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869967"
+  },
+  "from_name": "CF",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 370875
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869968"
+  },
+  "from_name": "CF",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869969"
+  },
+  "from_name": "CF",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 417100
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186996a"
+  },
+  "from_name": "CF",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186996b"
+  },
+  "from_name": "CF",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 126850
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186996c"
+  },
+  "from_name": "CF",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186996d"
+  },
+  "from_name": "CF",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186996e"
+  },
+  "from_name": "CF",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 133300
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186996f"
+  },
+  "from_name": "CF",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 193500
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869970"
+  },
+  "from_name": "CF",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869971"
+  },
+  "from_name": "CF",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869972"
+  },
+  "from_name": "CF",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869973"
+  },
+  "from_name": "CF",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869974"
+  },
+  "from_name": "CF",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869975"
+  },
+  "from_name": "CF",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869976"
+  },
+  "from_name": "CF",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869977"
+  },
+  "from_name": "CF",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869978"
+  },
+  "from_name": "CF",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 457950
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869979"
+  },
+  "from_name": "CF",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186997a"
+  },
+  "from_name": "CF",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186997b"
+  },
+  "from_name": "CF",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186997c"
+  },
+  "from_name": "CF",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 492350
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186997d"
+  },
+  "from_name": "CF",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 454725
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186997e"
+  },
+  "from_name": "CF",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186997f"
+  },
+  "from_name": "CF",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869980"
+  },
+  "from_name": "CF",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869981"
+  },
+  "from_name": "CF",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869982"
+  },
+  "from_name": "CF",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869983"
+  },
+  "from_name": "CF",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869984"
+  },
+  "from_name": "CF",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869985"
+  },
+  "from_name": "CF",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869986"
+  },
+  "from_name": "CF",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869987"
+  },
+  "from_name": "CF",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869988"
+  },
+  "from_name": "CF",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869989"
+  },
+  "from_name": "CF",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186998a"
+  },
+  "from_name": "CF",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 350450
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186998b"
+  },
+  "from_name": "CF",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 135450
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186998c"
+  },
+  "from_name": "CF",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186998d"
+  },
+  "from_name": "CF",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186998e"
+  },
+  "from_name": "CF",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186998f"
+  },
+  "from_name": "CF",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 240800
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869990"
+  },
+  "from_name": "CF",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869991"
+  },
+  "from_name": "CF",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869992"
+  },
+  "from_name": "CF",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 6501600
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869993"
+  },
+  "from_name": "BO",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 660050
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869994"
+  },
+  "from_name": "BO",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 1075
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869995"
+  },
+  "from_name": "BO",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 1650125
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869996"
+  },
+  "from_name": "BO",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 1276025
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869997"
+  },
+  "from_name": "BO",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869998"
+  },
+  "from_name": "BO",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 12900
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f051869999"
+  },
+  "from_name": "BO",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186999a"
+  },
+  "from_name": "BO",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186999b"
+  },
+  "from_name": "BO",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 26875
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186999c"
+  },
+  "from_name": "BO",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 868600
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186999d"
+  },
+  "from_name": "BO",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186999e"
+  },
+  "from_name": "BO",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f05186999f"
+  },
+  "from_name": "BO",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 13975
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a0"
+  },
+  "from_name": "BO",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 580500
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a1"
+  },
+  "from_name": "BO",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 1075
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a2"
+  },
+  "from_name": "BO",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a3"
+  },
+  "from_name": "BO",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a4"
+  },
+  "from_name": "BO",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 9675
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a5"
+  },
+  "from_name": "BO",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 1075
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a6"
+  },
+  "from_name": "BO",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 1075
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a7"
+  },
+  "from_name": "BO",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a8"
+  },
+  "from_name": "BO",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699a9"
+  },
+  "from_name": "BO",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 891175
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699aa"
+  },
+  "from_name": "BO",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 962125
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699ab"
+  },
+  "from_name": "BO",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699ac"
+  },
+  "from_name": "BO",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699ad"
+  },
+  "from_name": "BO",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699ae"
+  },
+  "from_name": "BO",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699af"
+  },
+  "from_name": "BO",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b0"
+  },
+  "from_name": "BO",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 245100
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b1"
+  },
+  "from_name": "BO",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 1385675
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b2"
+  },
+  "from_name": "BO",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b3"
+  },
+  "from_name": "BO",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 140825
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b4"
+  },
+  "from_name": "BO",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b5"
+  },
+  "from_name": "BO",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b6"
+  },
+  "from_name": "BO",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 32250
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b7"
+  },
+  "from_name": "BO",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 221450
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b8"
+  },
+  "from_name": "BO",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699b9"
+  },
+  "from_name": "BO",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699ba"
+  },
+  "from_name": "BO",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 667575
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699bb"
+  },
+  "from_name": "BO",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699bc"
+  },
+  "from_name": "BO",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 198875
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699bd"
+  },
+  "from_name": "BO",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699be"
+  },
+  "from_name": "BO",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699bf"
+  },
+  "from_name": "BO",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 901925
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699c0"
+  },
+  "from_name": "BO",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 660050
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699c1"
+  },
+  "from_name": "BO",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 1075
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699c2"
+  },
+  "from_name": "BO",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 1650125
+},
+{
+  "_id": {
+    "$oid": "67b27a60b812c0f0518699c3"
+  },
+  "from_name": "BO",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 1276025
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699c4"
+  },
+  "from_name": "BO",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699c5"
+  },
+  "from_name": "BO",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 12900
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699c6"
+  },
+  "from_name": "BO",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699c7"
+  },
+  "from_name": "BO",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699c8"
+  },
+  "from_name": "BO",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 26875
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699c9"
+  },
+  "from_name": "BO",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 868600
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699ca"
+  },
+  "from_name": "BO",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699cb"
+  },
+  "from_name": "BO",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699cc"
+  },
+  "from_name": "BO",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 13975
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699cd"
+  },
+  "from_name": "BO",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 580500
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699ce"
+  },
+  "from_name": "BO",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 1075
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699cf"
+  },
+  "from_name": "BO",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d0"
+  },
+  "from_name": "BO",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d1"
+  },
+  "from_name": "BO",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 9675
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d2"
+  },
+  "from_name": "BO",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 1075
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d3"
+  },
+  "from_name": "BO",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 1075
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d4"
+  },
+  "from_name": "BO",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d5"
+  },
+  "from_name": "BO",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d6"
+  },
+  "from_name": "BO",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 891175
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d7"
+  },
+  "from_name": "BO",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 962125
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d8"
+  },
+  "from_name": "BO",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699d9"
+  },
+  "from_name": "BO",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699da"
+  },
+  "from_name": "BO",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699db"
+  },
+  "from_name": "BO",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699dc"
+  },
+  "from_name": "BO",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699dd"
+  },
+  "from_name": "BO",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 245100
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699de"
+  },
+  "from_name": "BO",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 1385675
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699df"
+  },
+  "from_name": "BO",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e0"
+  },
+  "from_name": "BO",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 140825
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e1"
+  },
+  "from_name": "BO",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e2"
+  },
+  "from_name": "BO",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e3"
+  },
+  "from_name": "BO",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 32250
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e4"
+  },
+  "from_name": "BO",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 221450
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e5"
+  },
+  "from_name": "BO",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e6"
+  },
+  "from_name": "BO",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e7"
+  },
+  "from_name": "BO",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 667575
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e8"
+  },
+  "from_name": "BO",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699e9"
+  },
+  "from_name": "BO",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 198875
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699ea"
+  },
+  "from_name": "BO",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699eb"
+  },
+  "from_name": "BO",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a61b812c0f0518699ec"
+  },
+  "from_name": "BO",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 901925
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699ed"
+  },
+  "from_name": "JT",
+  "to_name": "BO",
+  "allocation_type": "budget",
+  "allocation": 1206000
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699ee"
+  },
+  "from_name": "JT",
+  "to_name": "CF",
+  "allocation_type": "budget",
+  "allocation": 1172000
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699ef"
+  },
+  "from_name": "JT",
+  "to_name": "GZ",
+  "allocation_type": "budget",
+  "allocation": 640000
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f0"
+  },
+  "from_name": "JT",
+  "to_name": "IF",
+  "allocation_type": "budget",
+  "allocation": 2332000
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f1"
+  },
+  "from_name": "JT",
+  "to_name": "VA",
+  "allocation_type": "budget",
+  "allocation": 2063000
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f2"
+  },
+  "from_name": "JT",
+  "to_name": "XO",
+  "allocation_type": "budget",
+  "allocation": 2587000
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f3"
+  },
+  "from_name": "JT",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 527465
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f4"
+  },
+  "from_name": "JT",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 414441
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f5"
+  },
+  "from_name": "JT",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 110400
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f6"
+  },
+  "from_name": "JT",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 963277
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f7"
+  },
+  "from_name": "JT",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f8"
+  },
+  "from_name": "JT",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 39897
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699f9"
+  },
+  "from_name": "JT",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699fa"
+  },
+  "from_name": "JT",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699fb"
+  },
+  "from_name": "JT",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 187966
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699fc"
+  },
+  "from_name": "JT",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 1126155
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699fd"
+  },
+  "from_name": "JT",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699fe"
+  },
+  "from_name": "JT",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f0518699ff"
+  },
+  "from_name": "JT",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a00"
+  },
+  "from_name": "JT",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a01"
+  },
+  "from_name": "JT",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a02"
+  },
+  "from_name": "JT",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a03"
+  },
+  "from_name": "JT",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a04"
+  },
+  "from_name": "JT",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a05"
+  },
+  "from_name": "JT",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 533618
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a06"
+  },
+  "from_name": "JT",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a07"
+  },
+  "from_name": "JT",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a08"
+  },
+  "from_name": "JT",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a09"
+  },
+  "from_name": "JT",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 618848
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a0a"
+  },
+  "from_name": "JT",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 2279546
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a0b"
+  },
+  "from_name": "JT",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a0c"
+  },
+  "from_name": "JT",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a0d"
+  },
+  "from_name": "JT",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a0e"
+  },
+  "from_name": "JT",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a0f"
+  },
+  "from_name": "JT",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a10"
+  },
+  "from_name": "JT",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a11"
+  },
+  "from_name": "JT",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 935821
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a12"
+  },
+  "from_name": "JT",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a13"
+  },
+  "from_name": "JT",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 36636
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a14"
+  },
+  "from_name": "JT",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a15"
+  },
+  "from_name": "JT",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a16"
+  },
+  "from_name": "JT",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a17"
+  },
+  "from_name": "JT",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 1068946
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a18"
+  },
+  "from_name": "JT",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a19"
+  },
+  "from_name": "JT",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a1a"
+  },
+  "from_name": "JT",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 440222
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a1b"
+  },
+  "from_name": "JT",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a1c"
+  },
+  "from_name": "JT",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 716465
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a1d"
+  },
+  "from_name": "JT",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a1e"
+  },
+  "from_name": "JT",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a1f"
+  },
+  "from_name": "JT",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 297
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a20"
+  },
+  "from_name": "JT",
+  "to_name": "BO",
+  "allocation_type": "total_funds",
+  "allocation": 1290000
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a21"
+  },
+  "from_name": "JT",
+  "to_name": "CF",
+  "allocation_type": "total_funds",
+  "allocation": 1237325
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a22"
+  },
+  "from_name": "JT",
+  "to_name": "GZ",
+  "allocation_type": "total_funds",
+  "allocation": 806250
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a23"
+  },
+  "from_name": "JT",
+  "to_name": "IF",
+  "allocation_type": "total_funds",
+  "allocation": 2440250
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a24"
+  },
+  "from_name": "JT",
+  "to_name": "VA",
+  "allocation_type": "total_funds",
+  "allocation": 2159675
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a25"
+  },
+  "from_name": "JT",
+  "to_name": "XO",
+  "allocation_type": "total_funds",
+  "allocation": 2816500
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a26"
+  },
+  "from_name": "JT",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 694863
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a27"
+  },
+  "from_name": "JT",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 446254
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a28"
+  },
+  "from_name": "JT",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 123453
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a29"
+  },
+  "from_name": "JT",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 1020048
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a2a"
+  },
+  "from_name": "JT",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a2b"
+  },
+  "from_name": "JT",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 41943
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a2c"
+  },
+  "from_name": "JT",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a2d"
+  },
+  "from_name": "JT",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a2e"
+  },
+  "from_name": "JT",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 195223
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a2f"
+  },
+  "from_name": "JT",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 1253311
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a30"
+  },
+  "from_name": "JT",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a31"
+  },
+  "from_name": "JT",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a32"
+  },
+  "from_name": "JT",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a33"
+  },
+  "from_name": "JT",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a34"
+  },
+  "from_name": "JT",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a35"
+  },
+  "from_name": "JT",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a36"
+  },
+  "from_name": "JT",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a37"
+  },
+  "from_name": "JT",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a38"
+  },
+  "from_name": "JT",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 547527
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a39"
+  },
+  "from_name": "JT",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a3a"
+  },
+  "from_name": "JT",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a3b"
+  },
+  "from_name": "JT",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a3c"
+  },
+  "from_name": "JT",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 644892
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a3d"
+  },
+  "from_name": "JT",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 2382168
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a3e"
+  },
+  "from_name": "JT",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a3f"
+  },
+  "from_name": "JT",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a40"
+  },
+  "from_name": "JT",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a41"
+  },
+  "from_name": "JT",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a42"
+  },
+  "from_name": "JT",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a43"
+  },
+  "from_name": "JT",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a44"
+  },
+  "from_name": "JT",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 971463
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a45"
+  },
+  "from_name": "JT",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a46"
+  },
+  "from_name": "JT",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 40515
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a47"
+  },
+  "from_name": "JT",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a48"
+  },
+  "from_name": "JT",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a49"
+  },
+  "from_name": "JT",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a4a"
+  },
+  "from_name": "JT",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 1135127
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a4b"
+  },
+  "from_name": "JT",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a4c"
+  },
+  "from_name": "JT",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a4d"
+  },
+  "from_name": "JT",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 458810
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a4e"
+  },
+  "from_name": "JT",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a4f"
+  },
+  "from_name": "JT",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 794282
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a50"
+  },
+  "from_name": "JT",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a51"
+  },
+  "from_name": "JT",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a62b812c0f051869a52"
+  },
+  "from_name": "JT",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 121
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a53"
+  },
+  "from_name": "JM",
+  "to_name": "BO",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a54"
+  },
+  "from_name": "JM",
+  "to_name": "CF",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a55"
+  },
+  "from_name": "JM",
+  "to_name": "GZ",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a56"
+  },
+  "from_name": "JM",
+  "to_name": "IF",
+  "allocation_type": "budget",
+  "allocation": 132650
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a57"
+  },
+  "from_name": "JM",
+  "to_name": "VA",
+  "allocation_type": "budget",
+  "allocation": 117350
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a58"
+  },
+  "from_name": "JM",
+  "to_name": "XO",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a59"
+  },
+  "from_name": "JM",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a5a"
+  },
+  "from_name": "JM",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a5b"
+  },
+  "from_name": "JM",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a5c"
+  },
+  "from_name": "JM",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 4708
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a5d"
+  },
+  "from_name": "JM",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a5e"
+  },
+  "from_name": "JM",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a5f"
+  },
+  "from_name": "JM",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a60"
+  },
+  "from_name": "JM",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a61"
+  },
+  "from_name": "JM",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a62"
+  },
+  "from_name": "JM",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a63"
+  },
+  "from_name": "JM",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a64"
+  },
+  "from_name": "JM",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a65"
+  },
+  "from_name": "JM",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a66"
+  },
+  "from_name": "JM",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a67"
+  },
+  "from_name": "JM",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a68"
+  },
+  "from_name": "JM",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a69"
+  },
+  "from_name": "JM",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a6a"
+  },
+  "from_name": "JM",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a6b"
+  },
+  "from_name": "JM",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a6c"
+  },
+  "from_name": "JM",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a6d"
+  },
+  "from_name": "JM",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a6e"
+  },
+  "from_name": "JM",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a6f"
+  },
+  "from_name": "JM",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a70"
+  },
+  "from_name": "JM",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 145468
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a71"
+  },
+  "from_name": "JM",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a72"
+  },
+  "from_name": "JM",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a73"
+  },
+  "from_name": "JM",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a74"
+  },
+  "from_name": "JM",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a75"
+  },
+  "from_name": "JM",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a76"
+  },
+  "from_name": "JM",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a77"
+  },
+  "from_name": "JM",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 41236
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a78"
+  },
+  "from_name": "JM",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a79"
+  },
+  "from_name": "JM",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a7a"
+  },
+  "from_name": "JM",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a7b"
+  },
+  "from_name": "JM",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a7c"
+  },
+  "from_name": "JM",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a7d"
+  },
+  "from_name": "JM",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 16555
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a7e"
+  },
+  "from_name": "JM",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a7f"
+  },
+  "from_name": "JM",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a80"
+  },
+  "from_name": "JM",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 42020
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a81"
+  },
+  "from_name": "JM",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a82"
+  },
+  "from_name": "JM",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a83"
+  },
+  "from_name": "JM",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a84"
+  },
+  "from_name": "JM",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a85"
+  },
+  "from_name": "JM",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 13
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a86"
+  },
+  "from_name": "JM",
+  "to_name": "BO",
+  "allocation_type": "total_funds",
+  "allocation": 1290000
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a87"
+  },
+  "from_name": "JM",
+  "to_name": "CF",
+  "allocation_type": "total_funds",
+  "allocation": 1237325
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a88"
+  },
+  "from_name": "JM",
+  "to_name": "GZ",
+  "allocation_type": "total_funds",
+  "allocation": 806250
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a89"
+  },
+  "from_name": "JM",
+  "to_name": "IF",
+  "allocation_type": "total_funds",
+  "allocation": 2440250
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a8a"
+  },
+  "from_name": "JM",
+  "to_name": "VA",
+  "allocation_type": "total_funds",
+  "allocation": 2159675
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a8b"
+  },
+  "from_name": "JM",
+  "to_name": "XO",
+  "allocation_type": "total_funds",
+  "allocation": 2816500
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a8c"
+  },
+  "from_name": "JM",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 694863
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a8d"
+  },
+  "from_name": "JM",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 446254
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a8e"
+  },
+  "from_name": "JM",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 123453
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a8f"
+  },
+  "from_name": "JM",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 1020048
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a90"
+  },
+  "from_name": "JM",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a91"
+  },
+  "from_name": "JM",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 41943
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a92"
+  },
+  "from_name": "JM",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a93"
+  },
+  "from_name": "JM",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a94"
+  },
+  "from_name": "JM",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 195223
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a95"
+  },
+  "from_name": "JM",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 1253311
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a96"
+  },
+  "from_name": "JM",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a97"
+  },
+  "from_name": "JM",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a98"
+  },
+  "from_name": "JM",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a99"
+  },
+  "from_name": "JM",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a9a"
+  },
+  "from_name": "JM",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a9b"
+  },
+  "from_name": "JM",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a9c"
+  },
+  "from_name": "JM",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a9d"
+  },
+  "from_name": "JM",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a9e"
+  },
+  "from_name": "JM",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 547527
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869a9f"
+  },
+  "from_name": "JM",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa0"
+  },
+  "from_name": "JM",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa1"
+  },
+  "from_name": "JM",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa2"
+  },
+  "from_name": "JM",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 644892
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa3"
+  },
+  "from_name": "JM",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 2382168
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa4"
+  },
+  "from_name": "JM",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa5"
+  },
+  "from_name": "JM",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa6"
+  },
+  "from_name": "JM",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa7"
+  },
+  "from_name": "JM",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa8"
+  },
+  "from_name": "JM",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aa9"
+  },
+  "from_name": "JM",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aaa"
+  },
+  "from_name": "JM",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 971463
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aab"
+  },
+  "from_name": "JM",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aac"
+  },
+  "from_name": "JM",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 40515
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aad"
+  },
+  "from_name": "JM",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aae"
+  },
+  "from_name": "JM",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869aaf"
+  },
+  "from_name": "JM",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab0"
+  },
+  "from_name": "JM",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 1135127
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab1"
+  },
+  "from_name": "JM",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab2"
+  },
+  "from_name": "JM",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab3"
+  },
+  "from_name": "JM",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 458810
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab4"
+  },
+  "from_name": "JM",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab5"
+  },
+  "from_name": "JM",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 794282
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab6"
+  },
+  "from_name": "JM",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab7"
+  },
+  "from_name": "JM",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a63b812c0f051869ab8"
+  },
+  "from_name": "JM",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 121
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ab9"
+  },
+  "from_name": "DM",
+  "to_name": "BO",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aba"
+  },
+  "from_name": "DM",
+  "to_name": "CF",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869abb"
+  },
+  "from_name": "DM",
+  "to_name": "GZ",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869abc"
+  },
+  "from_name": "DM",
+  "to_name": "IF",
+  "allocation_type": "budget",
+  "allocation": 265300
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869abd"
+  },
+  "from_name": "DM",
+  "to_name": "VA",
+  "allocation_type": "budget",
+  "allocation": 234700
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869abe"
+  },
+  "from_name": "DM",
+  "to_name": "XO",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869abf"
+  },
+  "from_name": "DM",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac0"
+  },
+  "from_name": "DM",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac1"
+  },
+  "from_name": "DM",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac2"
+  },
+  "from_name": "DM",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 15617
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac3"
+  },
+  "from_name": "DM",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac4"
+  },
+  "from_name": "DM",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac5"
+  },
+  "from_name": "DM",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac6"
+  },
+  "from_name": "DM",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac7"
+  },
+  "from_name": "DM",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac8"
+  },
+  "from_name": "DM",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ac9"
+  },
+  "from_name": "DM",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aca"
+  },
+  "from_name": "DM",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869acb"
+  },
+  "from_name": "DM",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869acc"
+  },
+  "from_name": "DM",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869acd"
+  },
+  "from_name": "DM",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ace"
+  },
+  "from_name": "DM",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869acf"
+  },
+  "from_name": "DM",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad0"
+  },
+  "from_name": "DM",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad1"
+  },
+  "from_name": "DM",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad2"
+  },
+  "from_name": "DM",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad3"
+  },
+  "from_name": "DM",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad4"
+  },
+  "from_name": "DM",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad5"
+  },
+  "from_name": "DM",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 11986
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad6"
+  },
+  "from_name": "DM",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 265279
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad7"
+  },
+  "from_name": "DM",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad8"
+  },
+  "from_name": "DM",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ad9"
+  },
+  "from_name": "DM",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ada"
+  },
+  "from_name": "DM",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869adb"
+  },
+  "from_name": "DM",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869adc"
+  },
+  "from_name": "DM",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869add"
+  },
+  "from_name": "DM",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 99034
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ade"
+  },
+  "from_name": "DM",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869adf"
+  },
+  "from_name": "DM",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae0"
+  },
+  "from_name": "DM",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae1"
+  },
+  "from_name": "DM",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae2"
+  },
+  "from_name": "DM",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae3"
+  },
+  "from_name": "DM",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 33994
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae4"
+  },
+  "from_name": "DM",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae5"
+  },
+  "from_name": "DM",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae6"
+  },
+  "from_name": "DM",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 74060
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae7"
+  },
+  "from_name": "DM",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae8"
+  },
+  "from_name": "DM",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869ae9"
+  },
+  "from_name": "DM",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aea"
+  },
+  "from_name": "DM",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aeb"
+  },
+  "from_name": "DM",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 30
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aec"
+  },
+  "from_name": "DM",
+  "to_name": "BO",
+  "allocation_type": "total_funds",
+  "allocation": 1290000
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aed"
+  },
+  "from_name": "DM",
+  "to_name": "CF",
+  "allocation_type": "total_funds",
+  "allocation": 1237325
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aee"
+  },
+  "from_name": "DM",
+  "to_name": "GZ",
+  "allocation_type": "total_funds",
+  "allocation": 806250
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aef"
+  },
+  "from_name": "DM",
+  "to_name": "IF",
+  "allocation_type": "total_funds",
+  "allocation": 2440250
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af0"
+  },
+  "from_name": "DM",
+  "to_name": "VA",
+  "allocation_type": "total_funds",
+  "allocation": 2159675
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af1"
+  },
+  "from_name": "DM",
+  "to_name": "XO",
+  "allocation_type": "total_funds",
+  "allocation": 2816500
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af2"
+  },
+  "from_name": "DM",
+  "to_name": "BehemothCorps",
+  "allocation_type": "total_funds",
+  "allocation": 694863
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af3"
+  },
+  "from_name": "DM",
+  "to_name": "BoarBrews",
+  "allocation_type": "total_funds",
+  "allocation": 446254
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af4"
+  },
+  "from_name": "DM",
+  "to_name": "Chieftronics",
+  "allocation_type": "total_funds",
+  "allocation": 123453
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af5"
+  },
+  "from_name": "DM",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "total_funds",
+  "allocation": 1020048
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af6"
+  },
+  "from_name": "DM",
+  "to_name": "Coreland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af7"
+  },
+  "from_name": "DM",
+  "to_name": "Curse",
+  "allocation_type": "total_funds",
+  "allocation": 41943
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af8"
+  },
+  "from_name": "DM",
+  "to_name": "Deserprises",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869af9"
+  },
+  "from_name": "DM",
+  "to_name": "Drifthead",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869afa"
+  },
+  "from_name": "DM",
+  "to_name": "Dynamicphone",
+  "allocation_type": "total_funds",
+  "allocation": 195223
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869afb"
+  },
+  "from_name": "DM",
+  "to_name": "Electrorks",
+  "allocation_type": "total_funds",
+  "allocation": 1253311
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869afc"
+  },
+  "from_name": "DM",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869afd"
+  },
+  "from_name": "DM",
+  "to_name": "Faseelectronics",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869afe"
+  },
+  "from_name": "DM",
+  "to_name": "Flowerscape",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869aff"
+  },
+  "from_name": "DM",
+  "to_name": "Ghostland",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b00"
+  },
+  "from_name": "DM",
+  "to_name": "Globaltube",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b01"
+  },
+  "from_name": "DM",
+  "to_name": "Honeywheels",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b02"
+  },
+  "from_name": "DM",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b03"
+  },
+  "from_name": "DM",
+  "to_name": "Ithigh",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b04"
+  },
+  "from_name": "DM",
+  "to_name": "Lionware",
+  "allocation_type": "total_funds",
+  "allocation": 547527
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b05"
+  },
+  "from_name": "DM",
+  "to_name": "Microbooks",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b06"
+  },
+  "from_name": "DM",
+  "to_name": "Mountaintales",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b07"
+  },
+  "from_name": "DM",
+  "to_name": "Nemomedia",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b08"
+  },
+  "from_name": "DM",
+  "to_name": "Nimbletainment",
+  "allocation_type": "total_funds",
+  "allocation": 644892
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b09"
+  },
+  "from_name": "DM",
+  "to_name": "Nitro",
+  "allocation_type": "total_funds",
+  "allocation": 2382168
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b0a"
+  },
+  "from_name": "DM",
+  "to_name": "Nymphware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b0b"
+  },
+  "from_name": "DM",
+  "to_name": "Peachpaw",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b0c"
+  },
+  "from_name": "DM",
+  "to_name": "Peachware",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b0d"
+  },
+  "from_name": "DM",
+  "to_name": "Prophecycurity",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b0e"
+  },
+  "from_name": "DM",
+  "to_name": "Purplestone",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b0f"
+  },
+  "from_name": "DM",
+  "to_name": "RavenMotors",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b10"
+  },
+  "from_name": "DM",
+  "to_name": "Ridgespace",
+  "allocation_type": "total_funds",
+  "allocation": 971463
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b11"
+  },
+  "from_name": "DM",
+  "to_name": "Shadewell",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b12"
+  },
+  "from_name": "DM",
+  "to_name": "Spherebank",
+  "allocation_type": "total_funds",
+  "allocation": 40515
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b13"
+  },
+  "from_name": "DM",
+  "to_name": "Spritespace",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b14"
+  },
+  "from_name": "DM",
+  "to_name": "ThunderRecords",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b15"
+  },
+  "from_name": "DM",
+  "to_name": "TribeofSpite",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b16"
+  },
+  "from_name": "DM",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "total_funds",
+  "allocation": 1135127
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b17"
+  },
+  "from_name": "DM",
+  "to_name": "Twist",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b18"
+  },
+  "from_name": "DM",
+  "to_name": "VortexPoint",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b19"
+  },
+  "from_name": "DM",
+  "to_name": "Whisper",
+  "allocation_type": "total_funds",
+  "allocation": 458810
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b1a"
+  },
+  "from_name": "DM",
+  "to_name": "YellowShade",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b1b"
+  },
+  "from_name": "DM",
+  "to_name": "Yeworks",
+  "allocation_type": "total_funds",
+  "allocation": 794282
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b1c"
+  },
+  "from_name": "DM",
+  "to_name": "Zaamtech",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b1d"
+  },
+  "from_name": "DM",
+  "to_name": "Zooin",
+  "allocation_type": "total_funds",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b1e"
+  },
+  "from_name": "DM",
+  "to_name": "_hold_",
+  "allocation_type": "total_funds",
+  "allocation": 121
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b1f"
+  },
+  "from_name": "sigma",
+  "to_name": "BO",
+  "allocation_type": "budget",
+  "allocation": 1206000
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b20"
+  },
+  "from_name": "sigma",
+  "to_name": "CF",
+  "allocation_type": "budget",
+  "allocation": 1172000
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b21"
+  },
+  "from_name": "sigma",
+  "to_name": "GZ",
+  "allocation_type": "budget",
+  "allocation": 640000
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b22"
+  },
+  "from_name": "sigma",
+  "to_name": "IF",
+  "allocation_type": "budget",
+  "allocation": 2729950
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b23"
+  },
+  "from_name": "sigma",
+  "to_name": "VA",
+  "allocation_type": "budget",
+  "allocation": 2415050
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b24"
+  },
+  "from_name": "sigma",
+  "to_name": "XO",
+  "allocation_type": "budget",
+  "allocation": 2587000
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b25"
+  },
+  "from_name": "sigma",
+  "to_name": "BehemothCorps",
+  "allocation_type": "budget",
+  "allocation": 564887
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b26"
+  },
+  "from_name": "sigma",
+  "to_name": "BoarBrews",
+  "allocation_type": "budget",
+  "allocation": 465393
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b27"
+  },
+  "from_name": "sigma",
+  "to_name": "Chieftronics",
+  "allocation_type": "budget",
+  "allocation": 110400
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b28"
+  },
+  "from_name": "sigma",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "budget",
+  "allocation": 1093905
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b29"
+  },
+  "from_name": "sigma",
+  "to_name": "Coreland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b2a"
+  },
+  "from_name": "sigma",
+  "to_name": "Curse",
+  "allocation_type": "budget",
+  "allocation": 39897
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b2b"
+  },
+  "from_name": "sigma",
+  "to_name": "Deserprises",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b2c"
+  },
+  "from_name": "sigma",
+  "to_name": "Drifthead",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b2d"
+  },
+  "from_name": "sigma",
+  "to_name": "Dynamicphone",
+  "allocation_type": "budget",
+  "allocation": 207956
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b2e"
+  },
+  "from_name": "sigma",
+  "to_name": "Electrorks",
+  "allocation_type": "budget",
+  "allocation": 1238387
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b2f"
+  },
+  "from_name": "sigma",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b30"
+  },
+  "from_name": "sigma",
+  "to_name": "Faseelectronics",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b31"
+  },
+  "from_name": "sigma",
+  "to_name": "Flowerscape",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b32"
+  },
+  "from_name": "sigma",
+  "to_name": "Ghostland",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b33"
+  },
+  "from_name": "sigma",
+  "to_name": "Globaltube",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b34"
+  },
+  "from_name": "sigma",
+  "to_name": "Honeywheels",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b35"
+  },
+  "from_name": "sigma",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b36"
+  },
+  "from_name": "sigma",
+  "to_name": "Ithigh",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b37"
+  },
+  "from_name": "sigma",
+  "to_name": "Lionware",
+  "allocation_type": "budget",
+  "allocation": 564124
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b38"
+  },
+  "from_name": "sigma",
+  "to_name": "Microbooks",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b39"
+  },
+  "from_name": "sigma",
+  "to_name": "Mountaintales",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b3a"
+  },
+  "from_name": "sigma",
+  "to_name": "Nemomedia",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a64b812c0f051869b3b"
+  },
+  "from_name": "sigma",
+  "to_name": "Nimbletainment",
+  "allocation_type": "budget",
+  "allocation": 719440
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b3c"
+  },
+  "from_name": "sigma",
+  "to_name": "Nitro",
+  "allocation_type": "budget",
+  "allocation": 2377934
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b3d"
+  },
+  "from_name": "sigma",
+  "to_name": "Nymphware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b3e"
+  },
+  "from_name": "sigma",
+  "to_name": "Peachpaw",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b3f"
+  },
+  "from_name": "sigma",
+  "to_name": "Peachware",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b40"
+  },
+  "from_name": "sigma",
+  "to_name": "Prophecycurity",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b41"
+  },
+  "from_name": "sigma",
+  "to_name": "Purplestone",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b42"
+  },
+  "from_name": "sigma",
+  "to_name": "RavenMotors",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b43"
+  },
+  "from_name": "sigma",
+  "to_name": "Ridgespace",
+  "allocation_type": "budget",
+  "allocation": 980792
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b44"
+  },
+  "from_name": "sigma",
+  "to_name": "Shadewell",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b45"
+  },
+  "from_name": "sigma",
+  "to_name": "Spherebank",
+  "allocation_type": "budget",
+  "allocation": 36636
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b46"
+  },
+  "from_name": "sigma",
+  "to_name": "Spritespace",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b47"
+  },
+  "from_name": "sigma",
+  "to_name": "ThunderRecords",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b48"
+  },
+  "from_name": "sigma",
+  "to_name": "TribeofSpite",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b49"
+  },
+  "from_name": "sigma",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "budget",
+  "allocation": 1097337
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b4a"
+  },
+  "from_name": "sigma",
+  "to_name": "Twist",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b4b"
+  },
+  "from_name": "sigma",
+  "to_name": "VortexPoint",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b4c"
+  },
+  "from_name": "sigma",
+  "to_name": "Whisper",
+  "allocation_type": "budget",
+  "allocation": 509233
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b4d"
+  },
+  "from_name": "sigma",
+  "to_name": "YellowShade",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b4e"
+  },
+  "from_name": "sigma",
+  "to_name": "Yeworks",
+  "allocation_type": "budget",
+  "allocation": 743246
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b4f"
+  },
+  "from_name": "sigma",
+  "to_name": "Zaamtech",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b50"
+  },
+  "from_name": "sigma",
+  "to_name": "Zooin",
+  "allocation_type": "budget",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b51"
+  },
+  "from_name": "sigma",
+  "to_name": "_hold_",
+  "allocation_type": "budget",
+  "allocation": 433
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b52"
+  },
+  "from_name": "BO",
+  "to_name": "BehemothCorps",
+  "allocation_type": "funders",
+  "allocation": 240
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b53"
+  },
+  "from_name": "BO",
+  "to_name": "BoarBrews",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b54"
+  },
+  "from_name": "BO",
+  "to_name": "Chieftronics",
+  "allocation_type": "funders",
+  "allocation": 110400
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b55"
+  },
+  "from_name": "BO",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "funders",
+  "allocation": 366240
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b56"
+  },
+  "from_name": "BO",
+  "to_name": "Coreland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b57"
+  },
+  "from_name": "BO",
+  "to_name": "Curse",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b58"
+  },
+  "from_name": "BO",
+  "to_name": "Deserprises",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b59"
+  },
+  "from_name": "BO",
+  "to_name": "Drifthead",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b5a"
+  },
+  "from_name": "BO",
+  "to_name": "Dynamicphone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b5b"
+  },
+  "from_name": "BO",
+  "to_name": "Electrorks",
+  "allocation_type": "funders",
+  "allocation": 175920
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b5c"
+  },
+  "from_name": "BO",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b5d"
+  },
+  "from_name": "BO",
+  "to_name": "Faseelectronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b5e"
+  },
+  "from_name": "BO",
+  "to_name": "Flowerscape",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b5f"
+  },
+  "from_name": "BO",
+  "to_name": "Ghostland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b60"
+  },
+  "from_name": "BO",
+  "to_name": "Globaltube",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b61"
+  },
+  "from_name": "BO",
+  "to_name": "Honeywheels",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b62"
+  },
+  "from_name": "BO",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b63"
+  },
+  "from_name": "BO",
+  "to_name": "Ithigh",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b64"
+  },
+  "from_name": "BO",
+  "to_name": "Lionware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b65"
+  },
+  "from_name": "BO",
+  "to_name": "Microbooks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b66"
+  },
+  "from_name": "BO",
+  "to_name": "Mountaintales",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b67"
+  },
+  "from_name": "BO",
+  "to_name": "Nemomedia",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b68"
+  },
+  "from_name": "BO",
+  "to_name": "Nimbletainment",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b69"
+  },
+  "from_name": "BO",
+  "to_name": "Nitro",
+  "allocation_type": "funders",
+  "allocation": 1680
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b6a"
+  },
+  "from_name": "BO",
+  "to_name": "Nymphware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b6b"
+  },
+  "from_name": "BO",
+  "to_name": "Peachpaw",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b6c"
+  },
+  "from_name": "BO",
+  "to_name": "Peachware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b6d"
+  },
+  "from_name": "BO",
+  "to_name": "Prophecycurity",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b6e"
+  },
+  "from_name": "BO",
+  "to_name": "Purplestone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b6f"
+  },
+  "from_name": "BO",
+  "to_name": "RavenMotors",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b70"
+  },
+  "from_name": "BO",
+  "to_name": "Ridgespace",
+  "allocation_type": "funders",
+  "allocation": 470520
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b71"
+  },
+  "from_name": "BO",
+  "to_name": "Shadewell",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b72"
+  },
+  "from_name": "BO",
+  "to_name": "Spherebank",
+  "allocation_type": "funders",
+  "allocation": 36120
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b73"
+  },
+  "from_name": "BO",
+  "to_name": "Spritespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b74"
+  },
+  "from_name": "BO",
+  "to_name": "ThunderRecords",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b75"
+  },
+  "from_name": "BO",
+  "to_name": "TribeofSpite",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b76"
+  },
+  "from_name": "BO",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "funders",
+  "allocation": 34800
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b77"
+  },
+  "from_name": "BO",
+  "to_name": "Twist",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b78"
+  },
+  "from_name": "BO",
+  "to_name": "VortexPoint",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b79"
+  },
+  "from_name": "BO",
+  "to_name": "Whisper",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b7a"
+  },
+  "from_name": "BO",
+  "to_name": "YellowShade",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b7b"
+  },
+  "from_name": "BO",
+  "to_name": "Yeworks",
+  "allocation_type": "funders",
+  "allocation": 10080
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b7c"
+  },
+  "from_name": "BO",
+  "to_name": "Zaamtech",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b7d"
+  },
+  "from_name": "BO",
+  "to_name": "Zooin",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b7e"
+  },
+  "from_name": "BO",
+  "to_name": "_hold_",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b7f"
+  },
+  "from_name": "CF",
+  "to_name": "BehemothCorps",
+  "allocation_type": "funders",
+  "allocation": 317655
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b80"
+  },
+  "from_name": "CF",
+  "to_name": "BoarBrews",
+  "allocation_type": "funders",
+  "allocation": 67743
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b81"
+  },
+  "from_name": "CF",
+  "to_name": "Chieftronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b82"
+  },
+  "from_name": "CF",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "funders",
+  "allocation": 98163
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b83"
+  },
+  "from_name": "CF",
+  "to_name": "Coreland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b84"
+  },
+  "from_name": "CF",
+  "to_name": "Curse",
+  "allocation_type": "funders",
+  "allocation": 39897
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b85"
+  },
+  "from_name": "CF",
+  "to_name": "Deserprises",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b86"
+  },
+  "from_name": "CF",
+  "to_name": "Drifthead",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b87"
+  },
+  "from_name": "CF",
+  "to_name": "Dynamicphone",
+  "allocation_type": "funders",
+  "allocation": 94302
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b88"
+  },
+  "from_name": "CF",
+  "to_name": "Electrorks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b89"
+  },
+  "from_name": "CF",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b8a"
+  },
+  "from_name": "CF",
+  "to_name": "Faseelectronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b8b"
+  },
+  "from_name": "CF",
+  "to_name": "Flowerscape",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b8c"
+  },
+  "from_name": "CF",
+  "to_name": "Ghostland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b8d"
+  },
+  "from_name": "CF",
+  "to_name": "Globaltube",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b8e"
+  },
+  "from_name": "CF",
+  "to_name": "Honeywheels",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b8f"
+  },
+  "from_name": "CF",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b90"
+  },
+  "from_name": "CF",
+  "to_name": "Ithigh",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b91"
+  },
+  "from_name": "CF",
+  "to_name": "Lionware",
+  "allocation_type": "funders",
+  "allocation": 338364
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b92"
+  },
+  "from_name": "CF",
+  "to_name": "Microbooks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b93"
+  },
+  "from_name": "CF",
+  "to_name": "Mountaintales",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b94"
+  },
+  "from_name": "CF",
+  "to_name": "Nemomedia",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b95"
+  },
+  "from_name": "CF",
+  "to_name": "Nimbletainment",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b96"
+  },
+  "from_name": "CF",
+  "to_name": "Nitro",
+  "allocation_type": "funders",
+  "allocation": 18837
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b97"
+  },
+  "from_name": "CF",
+  "to_name": "Nymphware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b98"
+  },
+  "from_name": "CF",
+  "to_name": "Peachpaw",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b99"
+  },
+  "from_name": "CF",
+  "to_name": "Peachware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b9a"
+  },
+  "from_name": "CF",
+  "to_name": "Prophecycurity",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b9b"
+  },
+  "from_name": "CF",
+  "to_name": "Purplestone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b9c"
+  },
+  "from_name": "CF",
+  "to_name": "RavenMotors",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b9d"
+  },
+  "from_name": "CF",
+  "to_name": "Ridgespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b9e"
+  },
+  "from_name": "CF",
+  "to_name": "Shadewell",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869b9f"
+  },
+  "from_name": "CF",
+  "to_name": "Spherebank",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba0"
+  },
+  "from_name": "CF",
+  "to_name": "Spritespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba1"
+  },
+  "from_name": "CF",
+  "to_name": "ThunderRecords",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba2"
+  },
+  "from_name": "CF",
+  "to_name": "TribeofSpite",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba3"
+  },
+  "from_name": "CF",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "funders",
+  "allocation": 197028
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba4"
+  },
+  "from_name": "CF",
+  "to_name": "Twist",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba5"
+  },
+  "from_name": "CF",
+  "to_name": "VortexPoint",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba6"
+  },
+  "from_name": "CF",
+  "to_name": "Whisper",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba7"
+  },
+  "from_name": "CF",
+  "to_name": "YellowShade",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba8"
+  },
+  "from_name": "CF",
+  "to_name": "Yeworks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869ba9"
+  },
+  "from_name": "CF",
+  "to_name": "Zaamtech",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869baa"
+  },
+  "from_name": "CF",
+  "to_name": "Zooin",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bab"
+  },
+  "from_name": "CF",
+  "to_name": "_hold_",
+  "allocation_type": "funders",
+  "allocation": 11
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bac"
+  },
+  "from_name": "GZ",
+  "to_name": "BehemothCorps",
+  "allocation_type": "funders",
+  "allocation": 205376
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bad"
+  },
+  "from_name": "GZ",
+  "to_name": "BoarBrews",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bae"
+  },
+  "from_name": "GZ",
+  "to_name": "Chieftronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869baf"
+  },
+  "from_name": "GZ",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb0"
+  },
+  "from_name": "GZ",
+  "to_name": "Coreland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb1"
+  },
+  "from_name": "GZ",
+  "to_name": "Curse",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb2"
+  },
+  "from_name": "GZ",
+  "to_name": "Deserprises",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb3"
+  },
+  "from_name": "GZ",
+  "to_name": "Drifthead",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb4"
+  },
+  "from_name": "GZ",
+  "to_name": "Dynamicphone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb5"
+  },
+  "from_name": "GZ",
+  "to_name": "Electrorks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb6"
+  },
+  "from_name": "GZ",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb7"
+  },
+  "from_name": "GZ",
+  "to_name": "Faseelectronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb8"
+  },
+  "from_name": "GZ",
+  "to_name": "Flowerscape",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bb9"
+  },
+  "from_name": "GZ",
+  "to_name": "Ghostland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bba"
+  },
+  "from_name": "GZ",
+  "to_name": "Globaltube",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bbb"
+  },
+  "from_name": "GZ",
+  "to_name": "Honeywheels",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bbc"
+  },
+  "from_name": "GZ",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bbd"
+  },
+  "from_name": "GZ",
+  "to_name": "Ithigh",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bbe"
+  },
+  "from_name": "GZ",
+  "to_name": "Lionware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bbf"
+  },
+  "from_name": "GZ",
+  "to_name": "Microbooks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc0"
+  },
+  "from_name": "GZ",
+  "to_name": "Mountaintales",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc1"
+  },
+  "from_name": "GZ",
+  "to_name": "Nemomedia",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc2"
+  },
+  "from_name": "GZ",
+  "to_name": "Nimbletainment",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc3"
+  },
+  "from_name": "GZ",
+  "to_name": "Nitro",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc4"
+  },
+  "from_name": "GZ",
+  "to_name": "Nymphware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc5"
+  },
+  "from_name": "GZ",
+  "to_name": "Peachpaw",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc6"
+  },
+  "from_name": "GZ",
+  "to_name": "Peachware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc7"
+  },
+  "from_name": "GZ",
+  "to_name": "Prophecycurity",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc8"
+  },
+  "from_name": "GZ",
+  "to_name": "Purplestone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bc9"
+  },
+  "from_name": "GZ",
+  "to_name": "RavenMotors",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bca"
+  },
+  "from_name": "GZ",
+  "to_name": "Ridgespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bcb"
+  },
+  "from_name": "GZ",
+  "to_name": "Shadewell",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bcc"
+  },
+  "from_name": "GZ",
+  "to_name": "Spherebank",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bcd"
+  },
+  "from_name": "GZ",
+  "to_name": "Spritespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bce"
+  },
+  "from_name": "GZ",
+  "to_name": "ThunderRecords",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bcf"
+  },
+  "from_name": "GZ",
+  "to_name": "TribeofSpite",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd0"
+  },
+  "from_name": "GZ",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "funders",
+  "allocation": 434624
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd1"
+  },
+  "from_name": "GZ",
+  "to_name": "Twist",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd2"
+  },
+  "from_name": "GZ",
+  "to_name": "VortexPoint",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd3"
+  },
+  "from_name": "GZ",
+  "to_name": "Whisper",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd4"
+  },
+  "from_name": "GZ",
+  "to_name": "YellowShade",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd5"
+  },
+  "from_name": "GZ",
+  "to_name": "Yeworks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd6"
+  },
+  "from_name": "GZ",
+  "to_name": "Zaamtech",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd7"
+  },
+  "from_name": "GZ",
+  "to_name": "Zooin",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd8"
+  },
+  "from_name": "GZ",
+  "to_name": "_hold_",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bd9"
+  },
+  "from_name": "IF",
+  "to_name": "BehemothCorps",
+  "allocation_type": "funders",
+  "allocation": 41616
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bda"
+  },
+  "from_name": "IF",
+  "to_name": "BoarBrews",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bdb"
+  },
+  "from_name": "IF",
+  "to_name": "Chieftronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bdc"
+  },
+  "from_name": "IF",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "funders",
+  "allocation": 321504
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bdd"
+  },
+  "from_name": "IF",
+  "to_name": "Coreland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bde"
+  },
+  "from_name": "IF",
+  "to_name": "Curse",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bdf"
+  },
+  "from_name": "IF",
+  "to_name": "Deserprises",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be0"
+  },
+  "from_name": "IF",
+  "to_name": "Drifthead",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be1"
+  },
+  "from_name": "IF",
+  "to_name": "Dynamicphone",
+  "allocation_type": "funders",
+  "allocation": 35088
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be2"
+  },
+  "from_name": "IF",
+  "to_name": "Electrorks",
+  "allocation_type": "funders",
+  "allocation": 166736
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be3"
+  },
+  "from_name": "IF",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be4"
+  },
+  "from_name": "IF",
+  "to_name": "Faseelectronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be5"
+  },
+  "from_name": "IF",
+  "to_name": "Flowerscape",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be6"
+  },
+  "from_name": "IF",
+  "to_name": "Ghostland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be7"
+  },
+  "from_name": "IF",
+  "to_name": "Globaltube",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be8"
+  },
+  "from_name": "IF",
+  "to_name": "Honeywheels",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869be9"
+  },
+  "from_name": "IF",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bea"
+  },
+  "from_name": "IF",
+  "to_name": "Ithigh",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869beb"
+  },
+  "from_name": "IF",
+  "to_name": "Lionware",
+  "allocation_type": "funders",
+  "allocation": 225760
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bec"
+  },
+  "from_name": "IF",
+  "to_name": "Microbooks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bed"
+  },
+  "from_name": "IF",
+  "to_name": "Mountaintales",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bee"
+  },
+  "from_name": "IF",
+  "to_name": "Nemomedia",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bef"
+  },
+  "from_name": "IF",
+  "to_name": "Nimbletainment",
+  "allocation_type": "funders",
+  "allocation": 719440
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf0"
+  },
+  "from_name": "IF",
+  "to_name": "Nitro",
+  "allocation_type": "funders",
+  "allocation": 512448
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf1"
+  },
+  "from_name": "IF",
+  "to_name": "Nymphware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf2"
+  },
+  "from_name": "IF",
+  "to_name": "Peachpaw",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf3"
+  },
+  "from_name": "IF",
+  "to_name": "Peachware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf4"
+  },
+  "from_name": "IF",
+  "to_name": "Prophecycurity",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf5"
+  },
+  "from_name": "IF",
+  "to_name": "Purplestone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf6"
+  },
+  "from_name": "IF",
+  "to_name": "RavenMotors",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf7"
+  },
+  "from_name": "IF",
+  "to_name": "Ridgespace",
+  "allocation_type": "funders",
+  "allocation": 510272
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf8"
+  },
+  "from_name": "IF",
+  "to_name": "Shadewell",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bf9"
+  },
+  "from_name": "IF",
+  "to_name": "Spherebank",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bfa"
+  },
+  "from_name": "IF",
+  "to_name": "Spritespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bfb"
+  },
+  "from_name": "IF",
+  "to_name": "ThunderRecords",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bfc"
+  },
+  "from_name": "IF",
+  "to_name": "TribeofSpite",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bfd"
+  },
+  "from_name": "IF",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "funders",
+  "allocation": 93024
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bfe"
+  },
+  "from_name": "IF",
+  "to_name": "Twist",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869bff"
+  },
+  "from_name": "IF",
+  "to_name": "VortexPoint",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c00"
+  },
+  "from_name": "IF",
+  "to_name": "Whisper",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c01"
+  },
+  "from_name": "IF",
+  "to_name": "YellowShade",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c02"
+  },
+  "from_name": "IF",
+  "to_name": "Yeworks",
+  "allocation_type": "funders",
+  "allocation": 103904
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c03"
+  },
+  "from_name": "IF",
+  "to_name": "Zaamtech",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c04"
+  },
+  "from_name": "IF",
+  "to_name": "Zooin",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c05"
+  },
+  "from_name": "IF",
+  "to_name": "_hold_",
+  "allocation_type": "funders",
+  "allocation": 158
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c06"
+  },
+  "from_name": "VA",
+  "to_name": "BehemothCorps",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c07"
+  },
+  "from_name": "VA",
+  "to_name": "BoarBrews",
+  "allocation_type": "funders",
+  "allocation": 397650
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c08"
+  },
+  "from_name": "VA",
+  "to_name": "Chieftronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c09"
+  },
+  "from_name": "VA",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "funders",
+  "allocation": 307998
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c0a"
+  },
+  "from_name": "VA",
+  "to_name": "Coreland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c0b"
+  },
+  "from_name": "VA",
+  "to_name": "Curse",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c0c"
+  },
+  "from_name": "VA",
+  "to_name": "Deserprises",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c0d"
+  },
+  "from_name": "VA",
+  "to_name": "Drifthead",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c0e"
+  },
+  "from_name": "VA",
+  "to_name": "Dynamicphone",
+  "allocation_type": "funders",
+  "allocation": 78566
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c0f"
+  },
+  "from_name": "VA",
+  "to_name": "Electrorks",
+  "allocation_type": "funders",
+  "allocation": 318843
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c10"
+  },
+  "from_name": "VA",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c11"
+  },
+  "from_name": "VA",
+  "to_name": "Faseelectronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c12"
+  },
+  "from_name": "VA",
+  "to_name": "Flowerscape",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c13"
+  },
+  "from_name": "VA",
+  "to_name": "Ghostland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c14"
+  },
+  "from_name": "VA",
+  "to_name": "Globaltube",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c15"
+  },
+  "from_name": "VA",
+  "to_name": "Honeywheels",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c16"
+  },
+  "from_name": "VA",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c17"
+  },
+  "from_name": "VA",
+  "to_name": "Ithigh",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c18"
+  },
+  "from_name": "VA",
+  "to_name": "Lionware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c19"
+  },
+  "from_name": "VA",
+  "to_name": "Microbooks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c1a"
+  },
+  "from_name": "VA",
+  "to_name": "Mountaintales",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c1b"
+  },
+  "from_name": "VA",
+  "to_name": "Nemomedia",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c1c"
+  },
+  "from_name": "VA",
+  "to_name": "Nimbletainment",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c1d"
+  },
+  "from_name": "VA",
+  "to_name": "Nitro",
+  "allocation_type": "funders",
+  "allocation": 614309
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c1e"
+  },
+  "from_name": "VA",
+  "to_name": "Nymphware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c1f"
+  },
+  "from_name": "VA",
+  "to_name": "Peachpaw",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c20"
+  },
+  "from_name": "VA",
+  "to_name": "Peachware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c21"
+  },
+  "from_name": "VA",
+  "to_name": "Prophecycurity",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c22"
+  },
+  "from_name": "VA",
+  "to_name": "Purplestone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c23"
+  },
+  "from_name": "VA",
+  "to_name": "RavenMotors",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c24"
+  },
+  "from_name": "VA",
+  "to_name": "Ridgespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c25"
+  },
+  "from_name": "VA",
+  "to_name": "Shadewell",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c26"
+  },
+  "from_name": "VA",
+  "to_name": "Spherebank",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c27"
+  },
+  "from_name": "VA",
+  "to_name": "Spritespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c28"
+  },
+  "from_name": "VA",
+  "to_name": "ThunderRecords",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c29"
+  },
+  "from_name": "VA",
+  "to_name": "TribeofSpite",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c2a"
+  },
+  "from_name": "VA",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "funders",
+  "allocation": 188221
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c2b"
+  },
+  "from_name": "VA",
+  "to_name": "Twist",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c2c"
+  },
+  "from_name": "VA",
+  "to_name": "VortexPoint",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c2d"
+  },
+  "from_name": "VA",
+  "to_name": "Whisper",
+  "allocation_type": "funders",
+  "allocation": 509233
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c2e"
+  },
+  "from_name": "VA",
+  "to_name": "YellowShade",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c2f"
+  },
+  "from_name": "VA",
+  "to_name": "Yeworks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c30"
+  },
+  "from_name": "VA",
+  "to_name": "Zaamtech",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c31"
+  },
+  "from_name": "VA",
+  "to_name": "Zooin",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c32"
+  },
+  "from_name": "VA",
+  "to_name": "_hold_",
+  "allocation_type": "funders",
+  "allocation": 230
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c33"
+  },
+  "from_name": "XO",
+  "to_name": "BehemothCorps",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c34"
+  },
+  "from_name": "XO",
+  "to_name": "BoarBrews",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c35"
+  },
+  "from_name": "XO",
+  "to_name": "Chieftronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c36"
+  },
+  "from_name": "XO",
+  "to_name": "ChronoBrotherhood",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c37"
+  },
+  "from_name": "XO",
+  "to_name": "Coreland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c38"
+  },
+  "from_name": "XO",
+  "to_name": "Curse",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c39"
+  },
+  "from_name": "XO",
+  "to_name": "Deserprises",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c3a"
+  },
+  "from_name": "XO",
+  "to_name": "Drifthead",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c3b"
+  },
+  "from_name": "XO",
+  "to_name": "Dynamicphone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c3c"
+  },
+  "from_name": "XO",
+  "to_name": "Electrorks",
+  "allocation_type": "funders",
+  "allocation": 576888
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c3d"
+  },
+  "from_name": "XO",
+  "to_name": "EnigmaCompany",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c3e"
+  },
+  "from_name": "XO",
+  "to_name": "Faseelectronics",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c3f"
+  },
+  "from_name": "XO",
+  "to_name": "Flowerscape",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c40"
+  },
+  "from_name": "XO",
+  "to_name": "Ghostland",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c41"
+  },
+  "from_name": "XO",
+  "to_name": "Globaltube",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c42"
+  },
+  "from_name": "XO",
+  "to_name": "Honeywheels",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c43"
+  },
+  "from_name": "XO",
+  "to_name": "ImaginationLimited",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c44"
+  },
+  "from_name": "XO",
+  "to_name": "Ithigh",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c45"
+  },
+  "from_name": "XO",
+  "to_name": "Lionware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c46"
+  },
+  "from_name": "XO",
+  "to_name": "Microbooks",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c47"
+  },
+  "from_name": "XO",
+  "to_name": "Mountaintales",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c48"
+  },
+  "from_name": "XO",
+  "to_name": "Nemomedia",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c49"
+  },
+  "from_name": "XO",
+  "to_name": "Nimbletainment",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c4a"
+  },
+  "from_name": "XO",
+  "to_name": "Nitro",
+  "allocation_type": "funders",
+  "allocation": 1230660
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c4b"
+  },
+  "from_name": "XO",
+  "to_name": "Nymphware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c4c"
+  },
+  "from_name": "XO",
+  "to_name": "Peachpaw",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c4d"
+  },
+  "from_name": "XO",
+  "to_name": "Peachware",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c4e"
+  },
+  "from_name": "XO",
+  "to_name": "Prophecycurity",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c4f"
+  },
+  "from_name": "XO",
+  "to_name": "Purplestone",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c50"
+  },
+  "from_name": "XO",
+  "to_name": "RavenMotors",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c51"
+  },
+  "from_name": "XO",
+  "to_name": "Ridgespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c52"
+  },
+  "from_name": "XO",
+  "to_name": "Shadewell",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c53"
+  },
+  "from_name": "XO",
+  "to_name": "Spherebank",
+  "allocation_type": "funders",
+  "allocation": 516
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c54"
+  },
+  "from_name": "XO",
+  "to_name": "Spritespace",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c55"
+  },
+  "from_name": "XO",
+  "to_name": "ThunderRecords",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c56"
+  },
+  "from_name": "XO",
+  "to_name": "TribeofSpite",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c57"
+  },
+  "from_name": "XO",
+  "to_name": "TribeofWarlords",
+  "allocation_type": "funders",
+  "allocation": 149640
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c58"
+  },
+  "from_name": "XO",
+  "to_name": "Twist",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c59"
+  },
+  "from_name": "XO",
+  "to_name": "VortexPoint",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c5a"
+  },
+  "from_name": "XO",
+  "to_name": "Whisper",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c5b"
+  },
+  "from_name": "XO",
+  "to_name": "YellowShade",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c5c"
+  },
+  "from_name": "XO",
+  "to_name": "Yeworks",
+  "allocation_type": "funders",
+  "allocation": 629262
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c5d"
+  },
+  "from_name": "XO",
+  "to_name": "Zaamtech",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c5e"
+  },
+  "from_name": "XO",
+  "to_name": "Zooin",
+  "allocation_type": "funders",
+  "allocation": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a65b812c0f051869c5f"
+  },
+  "from_name": "XO",
+  "to_name": "_hold_",
+  "allocation_type": "funders",
+  "allocation": 34
+}]

@@ -45,7 +45,6 @@ class Users:
     @staticmethod
     def check_auth(username, password):
         user = mongo.db.users.find_one({"username": username})
-        print(user, user["password"], password)
         if user and check_password_hash(user["password"], password):
             return {"username": user["username"], "role": user["role"]}
 

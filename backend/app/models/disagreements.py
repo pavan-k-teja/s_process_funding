@@ -13,5 +13,4 @@ class Disagreements:
                 if key != "_id":
                     simple_disagreements[key] = loads(dumps(value))
 
-        print(simple_disagreements)
         return simple_disagreements

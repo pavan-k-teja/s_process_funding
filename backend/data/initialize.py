@@ -4,7 +4,7 @@ import pymongo
 from werkzeug.security import generate_password_hash
 
 
-def get_database(db_name="test_grant_db", uri="mongodb://localhost:27017/"):
+def get_database(db_name="grant_db", uri="mongodb://localhost:27017/"):
     client = pymongo.MongoClient(uri)
     return client[db_name]
 

@@ -1,0 +1,2880 @@
+[{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b0"
+  },
+  "username": "BO",
+  "utility_name": "BehemothCorps",
+  "fdv": 0.5,
+  "ldt": 3000000,
+  "conc": -0.54
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b1"
+  },
+  "username": "CF",
+  "utility_name": "BehemothCorps",
+  "fdv": 1,
+  "ldt": 2000000,
+  "conc": -0.4
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b2"
+  },
+  "username": "GZ",
+  "utility_name": "BehemothCorps",
+  "fdv": 0.81,
+  "ldt": 2100000,
+  "conc": 0.14
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b3"
+  },
+  "username": "IF",
+  "utility_name": "BehemothCorps",
+  "fdv": 0.66,
+  "ldt": 250000,
+  "conc": 0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b4"
+  },
+  "username": "VA",
+  "utility_name": "BehemothCorps",
+  "fdv": 0.43,
+  "ldt": 400000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b5"
+  },
+  "username": "XO",
+  "utility_name": "BehemothCorps",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b6"
+  },
+  "username": "BO",
+  "utility_name": "BoarBrews",
+  "fdv": 0.2,
+  "ldt": 500000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b7"
+  },
+  "username": "CF",
+  "utility_name": "BoarBrews",
+  "fdv": 0.63,
+  "ldt": 500000,
+  "conc": 0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b8"
+  },
+  "username": "GZ",
+  "utility_name": "BoarBrews",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696b9"
+  },
+  "username": "IF",
+  "utility_name": "BoarBrews",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ba"
+  },
+  "username": "VA",
+  "utility_name": "BoarBrews",
+  "fdv": 0.72,
+  "ldt": 654000,
+  "conc": 0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696bb"
+  },
+  "username": "XO",
+  "utility_name": "BoarBrews",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696bc"
+  },
+  "username": "BO",
+  "utility_name": "Chieftronics",
+  "fdv": 0.65,
+  "ldt": 10000000,
+  "conc": -0.75
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696bd"
+  },
+  "username": "CF",
+  "utility_name": "Chieftronics",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696be"
+  },
+  "username": "GZ",
+  "utility_name": "Chieftronics",
+  "fdv": 0.54,
+  "ldt": 524000,
+  "conc": 0.89
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696bf"
+  },
+  "username": "IF",
+  "utility_name": "Chieftronics",
+  "fdv": 0.59,
+  "ldt": 600000,
+  "conc": 0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c0"
+  },
+  "username": "VA",
+  "utility_name": "Chieftronics",
+  "fdv": 0.16,
+  "ldt": 300000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c1"
+  },
+  "username": "XO",
+  "utility_name": "Chieftronics",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c2"
+  },
+  "username": "BO",
+  "utility_name": "ChronoBrotherhood",
+  "fdv": 0.82,
+  "ldt": 3000000,
+  "conc": -0.47
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c3"
+  },
+  "username": "CF",
+  "utility_name": "ChronoBrotherhood",
+  "fdv": 0.88,
+  "ldt": 1300000,
+  "conc": -0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c4"
+  },
+  "username": "GZ",
+  "utility_name": "ChronoBrotherhood",
+  "fdv": 0.66,
+  "ldt": 2000000,
+  "conc": 0.34
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c5"
+  },
+  "username": "IF",
+  "utility_name": "ChronoBrotherhood",
+  "fdv": 0.84,
+  "ldt": 2000000,
+  "conc": -0.2
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c6"
+  },
+  "username": "VA",
+  "utility_name": "ChronoBrotherhood",
+  "fdv": 0.96,
+  "ldt": 2000000,
+  "conc": -0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c7"
+  },
+  "username": "XO",
+  "utility_name": "ChronoBrotherhood",
+  "fdv": 0.38,
+  "ldt": 2500000,
+  "conc": -0.1
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c8"
+  },
+  "username": "BO",
+  "utility_name": "Coreland",
+  "fdv": 0.15,
+  "ldt": 660000,
+  "conc": 0.38
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696c9"
+  },
+  "username": "CF",
+  "utility_name": "Coreland",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ca"
+  },
+  "username": "GZ",
+  "utility_name": "Coreland",
+  "fdv": 0.36,
+  "ldt": 1300000,
+  "conc": -0.25
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696cb"
+  },
+  "username": "IF",
+  "utility_name": "Coreland",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696cc"
+  },
+  "username": "VA",
+  "utility_name": "Coreland",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696cd"
+  },
+  "username": "XO",
+  "utility_name": "Coreland",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ce"
+  },
+  "username": "BO",
+  "utility_name": "Curse",
+  "fdv": 0.21,
+  "ldt": 250000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696cf"
+  },
+  "username": "CF",
+  "utility_name": "Curse",
+  "fdv": 1,
+  "ldt": 350000,
+  "conc": -0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d0"
+  },
+  "username": "GZ",
+  "utility_name": "Curse",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d1"
+  },
+  "username": "IF",
+  "utility_name": "Curse",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d2"
+  },
+  "username": "VA",
+  "utility_name": "Curse",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d3"
+  },
+  "username": "XO",
+  "utility_name": "Curse",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d4"
+  },
+  "username": "BO",
+  "utility_name": "Deserprises",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d5"
+  },
+  "username": "CF",
+  "utility_name": "Deserprises",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": -0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d6"
+  },
+  "username": "GZ",
+  "utility_name": "Deserprises",
+  "fdv": 0.27,
+  "ldt": 200000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d7"
+  },
+  "username": "IF",
+  "utility_name": "Deserprises",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d8"
+  },
+  "username": "VA",
+  "utility_name": "Deserprises",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696d9"
+  },
+  "username": "XO",
+  "utility_name": "Deserprises",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": -0.01
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696da"
+  },
+  "username": "BO",
+  "utility_name": "Drifthead",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696db"
+  },
+  "username": "CF",
+  "utility_name": "Drifthead",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696dc"
+  },
+  "username": "GZ",
+  "utility_name": "Drifthead",
+  "fdv": 0.04,
+  "ldt": 499000,
+  "conc": 0.16
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696dd"
+  },
+  "username": "IF",
+  "utility_name": "Drifthead",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696de"
+  },
+  "username": "VA",
+  "utility_name": "Drifthead",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696df"
+  },
+  "username": "XO",
+  "utility_name": "Drifthead",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e0"
+  },
+  "username": "BO",
+  "utility_name": "Dynamicphone",
+  "fdv": 0.25,
+  "ldt": 150000,
+  "conc": -0.05
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e1"
+  },
+  "username": "CF",
+  "utility_name": "Dynamicphone",
+  "fdv": 1,
+  "ldt": 150000,
+  "conc": 0.35
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e2"
+  },
+  "username": "GZ",
+  "utility_name": "Dynamicphone",
+  "fdv": 0.18,
+  "ldt": 150000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e3"
+  },
+  "username": "IF",
+  "utility_name": "Dynamicphone",
+  "fdv": 0.74,
+  "ldt": 108000,
+  "conc": 0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e4"
+  },
+  "username": "VA",
+  "utility_name": "Dynamicphone",
+  "fdv": 0.85,
+  "ldt": 194000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e5"
+  },
+  "username": "XO",
+  "utility_name": "Dynamicphone",
+  "fdv": 0.26,
+  "ldt": 226000,
+  "conc": 0.65
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e6"
+  },
+  "username": "BO",
+  "utility_name": "Electrorks",
+  "fdv": 0.6,
+  "ldt": 1500000,
+  "conc": -0.13
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e7"
+  },
+  "username": "CF",
+  "utility_name": "Electrorks",
+  "fdv": 0.38,
+  "ldt": 500000,
+  "conc": 0.2
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e8"
+  },
+  "username": "GZ",
+  "utility_name": "Electrorks",
+  "fdv": 0.36,
+  "ldt": 1000000,
+  "conc": 0.56
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696e9"
+  },
+  "username": "IF",
+  "utility_name": "Electrorks",
+  "fdv": 0.79,
+  "ldt": 500000,
+  "conc": 0.2
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ea"
+  },
+  "username": "VA",
+  "utility_name": "Electrorks",
+  "fdv": 0.74,
+  "ldt": 1600000,
+  "conc": -0.2
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696eb"
+  },
+  "username": "XO",
+  "utility_name": "Electrorks",
+  "fdv": 1,
+  "ldt": 2400000,
+  "conc": -0.41
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ec"
+  },
+  "username": "BO",
+  "utility_name": "EnigmaCompany",
+  "fdv": 0.1,
+  "ldt": 2000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ed"
+  },
+  "username": "CF",
+  "utility_name": "EnigmaCompany",
+  "fdv": 0.25,
+  "ldt": 500000,
+  "conc": -0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ee"
+  },
+  "username": "GZ",
+  "utility_name": "EnigmaCompany",
+  "fdv": 0.35,
+  "ldt": 212000,
+  "conc": 0.1
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ef"
+  },
+  "username": "IF",
+  "utility_name": "EnigmaCompany",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f0"
+  },
+  "username": "VA",
+  "utility_name": "EnigmaCompany",
+  "fdv": 0.18,
+  "ldt": 520000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f1"
+  },
+  "username": "XO",
+  "utility_name": "EnigmaCompany",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f2"
+  },
+  "username": "BO",
+  "utility_name": "Faseelectronics",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f3"
+  },
+  "username": "CF",
+  "utility_name": "Faseelectronics",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f4"
+  },
+  "username": "GZ",
+  "utility_name": "Faseelectronics",
+  "fdv": 0,
+  "ldt": 640000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f5"
+  },
+  "username": "IF",
+  "utility_name": "Faseelectronics",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f6"
+  },
+  "username": "VA",
+  "utility_name": "Faseelectronics",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f7"
+  },
+  "username": "XO",
+  "utility_name": "Faseelectronics",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f8"
+  },
+  "username": "BO",
+  "utility_name": "Flowerscape",
+  "fdv": 0.22,
+  "ldt": 150000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696f9"
+  },
+  "username": "CF",
+  "utility_name": "Flowerscape",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696fa"
+  },
+  "username": "GZ",
+  "utility_name": "Flowerscape",
+  "fdv": 0.29,
+  "ldt": 129000,
+  "conc": 0.45
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696fb"
+  },
+  "username": "IF",
+  "utility_name": "Flowerscape",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696fc"
+  },
+  "username": "VA",
+  "utility_name": "Flowerscape",
+  "fdv": 0.48,
+  "ldt": 174000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696fd"
+  },
+  "username": "XO",
+  "utility_name": "Flowerscape",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696fe"
+  },
+  "username": "BO",
+  "utility_name": "Ghostland",
+  "fdv": 0.22,
+  "ldt": 998000,
+  "conc": 1
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518696ff"
+  },
+  "username": "CF",
+  "utility_name": "Ghostland",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869700"
+  },
+  "username": "GZ",
+  "utility_name": "Ghostland",
+  "fdv": 0.1,
+  "ldt": 683000,
+  "conc": 0.84
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869701"
+  },
+  "username": "IF",
+  "utility_name": "Ghostland",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869702"
+  },
+  "username": "VA",
+  "utility_name": "Ghostland",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869703"
+  },
+  "username": "XO",
+  "utility_name": "Ghostland",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869704"
+  },
+  "username": "BO",
+  "utility_name": "Globaltube",
+  "fdv": 0.2,
+  "ldt": 3000000,
+  "conc": -0.55
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869705"
+  },
+  "username": "CF",
+  "utility_name": "Globaltube",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869706"
+  },
+  "username": "GZ",
+  "utility_name": "Globaltube",
+  "fdv": 0.18,
+  "ldt": 500000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869707"
+  },
+  "username": "IF",
+  "utility_name": "Globaltube",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869708"
+  },
+  "username": "VA",
+  "utility_name": "Globaltube",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869709"
+  },
+  "username": "XO",
+  "utility_name": "Globaltube",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186970a"
+  },
+  "username": "BO",
+  "utility_name": "Honeywheels",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186970b"
+  },
+  "username": "CF",
+  "utility_name": "Honeywheels",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186970c"
+  },
+  "username": "GZ",
+  "utility_name": "Honeywheels",
+  "fdv": 0.41,
+  "ldt": 300000,
+  "conc": 0.03
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186970d"
+  },
+  "username": "IF",
+  "utility_name": "Honeywheels",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186970e"
+  },
+  "username": "VA",
+  "utility_name": "Honeywheels",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186970f"
+  },
+  "username": "XO",
+  "utility_name": "Honeywheels",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869710"
+  },
+  "username": "BO",
+  "utility_name": "ImaginationLimited",
+  "fdv": 0.15,
+  "ldt": 200000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869711"
+  },
+  "username": "CF",
+  "utility_name": "ImaginationLimited",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869712"
+  },
+  "username": "GZ",
+  "utility_name": "ImaginationLimited",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869713"
+  },
+  "username": "IF",
+  "utility_name": "ImaginationLimited",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869714"
+  },
+  "username": "VA",
+  "utility_name": "ImaginationLimited",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869715"
+  },
+  "username": "XO",
+  "utility_name": "ImaginationLimited",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869716"
+  },
+  "username": "BO",
+  "utility_name": "Ithigh",
+  "fdv": 0.21,
+  "ldt": 200000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869717"
+  },
+  "username": "CF",
+  "utility_name": "Ithigh",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869718"
+  },
+  "username": "GZ",
+  "utility_name": "Ithigh",
+  "fdv": 0.02,
+  "ldt": 641000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869719"
+  },
+  "username": "IF",
+  "utility_name": "Ithigh",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186971a"
+  },
+  "username": "VA",
+  "utility_name": "Ithigh",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186971b"
+  },
+  "username": "XO",
+  "utility_name": "Ithigh",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186971c"
+  },
+  "username": "BO",
+  "utility_name": "Lionware",
+  "fdv": 0.2,
+  "ldt": 1000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186971d"
+  },
+  "username": "CF",
+  "utility_name": "Lionware",
+  "fdv": 0.94,
+  "ldt": 500000,
+  "conc": 0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186971e"
+  },
+  "username": "GZ",
+  "utility_name": "Lionware",
+  "fdv": 0.27,
+  "ldt": 360000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186971f"
+  },
+  "username": "IF",
+  "utility_name": "Lionware",
+  "fdv": 0.84,
+  "ldt": 500000,
+  "conc": 0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869720"
+  },
+  "username": "VA",
+  "utility_name": "Lionware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869721"
+  },
+  "username": "XO",
+  "utility_name": "Lionware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869722"
+  },
+  "username": "BO",
+  "utility_name": "Microbooks",
+  "fdv": 0.2,
+  "ldt": 10000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869723"
+  },
+  "username": "CF",
+  "utility_name": "Microbooks",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869724"
+  },
+  "username": "GZ",
+  "utility_name": "Microbooks",
+  "fdv": 0,
+  "ldt": 480000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869725"
+  },
+  "username": "IF",
+  "utility_name": "Microbooks",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869726"
+  },
+  "username": "VA",
+  "utility_name": "Microbooks",
+  "fdv": 0.04,
+  "ldt": 960000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869727"
+  },
+  "username": "XO",
+  "utility_name": "Microbooks",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869728"
+  },
+  "username": "BO",
+  "utility_name": "Mountaintales",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869729"
+  },
+  "username": "CF",
+  "utility_name": "Mountaintales",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186972a"
+  },
+  "username": "GZ",
+  "utility_name": "Mountaintales",
+  "fdv": 0,
+  "ldt": 1700000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186972b"
+  },
+  "username": "IF",
+  "utility_name": "Mountaintales",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186972c"
+  },
+  "username": "VA",
+  "utility_name": "Mountaintales",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186972d"
+  },
+  "username": "XO",
+  "utility_name": "Mountaintales",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186972e"
+  },
+  "username": "BO",
+  "utility_name": "Nemomedia",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186972f"
+  },
+  "username": "CF",
+  "utility_name": "Nemomedia",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869730"
+  },
+  "username": "GZ",
+  "utility_name": "Nemomedia",
+  "fdv": 0.18,
+  "ldt": 120000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869731"
+  },
+  "username": "IF",
+  "utility_name": "Nemomedia",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869732"
+  },
+  "username": "VA",
+  "utility_name": "Nemomedia",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869733"
+  },
+  "username": "XO",
+  "utility_name": "Nemomedia",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0.2
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869734"
+  },
+  "username": "BO",
+  "utility_name": "Nimbletainment",
+  "fdv": 0.35,
+  "ldt": 8000000,
+  "conc": -0.54
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869735"
+  },
+  "username": "CF",
+  "utility_name": "Nimbletainment",
+  "fdv": 0.31,
+  "ldt": 5000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869736"
+  },
+  "username": "GZ",
+  "utility_name": "Nimbletainment",
+  "fdv": 0.36,
+  "ldt": 1800000,
+  "conc": -0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869737"
+  },
+  "username": "IF",
+  "utility_name": "Nimbletainment",
+  "fdv": 0.95,
+  "ldt": 2500000,
+  "conc": -0.1
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869738"
+  },
+  "username": "VA",
+  "utility_name": "Nimbletainment",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869739"
+  },
+  "username": "XO",
+  "utility_name": "Nimbletainment",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186973a"
+  },
+  "username": "BO",
+  "utility_name": "Nitro",
+  "fdv": 0.5,
+  "ldt": 2500000,
+  "conc": -0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186973b"
+  },
+  "username": "CF",
+  "utility_name": "Nitro",
+  "fdv": 0.63,
+  "ldt": 1200000,
+  "conc": -0.25
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186973c"
+  },
+  "username": "GZ",
+  "utility_name": "Nitro",
+  "fdv": 0.4,
+  "ldt": 170000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186973d"
+  },
+  "username": "IF",
+  "utility_name": "Nitro",
+  "fdv": 1,
+  "ldt": 800000,
+  "conc": 0.4
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186973e"
+  },
+  "username": "VA",
+  "utility_name": "Nitro",
+  "fdv": 0.96,
+  "ldt": 1300000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186973f"
+  },
+  "username": "XO",
+  "utility_name": "Nitro",
+  "fdv": 0.99,
+  "ldt": 1700000,
+  "conc": 0.33
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869740"
+  },
+  "username": "BO",
+  "utility_name": "Nymphware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869741"
+  },
+  "username": "CF",
+  "utility_name": "Nymphware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869742"
+  },
+  "username": "GZ",
+  "utility_name": "Nymphware",
+  "fdv": 0.18,
+  "ldt": 100000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869743"
+  },
+  "username": "IF",
+  "utility_name": "Nymphware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869744"
+  },
+  "username": "VA",
+  "utility_name": "Nymphware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869745"
+  },
+  "username": "XO",
+  "utility_name": "Nymphware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869746"
+  },
+  "username": "BO",
+  "utility_name": "Peachpaw",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869747"
+  },
+  "username": "CF",
+  "utility_name": "Peachpaw",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869748"
+  },
+  "username": "GZ",
+  "utility_name": "Peachpaw",
+  "fdv": 0,
+  "ldt": 900000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869749"
+  },
+  "username": "IF",
+  "utility_name": "Peachpaw",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186974a"
+  },
+  "username": "VA",
+  "utility_name": "Peachpaw",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186974b"
+  },
+  "username": "XO",
+  "utility_name": "Peachpaw",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186974c"
+  },
+  "username": "BO",
+  "utility_name": "Peachware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186974d"
+  },
+  "username": "CF",
+  "utility_name": "Peachware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186974e"
+  },
+  "username": "GZ",
+  "utility_name": "Peachware",
+  "fdv": 0,
+  "ldt": 1000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186974f"
+  },
+  "username": "IF",
+  "utility_name": "Peachware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869750"
+  },
+  "username": "VA",
+  "utility_name": "Peachware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869751"
+  },
+  "username": "XO",
+  "utility_name": "Peachware",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869752"
+  },
+  "username": "BO",
+  "utility_name": "Prophecycurity",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869753"
+  },
+  "username": "CF",
+  "utility_name": "Prophecycurity",
+  "fdv": 0,
+  "ldt": 300000,
+  "conc": 0.7
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869754"
+  },
+  "username": "GZ",
+  "utility_name": "Prophecycurity",
+  "fdv": 0,
+  "ldt": 1600000,
+  "conc": 3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869755"
+  },
+  "username": "IF",
+  "utility_name": "Prophecycurity",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869756"
+  },
+  "username": "VA",
+  "utility_name": "Prophecycurity",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869757"
+  },
+  "username": "XO",
+  "utility_name": "Prophecycurity",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869758"
+  },
+  "username": "BO",
+  "utility_name": "Purplestone",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869759"
+  },
+  "username": "CF",
+  "utility_name": "Purplestone",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186975a"
+  },
+  "username": "GZ",
+  "utility_name": "Purplestone",
+  "fdv": 0.09,
+  "ldt": 200000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186975b"
+  },
+  "username": "IF",
+  "utility_name": "Purplestone",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186975c"
+  },
+  "username": "VA",
+  "utility_name": "Purplestone",
+  "fdv": 0.16,
+  "ldt": 300000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186975d"
+  },
+  "username": "XO",
+  "utility_name": "Purplestone",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186975e"
+  },
+  "username": "BO",
+  "utility_name": "RavenMotors",
+  "fdv": 0.25,
+  "ldt": 1800000,
+  "conc": -0.14
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186975f"
+  },
+  "username": "CF",
+  "utility_name": "RavenMotors",
+  "fdv": 0.25,
+  "ldt": 300000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869760"
+  },
+  "username": "GZ",
+  "utility_name": "RavenMotors",
+  "fdv": 0.05,
+  "ldt": 320000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869761"
+  },
+  "username": "IF",
+  "utility_name": "RavenMotors",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869762"
+  },
+  "username": "VA",
+  "utility_name": "RavenMotors",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869763"
+  },
+  "username": "XO",
+  "utility_name": "RavenMotors",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869764"
+  },
+  "username": "BO",
+  "utility_name": "Ridgespace",
+  "fdv": 0.65,
+  "ldt": 2000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869765"
+  },
+  "username": "CF",
+  "utility_name": "Ridgespace",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869766"
+  },
+  "username": "GZ",
+  "utility_name": "Ridgespace",
+  "fdv": 0.47,
+  "ldt": 2000000,
+  "conc": -0.28
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869767"
+  },
+  "username": "IF",
+  "utility_name": "Ridgespace",
+  "fdv": 0.99,
+  "ldt": 1000000,
+  "conc": 0.2
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869768"
+  },
+  "username": "VA",
+  "utility_name": "Ridgespace",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869769"
+  },
+  "username": "XO",
+  "utility_name": "Ridgespace",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186976a"
+  },
+  "username": "BO",
+  "utility_name": "Shadewell",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186976b"
+  },
+  "username": "CF",
+  "utility_name": "Shadewell",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186976c"
+  },
+  "username": "GZ",
+  "utility_name": "Shadewell",
+  "fdv": 0,
+  "ldt": 900000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186976d"
+  },
+  "username": "IF",
+  "utility_name": "Shadewell",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186976e"
+  },
+  "username": "VA",
+  "utility_name": "Shadewell",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186976f"
+  },
+  "username": "XO",
+  "utility_name": "Shadewell",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869770"
+  },
+  "username": "BO",
+  "utility_name": "Spherebank",
+  "fdv": 0.6,
+  "ldt": 210000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869771"
+  },
+  "username": "CF",
+  "utility_name": "Spherebank",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869772"
+  },
+  "username": "GZ",
+  "utility_name": "Spherebank",
+  "fdv": 0.42,
+  "ldt": 203000,
+  "conc": 0.35
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869773"
+  },
+  "username": "IF",
+  "utility_name": "Spherebank",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869774"
+  },
+  "username": "VA",
+  "utility_name": "Spherebank",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869775"
+  },
+  "username": "XO",
+  "utility_name": "Spherebank",
+  "fdv": 0.52,
+  "ldt": 230000,
+  "conc": -0.69
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869776"
+  },
+  "username": "BO",
+  "utility_name": "Spritespace",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869777"
+  },
+  "username": "CF",
+  "utility_name": "Spritespace",
+  "fdv": 0,
+  "ldt": 1500000,
+  "conc": -0.25
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869778"
+  },
+  "username": "GZ",
+  "utility_name": "Spritespace",
+  "fdv": 0.27,
+  "ldt": 120000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869779"
+  },
+  "username": "IF",
+  "utility_name": "Spritespace",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186977a"
+  },
+  "username": "VA",
+  "utility_name": "Spritespace",
+  "fdv": 0.04,
+  "ldt": 502000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186977b"
+  },
+  "username": "XO",
+  "utility_name": "Spritespace",
+  "fdv": 0.11,
+  "ldt": 1700000,
+  "conc": -0.52
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186977c"
+  },
+  "username": "BO",
+  "utility_name": "ThunderRecords",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186977d"
+  },
+  "username": "CF",
+  "utility_name": "ThunderRecords",
+  "fdv": 0,
+  "ldt": 350000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186977e"
+  },
+  "username": "GZ",
+  "utility_name": "ThunderRecords",
+  "fdv": 0.09,
+  "ldt": 670000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186977f"
+  },
+  "username": "IF",
+  "utility_name": "ThunderRecords",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869780"
+  },
+  "username": "VA",
+  "utility_name": "ThunderRecords",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869781"
+  },
+  "username": "XO",
+  "utility_name": "ThunderRecords",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869782"
+  },
+  "username": "BO",
+  "utility_name": "TribeofSpite",
+  "fdv": 0.22,
+  "ldt": 5000000,
+  "conc": -0.55
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869783"
+  },
+  "username": "CF",
+  "utility_name": "TribeofSpite",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869784"
+  },
+  "username": "GZ",
+  "utility_name": "TribeofSpite",
+  "fdv": 0.25,
+  "ldt": 710000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869785"
+  },
+  "username": "IF",
+  "utility_name": "TribeofSpite",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869786"
+  },
+  "username": "VA",
+  "utility_name": "TribeofSpite",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869787"
+  },
+  "username": "XO",
+  "utility_name": "TribeofSpite",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0.06
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869788"
+  },
+  "username": "BO",
+  "utility_name": "TribeofWarlords",
+  "fdv": 0.62,
+  "ldt": 500000,
+  "conc": -0.33
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869789"
+  },
+  "username": "CF",
+  "utility_name": "TribeofWarlords",
+  "fdv": 0.75,
+  "ldt": 400000,
+  "conc": 0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186978a"
+  },
+  "username": "GZ",
+  "utility_name": "TribeofWarlords",
+  "fdv": 0.81,
+  "ldt": 500000,
+  "conc": 1.98
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186978b"
+  },
+  "username": "IF",
+  "utility_name": "TribeofWarlords",
+  "fdv": 0.93,
+  "ldt": 175000,
+  "conc": 0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186978c"
+  },
+  "username": "VA",
+  "utility_name": "TribeofWarlords",
+  "fdv": 0.96,
+  "ldt": 398000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186978d"
+  },
+  "username": "XO",
+  "utility_name": "TribeofWarlords",
+  "fdv": 0.99,
+  "ldt": 508000,
+  "conc": -0.32
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186978e"
+  },
+  "username": "BO",
+  "utility_name": "Twist",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186978f"
+  },
+  "username": "CF",
+  "utility_name": "Twist",
+  "fdv": 0.5,
+  "ldt": 1000000,
+  "conc": -0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869790"
+  },
+  "username": "GZ",
+  "utility_name": "Twist",
+  "fdv": 0.36,
+  "ldt": 460000,
+  "conc": 1
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869791"
+  },
+  "username": "IF",
+  "utility_name": "Twist",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869792"
+  },
+  "username": "VA",
+  "utility_name": "Twist",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869793"
+  },
+  "username": "XO",
+  "utility_name": "Twist",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869794"
+  },
+  "username": "BO",
+  "utility_name": "VortexPoint",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869795"
+  },
+  "username": "CF",
+  "utility_name": "VortexPoint",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869796"
+  },
+  "username": "GZ",
+  "utility_name": "VortexPoint",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869797"
+  },
+  "username": "IF",
+  "utility_name": "VortexPoint",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869798"
+  },
+  "username": "VA",
+  "utility_name": "VortexPoint",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f051869799"
+  },
+  "username": "XO",
+  "utility_name": "VortexPoint",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0.01
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186979a"
+  },
+  "username": "BO",
+  "utility_name": "Whisper",
+  "fdv": 0.3,
+  "ldt": 2000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186979b"
+  },
+  "username": "CF",
+  "utility_name": "Whisper",
+  "fdv": 0.25,
+  "ldt": 1200000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186979c"
+  },
+  "username": "GZ",
+  "utility_name": "Whisper",
+  "fdv": 0.18,
+  "ldt": 320000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186979d"
+  },
+  "username": "IF",
+  "utility_name": "Whisper",
+  "fdv": 0.47,
+  "ldt": 1000000,
+  "conc": 0.1
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186979e"
+  },
+  "username": "VA",
+  "utility_name": "Whisper",
+  "fdv": 1,
+  "ldt": 1700000,
+  "conc": -0.28
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f05186979f"
+  },
+  "username": "XO",
+  "utility_name": "Whisper",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a0"
+  },
+  "username": "BO",
+  "utility_name": "YellowShade",
+  "fdv": 0.15,
+  "ldt": 2500000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a1"
+  },
+  "username": "CF",
+  "utility_name": "YellowShade",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a2"
+  },
+  "username": "GZ",
+  "utility_name": "YellowShade",
+  "fdv": 0.27,
+  "ldt": 1700000,
+  "conc": -0.28
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a3"
+  },
+  "username": "IF",
+  "utility_name": "YellowShade",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a4"
+  },
+  "username": "VA",
+  "utility_name": "YellowShade",
+  "fdv": 0.2,
+  "ldt": 1000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a5"
+  },
+  "username": "XO",
+  "utility_name": "YellowShade",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a6"
+  },
+  "username": "BO",
+  "utility_name": "Yeworks",
+  "fdv": 0.6,
+  "ldt": 1000000,
+  "conc": -0.66
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a7"
+  },
+  "username": "CF",
+  "utility_name": "Yeworks",
+  "fdv": 0.38,
+  "ldt": 500000,
+  "conc": 0.35
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a8"
+  },
+  "username": "GZ",
+  "utility_name": "Yeworks",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697a9"
+  },
+  "username": "IF",
+  "utility_name": "Yeworks",
+  "fdv": 0.74,
+  "ldt": 320000,
+  "conc": 0.3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697aa"
+  },
+  "username": "VA",
+  "utility_name": "Yeworks",
+  "fdv": 0.36,
+  "ldt": 1300000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697ab"
+  },
+  "username": "XO",
+  "utility_name": "Yeworks",
+  "fdv": 0.99,
+  "ldt": 1700000,
+  "conc": -0.21
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697ac"
+  },
+  "username": "BO",
+  "utility_name": "Zaamtech",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697ad"
+  },
+  "username": "CF",
+  "utility_name": "Zaamtech",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697ae"
+  },
+  "username": "GZ",
+  "utility_name": "Zaamtech",
+  "fdv": 0.27,
+  "ldt": 960000,
+  "conc": -0.32
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697af"
+  },
+  "username": "IF",
+  "utility_name": "Zaamtech",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b0"
+  },
+  "username": "VA",
+  "utility_name": "Zaamtech",
+  "fdv": 0.31,
+  "ldt": 300000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b1"
+  },
+  "username": "XO",
+  "utility_name": "Zaamtech",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b2"
+  },
+  "username": "BO",
+  "utility_name": "Zooin",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b3"
+  },
+  "username": "CF",
+  "utility_name": "Zooin",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b4"
+  },
+  "username": "GZ",
+  "utility_name": "Zooin",
+  "fdv": 0.09,
+  "ldt": 449000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b5"
+  },
+  "username": "IF",
+  "utility_name": "Zooin",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b6"
+  },
+  "username": "VA",
+  "utility_name": "Zooin",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b7"
+  },
+  "username": "XO",
+  "utility_name": "Zooin",
+  "fdv": 0,
+  "ldt": 0,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b8"
+  },
+  "username": "BO",
+  "utility_name": "_hold_",
+  "fdv": 0.2,
+  "ldt": 20000000,
+  "conc": 3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697b9"
+  },
+  "username": "CF",
+  "utility_name": "_hold_",
+  "fdv": 0.31,
+  "ldt": 20000000,
+  "conc": 0.5
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697ba"
+  },
+  "username": "GZ",
+  "utility_name": "_hold_",
+  "fdv": 0.4,
+  "ldt": 20000000,
+  "conc": 0.28
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697bb"
+  },
+  "username": "IF",
+  "utility_name": "_hold_",
+  "fdv": 0,
+  "ldt": 20000000,
+  "conc": -3
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697bc"
+  },
+  "username": "VA",
+  "utility_name": "_hold_",
+  "fdv": 0.23,
+  "ldt": 20000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697bd"
+  },
+  "username": "XO",
+  "utility_name": "_hold_",
+  "fdv": 0.13,
+  "ldt": 26000000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697be"
+  },
+  "username": "JT",
+  "utility_name": "BO",
+  "fdv": 0.9,
+  "ldt": 5308000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697bf"
+  },
+  "username": "JT",
+  "utility_name": "CF",
+  "fdv": 0.95,
+  "ldt": 4375000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c0"
+  },
+  "username": "JT",
+  "utility_name": "GZ",
+  "fdv": 0.75,
+  "ldt": 8808000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c1"
+  },
+  "username": "JT",
+  "utility_name": "IF",
+  "fdv": 1,
+  "ldt": 7658000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c2"
+  },
+  "username": "JT",
+  "utility_name": "VA",
+  "fdv": 1,
+  "ldt": 6775000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c3"
+  },
+  "username": "JT",
+  "utility_name": "XO",
+  "fdv": 0.82,
+  "ldt": 10000000,
+  "conc": 0.22
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c4"
+  },
+  "username": "JM",
+  "utility_name": "BO",
+  "fdv": 0.9,
+  "ldt": 5308000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c5"
+  },
+  "username": "JM",
+  "utility_name": "CF",
+  "fdv": 0.95,
+  "ldt": 4375000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c6"
+  },
+  "username": "JM",
+  "utility_name": "GZ",
+  "fdv": 0.75,
+  "ldt": 8808000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c7"
+  },
+  "username": "JM",
+  "utility_name": "IF",
+  "fdv": 1,
+  "ldt": 7658000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c8"
+  },
+  "username": "JM",
+  "utility_name": "VA",
+  "fdv": 1,
+  "ldt": 6775000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697c9"
+  },
+  "username": "JM",
+  "utility_name": "XO",
+  "fdv": 0.82,
+  "ldt": 10000000,
+  "conc": 0.22
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697ca"
+  },
+  "username": "DM",
+  "utility_name": "BO",
+  "fdv": 0.9,
+  "ldt": 5308000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697cb"
+  },
+  "username": "DM",
+  "utility_name": "CF",
+  "fdv": 0.95,
+  "ldt": 4375000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697cc"
+  },
+  "username": "DM",
+  "utility_name": "GZ",
+  "fdv": 0.75,
+  "ldt": 8808000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697cd"
+  },
+  "username": "DM",
+  "utility_name": "IF",
+  "fdv": 1,
+  "ldt": 7658000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697ce"
+  },
+  "username": "DM",
+  "utility_name": "VA",
+  "fdv": 1,
+  "ldt": 6775000,
+  "conc": 0
+},
+{
+  "_id": {
+    "$oid": "67b27a5eb812c0f0518697cf"
+  },
+  "username": "DM",
+  "utility_name": "XO",
+  "fdv": 0.82,
+  "ldt": 10000000,
+  "conc": 0.22
+}]

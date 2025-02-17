@@ -23,7 +23,6 @@ def login():
     data = request.get_json()
     username = data.get("username")
     password = data.get("password")
-    print(data)
 
     user = Users.check_auth(username, password)
 
@@ -42,7 +41,6 @@ def login():
 @auth_bp.route("/check_jwt", methods=["GET"])
 @jwt_required()
 def check_jwt():
-    print("Hi")
     return jsonify({"msg": "Valid JWT"}), 200
 
 
@@ -51,20 +49,16 @@ def check_jwt():
 def get_user_data():
     complete_jwt = get_jwt()
     username, role = complete_jwt["sub"], complete_jwt["role"]
-    print(username, role)
 
     data = {}
     if role == "recommender":
         data = get_recommender_data(username)
     elif role == "funder":
-        print("data for funder")
         data = get_funder_data(username)
     elif role == "sigma":
         data = get_sigma_data(username)
     else:
         return jsonify({"msg": "Invalid role"}), 401
-
-    print(data)
 
     return jsonify(data), 200
 

@@ -62,10 +62,6 @@ def get_funder_data(funder_name):
         )
     ]
 
-    print("\n\n")
-    print(filtered_allocations)
-    print("\n\n")
-
     return {
         "current_user": current_user,
         "users": profiles,
