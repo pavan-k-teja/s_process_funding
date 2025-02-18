@@ -68,7 +68,9 @@ def get_user_data():
 
 
 def update_user_data(username, utility_data, budget):
+    print("Started updating data")
     update_data(username, utility_data, budget)
+    print("Finished updating data")
 
 
 @auth_bp.route("/save_data", methods=["POST"])
