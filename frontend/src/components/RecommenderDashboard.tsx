@@ -11,6 +11,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState, AppDispatch } from '@/store';
 import { setCurrentUser, setAllocations, setUtilities, setDynamicUtilities, resetChangeDetection } from '@/store';
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const RecommenderDashboard: React.FC = () => {
 
     const enableUtilityHighlight = true;
@@ -65,7 +67,7 @@ const RecommenderDashboard: React.FC = () => {
             return;
         }
         try {
-            await fetch('/api/save_data', {
+            await fetch(`${API_URL}/api/save_data`, {
                 method: 'POST',
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem("jwt")}`,

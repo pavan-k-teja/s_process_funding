@@ -15,15 +15,8 @@ export default defineConfig(({ mode }) => {
     optimizeDeps: {
       exclude: ['sw.js'],
     },
-    server: {
-      proxy: {
-        "/api": {
-          "target": env.VITE_API_URL,
-          "changeOrigin": true,
-          "secure": false,
-          "rewrite": (path) => path.replace(/^\/proxy/, ''),
-        },
-      },
+    define: {
+      "import.meta.env.VITE_API_URL": JSON.stringify(env.VITE_API_URL),
     },
   };
 });

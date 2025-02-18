@@ -8,6 +8,8 @@ import RecommenderDashboard from '@/components/RecommenderDashboard'
 import FunderDashboard from '@/components/FunderDashboard'
 import SigmaDashboard from '@/components/SigmaDashboard'
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 const UserRouter: React.FC = () => {
 
@@ -21,7 +23,7 @@ const UserRouter: React.FC = () => {
                 const token = localStorage.getItem("jwt")
                 if (!token) throw new Error("No token found")
 
-                const response = await fetch("/api/get_data", {
+                const response = await fetch(`${API_URL}/api/get_data`, {
                     headers: {
                         "Authorization": `Bearer ${token}`,
                         "Access-Control-Allow-Origin": "*",

@@ -11,6 +11,8 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 interface LoginFormProps extends React.ComponentPropsWithoutRef<"div"> {
   onLoginSuccess: () => void
 }
@@ -31,7 +33,7 @@ export function LoginForm({
     setError("");
 
     try {
-      const response = await fetch("/api/auth", {
+      const response = await fetch(`${API_URL}/api/auth`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

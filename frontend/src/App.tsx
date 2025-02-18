@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { LoginForm } from "@/components/login-form"
 import UserRouter from "@/components/UserRouter"
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -17,7 +19,7 @@ function App() {
         const token = localStorage.getItem("jwt")
         if (!token) throw new Error("No token found")
 
-        const response = await fetch("/api/check_jwt", {
+        const response = await fetch(`${API_URL}/api/check_jwt`, {
           headers: {
             "Authorization": `Bearer ${token}`,
             "Access-Control-Allow-Origin": "*",
