@@ -56,7 +56,49 @@ function App() {
             <UserRouter />
           </>
         ) : (
-          <LoginForm onLoginSuccess={() => setIsAuthenticated(true)} />
+          // <LoginForm onLoginSuccess={() => setIsAuthenticated(true)} />
+          <div className="flex items-center justify-center h-screen">
+            <div className="flex flex-row items-center gap-10">
+              {/* Login Form (Always Centered) */}
+              <LoginForm onLoginSuccess={() => setIsAuthenticated(true)} />
+
+              {/* Tooltip for Demo Credentials (Properly Positioned to the Right) */}
+              <div className="w-64 h-max overflow-y-auto px-6 py-4 bg-gray-100 text-gray-800 rounded-lg shadow-md text-center text-sm">
+                <p className="text-lg font-semibold text-gray-900">Demo Credentials</p>
+                <p className="font-bold mt-1">Username <span className="text-xl font-extrabold px-1 align-middle">|</span> Password</p>
+
+                <div className="mt-3 space-y-4 text-center">
+                  <div>
+                    <p className="font-semibold text-gray-700">Role: Recommender</p>
+                    <div className="space-y-1">
+                      <p>XO <span className="text-xl font-extrabold px-5 align-middle">|</span> XO</p>
+                      <p>VA <span className="text-xl font-extrabold px-5 align-middle">|</span> VA</p>
+                      <p>IF <span className="text-xl font-extrabold px-5 align-middle">|</span> IF</p>
+                      <p>GZ <span className="text-xl font-extrabold px-5 align-middle">|</span> GZ</p>
+                      <p>CF <span className="text-xl font-extrabold px-5 align-middle">|</span> CF</p>
+                      <p>BO <span className="text-xl font-extrabold px-5 align-middle">|</span> BO</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-gray-700">Role: Recommender</p>
+                    <div className="space-y-1">
+                      <p>JT <span className="text-xl font-extrabold px-5 align-middle">|</span> JT</p>
+                      <p>JM <span className="text-xl font-extrabold px-5 align-middle">|</span> JM</p>
+                      <p>DM <span className="text-xl font-extrabold px-5 align-middle">|</span> DM</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-gray-700">Role: Recommender</p>
+                    <p>SIGMA <span className="text-xl font-extrabold px-1 align-middle">|</span> SIGMA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         )}
       </ThemeProvider>
     </div>

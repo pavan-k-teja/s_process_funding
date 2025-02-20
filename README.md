@@ -1,6 +1,6 @@
-# Grant Distribution Platform using the S-Process
+# Grant Recommendation Platform using the S-Process
 
-This project is a full‑stack web-based application that replicates the S‑Process used by [Survival and Flourishing Fund (SFF)](https://survivalandflourishing.fund/s-process) for grant distribution. The S-Process is a simulation process that enables philanthropists to delegate grant-making discussions and deliberations to trusted advisors, facilitating collaborative decision-making in funding allocations.
+This project is a full-stack web-based application that replicates the S-Process used by [Survival and Flourishing Fund (SFF)](https://survivalandflourishing.fund/s-process) for grant recommendation. The S-Process is a simulation process that enables philanthropists to delegate grant-making discussions and deliberations to trusted advisors, facilitating collaborative decision-making in funding allocations.
 
 ## Technologies Used
 
@@ -64,7 +64,13 @@ Follow these steps to set up the project on your local machine:
     FLASK_DEBUG=True
    ```
 
-5. **Run the Backend Server**: Start the Flask application using Gunicorn.
+5. **Populate Database**: Once your application is connected to MongoDB via the `MONGO_URI`, you can populate the collections and documents. Run the following command from the `backend` directory with the updated URI in the code:
+
+   ```bash
+   python data/initiate.py
+   ```
+
+6. **Run the Backend Server**: Start the Flask application using Gunicorn.
 
    ```bash
    gunicorn -w 4 "main:create_app()"
