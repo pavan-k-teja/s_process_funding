@@ -2,6 +2,21 @@
 
 This project is a full-stack web-based application that replicates the S-Process used by [Survival and Flourishing Fund (SFF)](https://survivalandflourishing.fund/s-process) for grant recommendation. The S-Process is a simulation process that enables philanthropists to delegate grant-making discussions and deliberations to trusted advisors, facilitating collaborative decision-making in funding allocations.
 
+## Preview
+
+### Recommender View
+![Recommender](preview_pics/Recommender_view.png)
+
+### Funder View
+![Funder](preview_pics/Funder_view.png)
+
+### Sigma View
+![Sigma](preview_pics/Sigma_view.png)
+
+### Disagreement Matrix
+![Disagreement Matrix](preview_pics/Sigma_disagreement_matrix.png)
+
+
 ## Technologies Used
 
 The application is built with the following technologies:
